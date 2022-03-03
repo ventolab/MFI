@@ -1,0 +1,613 @@
+,interacting_pair,partner_in_troph,partner_in_troph_expr_where,partner_other,partner_other_expr_where,direction_of_interaction
+0,ABCA1_APOA1,ABCA1,"['eEVT', 'iEVT', 'GC']",APOA1,"['EVT_2', 'eEVT', 'iEVT', 'dS3', 'dS2']",F-(M+F)
+1,ABCA1_APOA1,APOA1,"['EVT_2', 'eEVT', 'iEVT']",ABCA1,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+2,ACKR2_CCL13,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL13,"['EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+3,ACKR2_CCL13,CCL13,"['EVT_1', 'EVT_2', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+4,ACKR2_CCL14,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL14,"['EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+5,ACKR2_CCL14,CCL14,"['EVT_1', 'EVT_2', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+6,ACKR2_CCL2,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL2,"['GC', 'dM1', 'dM2', 'Endo_M']",F-(M+F)
+7,ACKR2_CCL2,CCL2,['GC'],ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+8,ACKR2_CCL3,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+9,ACKR2_CCL3,CCL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+10,ACKR2_CCL4,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT', 'iEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+11,ACKR2_CCL4,CCL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+12,ACKR2_CCL5,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL5,"['VCT_CCC', 'eEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+13,ACKR2_CCL5,CCL5,"['VCT_CCC', 'eEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+14,ACKR2_CCL7,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL7,"['EVT_1', 'iEVT', 'dM1']",F-(M+F)
+15,ACKR2_CCL7,CCL7,"['EVT_1', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+16,ACKR2_CCL8,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL8,"['EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS3', 'dS2']",F-(M+F)
+17,ACKR2_CCL8,CCL8,"['EVT_1', 'EVT_2', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+18,ADORA1_ENTPD1,ADORA1,['eEVT'],ENTPD1,"['eEVT', 'iEVT', 'GC', 'dNK1', 'dM1', 'dM2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+19,ADORA1_ENTPD1,ENTPD1,"['eEVT', 'iEVT', 'GC']",ADORA1,"['eEVT', 'dM2', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+20,ADORA2B_ENTPD1,ADORA2B,"['iEVT', 'GC']",ENTPD1,"['eEVT', 'iEVT', 'GC', 'dNK1', 'dM1', 'dM2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+21,ADORA2B_ENTPD1,ENTPD1,"['eEVT', 'iEVT', 'GC']",ADORA2B,"['iEVT', 'GC', 'dS3', 'dS2']",(M+F)-(M+F)
+22,ADORA3_ENTPD1,ADORA3,"['EVT_1', 'iEVT']",ENTPD1,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+23,ADORA3_ENTPD1,ENTPD1,"['eEVT', 'iEVT', 'GC']",ADORA3,"['EVT_1', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+24,AGRN_NCAM1,AGRN,"['EVT_2', 'eEVT', 'iEVT', 'GC']",NCAM1,"['eEVT', 'dNK1', 'dNK2', 'dNK3', 'uSMC']",(M+F)-(M+F)
+25,AGRN_NCAM1,NCAM1,['eEVT'],AGRN,"['EVT_2', 'eEVT', 'iEVT', 'GC', 'dS3', 'dS2', 'Endo_M']",(M+F)-(M+F)
+26,AGRN_PTPRS,AGRN,"['EVT_2', 'eEVT', 'iEVT', 'GC']",PTPRS,"['eEVT', 'iEVT', 'GC', 'dS2', 'dS1', 'uSMC']",(M+F)-(M+F)
+27,AGRN_PTPRS,PTPRS,"['eEVT', 'iEVT', 'GC']",AGRN,"['EVT_2', 'eEVT', 'iEVT', 'GC', 'dS3', 'dS2', 'Endo_M']",(M+F)-(M+F)
+28,ANXA1_FPR3,ANXA1,"['VCT_CCC', 'EVT_1', 'EVT_2']",FPR3,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+29,ANXA1_FPR3,FPR3,"['VCT_CCC', 'EVT_2', 'iEVT']",ANXA1,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+30,APLP2_PLXNA4,APLP2,"['VCT_CCC', 'GC']",PLXNA4,"['EVT_2', 'eEVT', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+31,APLP2_PLXNA4,PLXNA4,"['EVT_2', 'eEVT', 'iEVT']",APLP2,"['VCT_CCC', 'GC']",(M+F)-F
+32,APP_PLXNA4,APP,"['eEVT', 'GC']",PLXNA4,"['EVT_2', 'eEVT', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+33,APP_PLXNA4,PLXNA4,"['EVT_2', 'eEVT', 'iEVT']",APP,"['eEVT', 'GC']",(M+F)-F
+34,APP_SORL1,APP,"['eEVT', 'GC']",SORL1,"['eEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+35,APP_SORL1,SORL1,"['eEVT', 'GC']",APP,"['eEVT', 'GC']",(M+F)-F
+36,ATP6AP2_REN,ATP6AP2,"['EVT_1', 'iEVT', 'GC']",REN,"['GC', 'dS3', 'dS2', 'Endo_M']",(M+F)-(M+F)
+37,ATP6AP2_REN,REN,['GC'],ATP6AP2,"['EVT_1', 'iEVT', 'GC', 'dM1', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F)
+38,Acetylcholine_byCHAT_CHRM5,CHAT,"['VCT_CCC', 'iEVT']",CHRM5,"['eEVT', 'iEVT']",(M+F)-F
+39,Acetylcholine_byCHAT_CHRM5,CHRM5,"['eEVT', 'iEVT']",CHAT,"['VCT_CCC', 'iEVT', 'dNK1', 'dM2', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+40,BDNF_SORT1,BDNF,"['VCT_CCC', 'EVT_2', 'iEVT']",SORT1,"['VCT_CCC', 'iEVT']",(M+F)-F
+41,BDNF_SORT1,SORT1,"['VCT_CCC', 'iEVT']",BDNF,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F)
+42,BSG_PPIA,BSG,"['VCT_CCC', 'EVT_1', 'EVT_2']",PPIA,"['VCT_CCC', 'EVT_1', 'GC']",(M+F)-F
+43,BSG_PPIA,PPIA,"['VCT_CCC', 'EVT_1', 'GC']",BSG,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dS3', 'dS2', 'Endo_M', 'dS1']",F-(M+F)
+44,BST1_VASN,BST1,"['VCT_CCC', 'EVT_1']",VASN,"['VCT_CCC', 'eEVT', 'iEVT', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F)
+45,BST1_VASN,VASN,"['VCT_CCC', 'eEVT', 'iEVT']",BST1,"['VCT_CCC', 'EVT_1', 'dM1', 'dS3', 'dS2']",(M+F)-(M+F)
+46,BTC_ERBB4,BTC,"['VCT_CCC', 'iEVT']",ERBB4,['eEVT'],(M+F)-F
+47,BTC_ERBB4,ERBB4,['eEVT'],BTC,"['VCT_CCC', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+48,BTN3A1_CSF1R,BTN3A1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CSF1R,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+49,BTN3A1_CSF1R,CSF1R,"['EVT_1', 'EVT_2', 'eEVT']",BTN3A1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3', 'Endo_M']",F-(M+F)
+50,CADH2_IGSF8,CDH2,"['VCT_CCC', 'EVT_2', 'iEVT']",IGSF8,"['EVT_1', 'eEVT']",(M+F)-F
+51,CADH2_IGSF8,IGSF8,"['EVT_1', 'eEVT']",CDH2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'Endo_M', 'dS1']",F-(M+F)
+52,CBPM_M6PR,CPM,"['eEVT', 'iEVT', 'GC']",M6PR,"['VCT_CCC', 'EVT_1', 'dNK3', 'dM1', 'dM2', 'dS3']",(M+F)-(M+F)
+53,CBPM_M6PR,M6PR,"['VCT_CCC', 'EVT_1']",CPM,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'uSMC']",(M+F)-(M+F)
+54,CCL3L1_CCR1,CCL3L1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+55,CCL3L1_CCR1,CCR1,"['EVT_1', 'EVT_2', 'eEVT']",CCL3L1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+56,CCL3L1_CCR3,CCL3L1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F
+57,CCL3L1_CCR3,CCR3,"['eEVT', 'GC']",CCL3L1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+58,CCL3_CCR1,CCL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+59,CCL3_CCR1,CCR1,"['EVT_1', 'EVT_2', 'eEVT']",CCL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+60,CCL3_CCR3,CCL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F
+61,CCL3_CCR3,CCR3,"['eEVT', 'GC']",CCL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+62,CCL5_CCR1,CCL5,"['VCT_CCC', 'eEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+63,CCL5_CCR1,CCR1,"['EVT_1', 'EVT_2', 'eEVT']",CCL5,"['VCT_CCC', 'eEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+64,CCL5_CCR3,CCL5,"['VCT_CCC', 'eEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F
+65,CCL5_CCR3,CCR3,"['eEVT', 'GC']",CCL5,"['VCT_CCC', 'eEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+66,CCR1_CCL14,CCR1,"['EVT_1', 'EVT_2', 'eEVT']",CCL14,"['EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+67,CCR1_CCL14,CCL14,"['EVT_1', 'EVT_2', 'iEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+68,CCR1_CCL26,CCR1,"['EVT_1', 'EVT_2', 'eEVT']",CCL26,"['iEVT', 'dS3', 'dS2']",F-(M+F)
+69,CCR1_CCL26,CCL26,['iEVT'],CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+70,CCR1_CCL7,CCR1,"['EVT_1', 'EVT_2', 'eEVT']",CCL7,"['EVT_1', 'iEVT', 'dM1']",F-(M+F)
+71,CCR1_CCL7,CCL7,"['EVT_1', 'iEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+72,CCR1_CCL8,CCR1,"['EVT_1', 'EVT_2', 'eEVT']",CCL8,"['EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS3', 'dS2']",F-(M+F)
+73,CCR1_CCL8,CCL8,"['EVT_1', 'EVT_2', 'iEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+74,CCR3_CCL13,CCR3,"['eEVT', 'GC']",CCL13,"['EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+75,CCR3_CCL13,CCL13,"['EVT_1', 'EVT_2', 'iEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F
+76,CCR3_CCL14,CCR3,"['eEVT', 'GC']",CCL14,"['EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+77,CCR3_CCL14,CCL14,"['EVT_1', 'EVT_2', 'iEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F
+78,CCR3_CCL26,CCR3,"['eEVT', 'GC']",CCL26,"['iEVT', 'dS3', 'dS2']",F-(M+F)
+79,CCR3_CCL26,CCL26,['iEVT'],CCR3,"['eEVT', 'GC']",(M+F)-F
+80,CCR3_CCL7,CCR3,"['eEVT', 'GC']",CCL7,"['EVT_1', 'iEVT', 'dM1']",F-(M+F)
+81,CCR3_CCL7,CCL7,"['EVT_1', 'iEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F
+82,CCR3_CCL8,CCR3,"['eEVT', 'GC']",CCL8,"['EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS3', 'dS2']",F-(M+F)
+83,CCR3_CCL8,CCL8,"['EVT_1', 'EVT_2', 'iEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F
+84,CD200_CD200R1,CD200,"['EVT_2', 'iEVT', 'GC']",CD200R1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dNK1', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+85,CD200_CD200R1,CD200R1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CD200,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+86,CD226_NECTIN2,CD226,['eEVT'],NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+87,CD226_NECTIN2,NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CD226,"['eEVT', 'dNK3', 'dM1', 'dM2', 'dS1', 'uSMC']",F-(M+F)
+88,CD2_CD58,CD2,['GC'],CD58,"['eEVT', 'GC']",(M+F)-F
+89,CD2_CD58,CD58,"['eEVT', 'GC']",CD2,"['GC', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+90,CD33_GP6,CD33,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",GP6,"['iEVT', 'GC']",(M+F)-F
+91,CD33_GP6,GP6,"['iEVT', 'GC']",CD33,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+92,CD33_GPVI,CD33,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",GP6,"['iEVT', 'GC']",(M+F)-F
+93,CD33_GPVI,GP6,"['iEVT', 'GC']",CD33,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+94,CD46_JAG1,CD46,"['eEVT', 'iEVT', 'GC']",JAG1,"['eEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+95,CD46_JAG1,JAG1,['eEVT'],CD46,"['eEVT', 'iEVT', 'GC', 'dS3', 'dS2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+96,CD47_SIRPG,CD47,"['VCT_CCC', 'EVT_1']",SIRPG,"['EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+97,CD47_SIRPG,SIRPG,"['EVT_2', 'iEVT']",CD47,"['VCT_CCC', 'EVT_1']",(M+F)-F
+98,CD55_ADGRE2,CD55,"['VCT_CCC', 'EVT_1', 'EVT_2']",ADGRE2,"['EVT_2', 'eEVT', 'dM1', 'dM2']",F-(M+F)
+99,CD55_ADGRE2,ADGRE2,"['EVT_2', 'eEVT']",CD55,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+100,CD55_ADGRE5,CD55,"['VCT_CCC', 'EVT_1', 'EVT_2']",ADGRE5,"['EVT_2', 'eEVT', 'iEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'uSMC']",(M+F)-(M+F)
+101,CD55_ADGRE5,ADGRE5,"['EVT_2', 'eEVT', 'iEVT', 'GC']",CD55,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dS3', 'dS2', 'Endo_M', 'dS1']",(M+F)-(M+F)
+102,CD74_APP,CD74,"['VCT_CCC', 'EVT_2', 'iEVT']",APP,"['eEVT', 'GC']",(M+F)-F
+103,CD74_APP,APP,"['eEVT', 'GC']",CD74,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK3', 'dM1', 'dM2', 'Endo_M']",F-(M+F)
+104,CD80_CD274,CD80,"['VCT_CCC', 'iEVT']",CD274,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+105,CD80_CD274,CD274,"['eEVT', 'iEVT', 'GC']",CD80,"['VCT_CCC', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+106,CD96_NECTIN1,CD96,"['eEVT', 'GC']",NECTIN1,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK1', 'dNK2']",F-(M+F)
+107,CD96_NECTIN1,NECTIN1,"['VCT_CCC', 'EVT_2', 'iEVT']",CD96,"['eEVT', 'GC']",(M+F)-F
+108,CD99_PILRA,CD99,"['VCT_CCC', 'EVT_1']",PILRA,"['GC', 'dM1', 'dM2', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F)
+109,CD99_PILRA,PILRA,['GC'],CD99,"['VCT_CCC', 'EVT_1', 'dNK1', 'dNK2', 'dNK3', 'dS3', 'dS1']",(M+F)-(M+F)
+110,CDH1_IGSF8,CDH1,"['VCT_CCC', 'eEVT', 'GC']",IGSF8,"['EVT_1', 'eEVT', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F)
+111,CDH1_IGSF8,IGSF8,"['EVT_1', 'eEVT']",CDH1,"['VCT_CCC', 'eEVT', 'GC', 'dNK1', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+112,CDH1_KLRG1,CDH1,"['VCT_CCC', 'eEVT', 'GC']",KLRG1,"['VCT_CCC', 'EVT_1', 'iEVT', 'dNK3', 'Endo_M', 'uSMC']",F-(M+F)
+113,CDH1_KLRG1,KLRG1,"['VCT_CCC', 'EVT_1', 'iEVT']",CDH1,"['VCT_CCC', 'eEVT', 'GC']",(M+F)-F
+114,CDH2_IGSF8,CDH2,"['VCT_CCC', 'EVT_2', 'iEVT']",IGSF8,"['EVT_1', 'eEVT']",(M+F)-F
+115,CDH2_IGSF8,IGSF8,"['EVT_1', 'eEVT']",CDH2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'Endo_M', 'dS1']",F-(M+F)
+116,CDH5_CDH5,CDH5,"['VCT_CCC', 'EVT_1', 'eEVT']",CDH5,"['VCT_CCC', 'EVT_1', 'eEVT', 'Endo_M']",(M+F)-(M+F)
+117,CDH5_CDH5,CDH5,"['VCT_CCC', 'EVT_1', 'eEVT']",CDH5,"['VCT_CCC', 'EVT_1', 'eEVT', 'Endo_M']",(M+F)-(M+F)
+118,CEACAM1_CD209,CEACAM1,"['VCT_CCC', 'iEVT']",CD209,"['eEVT', 'dM1', 'dM2']",F-(M+F)
+119,CEACAM1_CD209,CD209,['eEVT'],CEACAM1,"['VCT_CCC', 'iEVT']",(M+F)-F
+120,CEACAM1_SELE,CEACAM1,"['VCT_CCC', 'iEVT']",SELE,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dS2', 'Endo_M']",F-(M+F)
+121,CEACAM1_SELE,SELE,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CEACAM1,"['VCT_CCC', 'iEVT']",(M+F)-F
+122,CEACAM4_PDCD1LG2,CEACAM4,"['EVT_2', 'iEVT']",PDCD1LG2,"['iEVT', 'GC']",(M+F)-F
+123,CEACAM4_PDCD1LG2,PDCD1LG2,"['iEVT', 'GC']",CEACAM4,"['EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+124,CEAM4_PDCD1LG2,CEACAM4,"['EVT_2', 'iEVT']",PDCD1LG2,"['iEVT', 'GC']",(M+F)-F
+125,CEAM4_PDCD1LG2,PDCD1LG2,"['iEVT', 'GC']",CEACAM4,"['EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+126,CPM_M6PR,CPM,"['eEVT', 'iEVT', 'GC']",M6PR,"['VCT_CCC', 'EVT_1', 'dNK3', 'dM1', 'dM2', 'dS3']",(M+F)-(M+F)
+127,CPM_M6PR,M6PR,"['VCT_CCC', 'EVT_1']",CPM,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'uSMC']",(M+F)-(M+F)
+128,CSF1R_CSF1,CSF1R,"['EVT_1', 'EVT_2', 'eEVT']",CSF1,"['GC', 'dNK1', 'dNK2']",F-(M+F)
+129,CSF1R_CSF1,CSF1,['GC'],CSF1R,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+130,CXCL10_DPP4,CXCL10,"['VCT_CCC', 'iEVT']",DPP4,"['VCT_CCC', 'EVT_1']",(M+F)-F
+131,CXCL10_DPP4,DPP4,"['VCT_CCC', 'EVT_1']",CXCL10,"['VCT_CCC', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+132,CXCL11_ACKR3,CXCL11,"['EVT_2', 'iEVT']",ACKR3,['eEVT'],(M+F)-F
+133,CXCL11_ACKR3,ACKR3,['eEVT'],CXCL11,"['EVT_2', 'iEVT', 'dM1']",F-(M+F)
+134,CXCL11_DPP4,CXCL11,"['EVT_2', 'iEVT']",DPP4,"['VCT_CCC', 'EVT_1']",(M+F)-F
+135,CXCL11_DPP4,DPP4,"['VCT_CCC', 'EVT_1']",CXCL11,"['EVT_2', 'iEVT', 'dM1']",F-(M+F)
+136,CXCL12_CXCR4,CXCL12,['eEVT'],CXCR4,"['iEVT', 'GC', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+137,CXCL12_CXCR4,CXCR4,"['iEVT', 'GC']",CXCL12,['eEVT'],(M+F)-F
+138,CXCL14_CXCR4,CXCL14,"['EVT_2', 'eEVT', 'iEVT']",CXCR4,"['iEVT', 'GC', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+139,CXCL14_CXCR4,CXCR4,"['iEVT', 'GC']",CXCL14,"['EVT_2', 'eEVT', 'iEVT']",(M+F)-F
+140,CXCL2_DPP4,CXCL2,['VCT_CCC'],DPP4,"['VCT_CCC', 'EVT_1']",(M+F)-F
+141,CXCL2_DPP4,DPP4,"['VCT_CCC', 'EVT_1']",CXCL2,"['VCT_CCC', 'dM1', 'dM2', 'dS3', 'dS2', 'Endo_M']",F-(M+F)
+142,CXCR6_CXCL16,CXCR6,"['EVT_1', 'iEVT']",CXCL16,"['VCT_CCC', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+143,CXCR6_CXCL16,CXCL16,"['VCT_CCC', 'iEVT']",CXCR6,"['EVT_1', 'iEVT']",(M+F)-F
+144,DLK1_NOTCH2,DLK1,['GC'],NOTCH2,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'dS1', 'uSMC']",(M+F)-(M+F)
+145,DLK1_NOTCH2,NOTCH2,"['eEVT', 'iEVT', 'GC']",DLK1,"['GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2', 'Endo_M']",(M+F)-(M+F)
+146,DLK1_NOTCH3,DLK1,['GC'],NOTCH3,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+147,DLK1_NOTCH3,NOTCH3,"['VCT_CCC', 'eEVT']",DLK1,['GC'],(M+F)-F
+148,DLK1_NOTCH4,DLK1,['GC'],NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+149,DLK1_NOTCH4,NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",DLK1,['GC'],(M+F)-F
+150,DLL1_NOTCH1,DLL1,"['VCT_CCC', 'EVT_1', 'EVT_2']",NOTCH1,['VCT_CCC'],(M+F)-F
+151,DLL1_NOTCH1,NOTCH1,['VCT_CCC'],DLL1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dS3', 'dS2', 'Endo_M', 'dS1']",F-(M+F)
+152,DLL1_NOTCH2,DLL1,"['VCT_CCC', 'EVT_1', 'EVT_2']",NOTCH2,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+153,DLL1_NOTCH2,NOTCH2,"['eEVT', 'iEVT', 'GC']",DLL1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dS3', 'dS2', 'Endo_M', 'dS1']",F-(M+F)
+154,DPP4_CXCL12,DPP4,"['VCT_CCC', 'EVT_1']",CXCL12,"['eEVT', 'dS3', 'dS2', 'Endo_M', 'dS1']",(M+F)-(M+F)
+155,DPP4_CXCL12,CXCL12,['eEVT'],DPP4,"['VCT_CCC', 'EVT_1', 'dS2', 'Endo_M']",(M+F)-(M+F)
+156,DPP4_CXCL9,DPP4,"['VCT_CCC', 'EVT_1']",CXCL9,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1']",F-(M+F)
+157,DPP4_CXCL9,CXCL9,"['VCT_CCC', 'EVT_2', 'iEVT']",DPP4,"['VCT_CCC', 'EVT_1']",(M+F)-F
+158,DSC2_DSG2,DSC2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT']",DSG2,"['eEVT', 'dM2', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+159,DSC2_DSG2,DSG2,['eEVT'],DSC2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT', 'dM1', 'dM2', 'uSMC']",(M+F)-(M+F)
+160,DSCAM_NTN1,DSCAM,"['eEVT', 'GC']",NTN1,"['EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+161,DSCAM_NTN1,NTN1,"['EVT_2', 'iEVT']",DSCAM,"['eEVT', 'GC']",(M+F)-F
+162,DSG2_DSC3,DSG2,['eEVT'],DSC3,"['VCT_CCC', 'dM2', 'Endo_M', 'uSMC']",F-(M+F)
+163,DSG2_DSC3,DSC3,['VCT_CCC'],DSG2,['eEVT'],(M+F)-F
+164,EFNA1_EPHA1,EFNA1,"['EVT_1', 'GC']",EPHA1,"['eEVT', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F)
+165,EFNA1_EPHA1,EPHA1,['eEVT'],EFNA1,"['EVT_1', 'GC', 'dS2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+166,EFNA1_EPHA2,EFNA1,"['EVT_1', 'GC']",EPHA2,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M']",F-(M+F)
+167,EFNA1_EPHA2,EPHA2,"['VCT_CCC', 'eEVT']",EFNA1,"['EVT_1', 'GC']",(M+F)-F
+168,EFNA1_EPHA3,EFNA1,"['EVT_1', 'GC']",EPHA3,"['EVT_2', 'eEVT', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+169,EFNA1_EPHA3,EPHA3,"['EVT_2', 'eEVT', 'iEVT']",EFNA1,"['EVT_1', 'GC']",(M+F)-F
+170,EFNA1_EPHA4,EFNA1,"['EVT_1', 'GC']",EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F)
+171,EFNA1_EPHA4,EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT']",EFNA1,"['EVT_1', 'GC']",(M+F)-F
+172,EFNA1_EPHA7,EFNA1,"['EVT_1', 'GC']",EPHA7,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+173,EFNA1_EPHA7,EPHA7,"['VCT_CCC', 'EVT_2', 'iEVT']",EFNA1,"['EVT_1', 'GC']",(M+F)-F
+174,EFNA3_EPHA4,EFNA3,"['EVT_1', 'EVT_2']",EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F)
+175,EFNA3_EPHA4,EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT']",EFNA3,"['EVT_1', 'EVT_2']",(M+F)-F
+176,EFNA3_EPHA7,EFNA3,"['EVT_1', 'EVT_2']",EPHA7,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+177,EFNA3_EPHA7,EPHA7,"['VCT_CCC', 'EVT_2', 'iEVT']",EFNA3,"['EVT_1', 'EVT_2']",(M+F)-F
+178,EFNA4_EPHA4,EFNA4,"['EVT_1', 'EVT_2']",EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F)
+179,EFNA4_EPHA4,EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT']",EFNA4,"['EVT_1', 'EVT_2']",(M+F)-F
+180,EFNA4_EPHA7,EFNA4,"['EVT_1', 'EVT_2']",EPHA7,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+181,EFNA4_EPHA7,EPHA7,"['VCT_CCC', 'EVT_2', 'iEVT']",EFNA4,"['EVT_1', 'EVT_2']",(M+F)-F
+182,EFNB2_EPHB3,EFNB2,"['EVT_2', 'GC']",EPHB3,"['EVT_2', 'eEVT', 'iEVT']",(M+F)-F
+183,EFNB2_EPHB3,EPHB3,"['EVT_2', 'eEVT', 'iEVT']",EFNB2,"['EVT_2', 'GC', 'dS3', 'dS2', 'Endo_M']",F-(M+F)
+184,EGFR_AREG,EGFR,"['VCT_CCC', 'iEVT', 'GC']",AREG,"['VCT_CCC', 'eEVT', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+185,EGFR_AREG,AREG,"['VCT_CCC', 'eEVT', 'iEVT']",EGFR,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F
+186,EGFR_BTC,EGFR,"['VCT_CCC', 'iEVT', 'GC']",BTC,"['VCT_CCC', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+187,EGFR_BTC,BTC,"['VCT_CCC', 'iEVT']",EGFR,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F
+188,EGFR_HBEGF,EGFR,"['VCT_CCC', 'iEVT', 'GC']",HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dM1', 'dM2', 'Endo_M']",F-(M+F)
+189,EGFR_HBEGF,HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2']",EGFR,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F
+190,EGFR_TGFA,EGFR,"['VCT_CCC', 'iEVT', 'GC']",TGFA,"['EVT_1', 'EVT_2', 'iEVT', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+191,EGFR_TGFA,TGFA,"['EVT_1', 'EVT_2', 'iEVT']",EGFR,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F
+192,EPHA1_EFNA3,EPHA1,['eEVT'],EFNA3,"['EVT_1', 'EVT_2', 'dNK1', 'dM1', 'Endo_M']",(M+F)-(M+F)
+193,EPHA1_EFNA3,EFNA3,"['EVT_1', 'EVT_2']",EPHA1,"['eEVT', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F)
+194,EPHA1_EFNA4,EPHA1,['eEVT'],EFNA4,"['EVT_1', 'EVT_2', 'dM1', 'dS3', 'dS2', 'Endo_M', 'dS1']",(M+F)-(M+F)
+195,EPHA1_EFNA4,EFNA4,"['EVT_1', 'EVT_2']",EPHA1,"['eEVT', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F)
+196,EPHA1_EFNA5,EPHA1,['eEVT'],EFNA5,"['VCT_CCC', 'GC', 'dNK1', 'dNK2', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+197,EPHA1_EFNA5,EFNA5,"['VCT_CCC', 'GC']",EPHA1,['eEVT'],(M+F)-F
+198,EPHA2_EFNA3,EPHA2,"['VCT_CCC', 'eEVT']",EFNA3,"['EVT_1', 'EVT_2']",(M+F)-F
+199,EPHA2_EFNA3,EFNA3,"['EVT_1', 'EVT_2']",EPHA2,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M']",F-(M+F)
+200,EPHA2_EFNA4,EPHA2,"['VCT_CCC', 'eEVT']",EFNA4,"['EVT_1', 'EVT_2']",(M+F)-F
+201,EPHA2_EFNA4,EFNA4,"['EVT_1', 'EVT_2']",EPHA2,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M']",F-(M+F)
+202,EPHA2_EFNB1,EPHA2,"['VCT_CCC', 'eEVT']",EFNB1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+203,EPHA2_EFNB1,EFNB1,"['EVT_2', 'iEVT', 'GC']",EPHA2,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M']",F-(M+F)
+204,EPHA3_EFNA3,EPHA3,"['EVT_2', 'eEVT', 'iEVT']",EFNA3,"['EVT_1', 'EVT_2']",(M+F)-F
+205,EPHA3_EFNA3,EFNA3,"['EVT_1', 'EVT_2']",EPHA3,"['EVT_2', 'eEVT', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+206,EPHA3_EFNA4,EPHA3,"['EVT_2', 'eEVT', 'iEVT']",EFNA4,"['EVT_1', 'EVT_2']",(M+F)-F
+207,EPHA3_EFNA4,EFNA4,"['EVT_1', 'EVT_2']",EPHA3,"['EVT_2', 'eEVT', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+208,EPHA4_EFNB1,EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT']",EFNB1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+209,EPHA4_EFNB1,EFNB1,"['EVT_2', 'iEVT', 'GC']",EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F)
+210,EPHB1_EFNB1,EPHB1,"['eEVT', 'iEVT']",EFNB1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+211,EPHB1_EFNB1,EFNB1,"['EVT_2', 'iEVT', 'GC']",EPHB1,"['eEVT', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F)
+212,EPHB2_EFNA5,EPHB2,"['eEVT', 'iEVT', 'GC']",EFNA5,"['VCT_CCC', 'GC', 'dNK1', 'dNK2', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+213,EPHB2_EFNA5,EFNA5,"['VCT_CCC', 'GC']",EPHB2,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+214,EPHB2_EFNB1,EPHB2,"['eEVT', 'iEVT', 'GC']",EFNB1,"['EVT_2', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+215,EPHB2_EFNB1,EFNB1,"['EVT_2', 'iEVT', 'GC']",EPHB2,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'uSMC']",(M+F)-(M+F)
+216,EPHB2_EFNB2,EPHB2,"['eEVT', 'iEVT', 'GC']",EFNB2,"['EVT_2', 'GC', 'dS3', 'dS2', 'Endo_M']",F-(M+F)
+217,EPHB2_EFNB2,EFNB2,"['EVT_2', 'GC']",EPHB2,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+218,EPHB3_EFNB1,EPHB3,"['EVT_2', 'eEVT', 'iEVT']",EFNB1,"['EVT_2', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+219,EPHB3_EFNB1,EFNB1,"['EVT_2', 'iEVT', 'GC']",EPHB3,"['EVT_2', 'eEVT', 'iEVT', 'dNK2', 'dM2', 'dS1', 'uSMC']",(M+F)-(M+F)
+220,EPHB4_EFNB1,EPHB4,['VCT_CCC'],EFNB1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+221,EPHB4_EFNB1,EFNB1,"['EVT_2', 'iEVT', 'GC']",EPHB4,"['VCT_CCC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+222,EPHB6_EFNB1,EPHB6,"['VCT_CCC', 'EVT_2', 'iEVT']",EFNB1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+223,EPHB6_EFNB1,EFNB1,"['EVT_2', 'iEVT', 'GC']",EPHB6,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS3', 'dS2', 'dS1']",F-(M+F)
+224,EPO_EPOR,EPO,"['VCT_CCC', 'EVT_1']",EPOR,"['eEVT', 'iEVT', 'dS3', 'dS2']",(M+F)-(M+F)
+225,EPO_EPOR,EPOR,"['eEVT', 'iEVT']",EPO,"['VCT_CCC', 'EVT_1', 'dS1', 'uSMC']",(M+F)-(M+F)
+226,ERBB2_HBEGF,ERBB2,"['eEVT', 'iEVT', 'GC']",HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dM1', 'dM2', 'Endo_M']",F-(M+F)
+227,ERBB2_HBEGF,HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2']",ERBB2,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+228,ERBB3_BTC,ERBB3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",BTC,"['VCT_CCC', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+229,ERBB3_BTC,BTC,"['VCT_CCC', 'iEVT']",ERBB3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+230,ERBB4_HBEGF,ERBB4,['eEVT'],HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dM1', 'dM2', 'Endo_M']",F-(M+F)
+231,ERBB4_HBEGF,HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2']",ERBB4,['eEVT'],(M+F)-F
+232,ERBB4_NRG4,ERBB4,['eEVT'],NRG4,"['GC', 'dNK1', 'dS1', 'uSMC']",F-(M+F)
+233,ERBB4_NRG4,NRG4,['GC'],ERBB4,['eEVT'],(M+F)-F
+234,EREG_EGFR,EREG,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",EGFR,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F
+235,EREG_EGFR,EGFR,"['VCT_CCC', 'iEVT', 'GC']",EREG,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1']",F-(M+F)
+236,EREG_ERBB4,EREG,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",ERBB4,['eEVT'],(M+F)-F
+237,EREG_ERBB4,ERBB4,['eEVT'],EREG,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1']",F-(M+F)
+238,ESAM_ESAM,ESAM,"['eEVT', 'iEVT', 'GC']",ESAM,"['eEVT', 'iEVT', 'GC', 'Endo_M']",(M+F)-(M+F)
+239,ESAM_ESAM,ESAM,"['eEVT', 'iEVT', 'GC']",ESAM,"['eEVT', 'iEVT', 'GC', 'Endo_M']",(M+F)-(M+F)
+240,Estradiol_byCYP19A1_ESR1,CYP19A1,['GC'],ESR1,"['GC', 'dS3', 'dS2', 'dS1', 'uSMC']",(M+F)-(M+F)
+241,Estradiol_byCYP19A1_ESR1,ESR1,['GC'],CYP19A1,"['GC', 'dM2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+242,Estradiol_byCYP19A1_ESR2,CYP19A1,['GC'],ESR2,"['eEVT', 'iEVT', 'GC', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+243,Estradiol_byCYP19A1_ESR2,ESR2,"['eEVT', 'iEVT', 'GC']",CYP19A1,"['GC', 'dM2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+244,Estradiol_byHSD17B1_ESR1,HSD17B1,"['VCT_CCC', 'eEVT', 'GC']",ESR1,['GC'],(M+F)-F
+245,Estradiol_byHSD17B1_ESR1,ESR1,['GC'],HSD17B1,"['VCT_CCC', 'eEVT', 'GC', 'dM2', 'dS3', 'dS2', 'Endo_M', 'uSMC']",F-(M+F)
+246,Estradiol_byHSD17B1_ESR2,HSD17B1,"['VCT_CCC', 'eEVT', 'GC']",ESR2,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+247,Estradiol_byHSD17B1_ESR2,ESR2,"['eEVT', 'iEVT', 'GC']",HSD17B1,"['VCT_CCC', 'eEVT', 'GC', 'dM2', 'dS3', 'dS2', 'Endo_M', 'uSMC']",F-(M+F)
+248,FGF1_FGFR1,FGF1,['eEVT'],FGFR1,"['EVT_2', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+249,FGF1_FGFR1,FGFR1,"['EVT_2', 'iEVT', 'GC']",FGF1,"['eEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+250,FGF1_FGFR2,FGF1,['eEVT'],FGFR2,"['VCT_CCC', 'uSMC']",F-(M+F)
+251,FGF1_FGFR2,FGFR2,['VCT_CCC'],FGF1,['eEVT'],(M+F)-F
+252,FGF1_FGFR3,FGF1,['eEVT'],FGFR3,"['EVT_1', 'EVT_2', 'eEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+253,FGF1_FGFR3,FGFR3,"['EVT_1', 'EVT_2', 'eEVT']",FGF1,"['eEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+254,FGF2_FGFR1,FGF2,"['VCT_CCC', 'EVT_2', 'iEVT']",FGFR1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+255,FGF2_FGFR1,FGFR1,"['EVT_2', 'iEVT', 'GC']",FGF2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+256,FGF2_FGFR3,FGF2,"['VCT_CCC', 'EVT_2', 'iEVT']",FGFR3,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+257,FGF2_FGFR3,FGFR3,"['EVT_1', 'EVT_2', 'eEVT']",FGF2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+258,FGFR1_NCAM1,FGFR1,"['EVT_2', 'iEVT', 'GC']",NCAM1,"['eEVT', 'dNK1', 'dNK2', 'dNK3', 'uSMC']",(M+F)-(M+F)
+259,FGFR1_NCAM1,NCAM1,['eEVT'],FGFR1,"['EVT_2', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+260,FLT1_PGF,FLT1,"['EVT_2', 'iEVT', 'GC']",PGF,"['EVT_1', 'EVT_2', 'GC', 'dM2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+261,FLT1_PGF,PGF,"['EVT_1', 'EVT_2', 'GC']",FLT1,"['EVT_2', 'iEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+262,FLT1_VEGFB,FLT1,"['EVT_2', 'iEVT', 'GC']",VEGFB,"['VCT_CCC', 'iEVT', 'GC', 'dM1', 'dM2', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F)
+263,FLT1_VEGFB,VEGFB,"['VCT_CCC', 'iEVT', 'GC']",FLT1,"['EVT_2', 'iEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+264,FLT4_VEGFC,FLT4,['eEVT'],VEGFC,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+265,FLT4_VEGFC,VEGFC,"['VCT_CCC', 'EVT_2', 'iEVT']",FLT4,['eEVT'],(M+F)-F
+266,FPR3_HEBP1,FPR3,"['VCT_CCC', 'EVT_2', 'iEVT']",HEBP1,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F
+267,FPR3_HEBP1,HEBP1,"['VCT_CCC', 'iEVT', 'GC']",FPR3,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+268,FRZB_WNT2B,FRZB,"['VCT_CCC', 'EVT_2', 'iEVT']",WNT2B,"['iEVT', 'GC']",(M+F)-F
+269,FRZB_WNT2B,WNT2B,"['iEVT', 'GC']",FRZB,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM2', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+270,FRZB_WNT6,FRZB,"['VCT_CCC', 'EVT_2', 'iEVT']",WNT6,['VCT_CCC'],(M+F)-F
+271,FRZB_WNT6,WNT6,['VCT_CCC'],FRZB,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM2', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+272,FTH1_SCARA5,FTH1,"['VCT_CCC', 'EVT_1', 'EVT_2']",SCARA5,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1']",F-(M+F)
+273,FTH1_SCARA5,SCARA5,"['VCT_CCC', 'EVT_2', 'iEVT']",FTH1,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+274,FTL_SCARA5,FTL,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",SCARA5,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1']",F-(M+F)
+275,FTL_SCARA5,SCARA5,"['VCT_CCC', 'EVT_2', 'iEVT']",FTL,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+276,GFRA2_TMEM132A,GFRA2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",TMEM132A,"['EVT_2', 'eEVT', 'iEVT', 'GC']",(M+F)-F
+277,GFRA2_TMEM132A,TMEM132A,"['EVT_2', 'eEVT', 'iEVT', 'GC']",GFRA2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS3', 'dS2']",F-(M+F)
+278,GH2_GHR,GH2,['eEVT'],GHR,"['VCT_CCC', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+279,GH2_GHR,GHR,"['VCT_CCC', 'GC']",GH2,['eEVT'],(M+F)-F
+280,GPR1_RARRES2,GPR1,"['eEVT', 'iEVT', 'GC']",RARRES2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+281,GPR1_RARRES2,RARRES2,"['VCT_CCC', 'EVT_2', 'iEVT']",GPR1,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+282,GPR37_PSAP,GPR37,"['VCT_CCC', 'EVT_1', 'eEVT']",PSAP,"['iEVT', 'GC', 'dM1', 'dM2', 'dS3', 'dS2']",(M+F)-(M+F)
+283,GPR37_PSAP,PSAP,"['iEVT', 'GC']",GPR37,"['VCT_CCC', 'EVT_1', 'eEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+284,HFE_JAG2,HFE,"['EVT_2', 'iEVT']",JAG2,"['eEVT', 'iEVT']",(M+F)-F
+285,HFE_JAG2,JAG2,"['eEVT', 'iEVT']",HFE,"['EVT_2', 'iEVT', 'dM1', 'dM2', 'dS3', 'Endo_M', 'uSMC']",F-(M+F)
+286,HLA-C_KIR2DL1,HLA-C,"['EVT_1', 'EVT_2', 'iEVT']",KIR2DL1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+287,HLA-C_KIR2DL1,KIR2DL1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",HLA-C,"['EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+288,HLA-C_KIR2DL3,HLA-C,"['EVT_1', 'EVT_2', 'iEVT']",KIR2DL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+289,HLA-C_KIR2DL3,KIR2DL3,"['VCT_CCC', 'EVT_1', 'EVT_2']",HLA-C,"['EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+290,HLA-E_KLRC1,HLA-E,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",KLRC1,"['eEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+291,HLA-E_KLRC1,KLRC1,['eEVT'],HLA-E,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",(M+F)-F
+292,HLA-E_KLRC2,HLA-E,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",KLRC2,"['GC', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+293,HLA-E_KLRC2,KLRC2,['GC'],HLA-E,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",(M+F)-F
+294,HLA-E_VSIR,HLA-E,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",VSIR,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dNK3', 'dM1', 'dM2', 'dS1']",(M+F)-(M+F)
+295,HLA-E_VSIR,VSIR,"['VCT_CCC', 'EVT_1', 'EVT_2']",HLA-E,"['EVT_1', 'EVT_2', 'iEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dS3', 'Endo_M']",(M+F)-(M+F)
+296,HLA-F_LILRB1,HLA-F,"['eEVT', 'GC']",LILRB1,"['eEVT', 'dNK1', 'dM1', 'dM2']",F-(M+F)
+297,HLA-F_LILRB1,LILRB1,['eEVT'],HLA-F,"['eEVT', 'GC']",(M+F)-F
+298,HLA-F_LILRB2,HLA-F,"['eEVT', 'GC']",LILRB2,"['eEVT', 'dM1', 'dM2']",F-(M+F)
+299,HLA-F_LILRB2,LILRB2,['eEVT'],HLA-F,"['eEVT', 'GC']",(M+F)-F
+300,HLA-F_VSIR,HLA-F,"['eEVT', 'GC']",VSIR,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dNK3', 'dM1', 'dM2', 'dS1']",(M+F)-(M+F)
+301,HLA-F_VSIR,VSIR,"['VCT_CCC', 'EVT_1', 'EVT_2']",HLA-F,"['eEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dS3']",(M+F)-(M+F)
+302,HLA-G_LILRB1,HLA-G,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",LILRB1,"['eEVT', 'dNK1', 'dM1', 'dM2']",F-(M+F)
+303,HLA-G_LILRB1,LILRB1,['eEVT'],HLA-G,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",(M+F)-F
+304,HLA-G_LILRB2,HLA-G,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",LILRB2,"['eEVT', 'dM1', 'dM2']",F-(M+F)
+305,HLA-G_LILRB2,LILRB2,['eEVT'],HLA-G,"['EVT_1', 'EVT_2', 'iEVT', 'GC']",(M+F)-F
+306,ICAM3_CD209,ICAM3,"['VCT_CCC', 'EVT_1', 'eEVT']",CD209,"['eEVT', 'dM1', 'dM2']",F-(M+F)
+307,ICAM3_CD209,CD209,['eEVT'],ICAM3,"['VCT_CCC', 'EVT_1', 'eEVT']",(M+F)-F
+308,ICAM3_CLEC4M,ICAM3,"['VCT_CCC', 'EVT_1', 'eEVT']",CLEC4M,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'Endo_M', 'dS1']",F-(M+F)
+309,ICAM3_CLEC4M,CLEC4M,"['VCT_CCC', 'EVT_2', 'iEVT']",ICAM3,"['VCT_CCC', 'EVT_1', 'eEVT']",(M+F)-F
+310,IFNGR1_C1QR1,IFNGR1,"['eEVT', 'GC']",CD93,"['eEVT', 'dM1', 'dM2', 'Endo_M']",F-(M+F)
+311,IFNGR1_C1QR1,CD93,['eEVT'],IFNGR1,"['eEVT', 'GC']",(M+F)-F
+312,IFNGR1_CD93,IFNGR1,"['eEVT', 'GC']",CD93,"['eEVT', 'dM1', 'dM2', 'Endo_M']",F-(M+F)
+313,IFNGR1_CD93,CD93,['eEVT'],IFNGR1,"['eEVT', 'GC']",(M+F)-F
+314,IGF1_IGF1R,IGF1,"['eEVT', 'GC']",IGF1R,"['VCT_CCC', 'eEVT', 'iEVT']",(M+F)-F
+315,IGF1_IGF1R,IGF1R,"['VCT_CCC', 'eEVT', 'iEVT']",IGF1,"['eEVT', 'GC', 'dM2', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+316,IGFBP3_TMEM219,IGFBP3,"['EVT_1', 'EVT_2']",TMEM219,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dS3', 'Endo_M']",(M+F)-(M+F)
+317,IGFBP3_TMEM219,TMEM219,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",IGFBP3,"['EVT_1', 'EVT_2', 'dS3', 'dS2', 'Endo_M', 'dS1']",(M+F)-(M+F)
+318,IGFLR1_PILRA,IGFLR1,"['VCT_CCC', 'EVT_1', 'EVT_2']",PILRA,['GC'],(M+F)-F
+319,IGFLR1_PILRA,PILRA,['GC'],IGFLR1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+320,IL7R_APLP2,IL7R,"['EVT_2', 'iEVT']",APLP2,"['VCT_CCC', 'GC']",(M+F)-F
+321,IL7R_APLP2,APLP2,"['VCT_CCC', 'GC']",IL7R,"['EVT_2', 'iEVT', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+322,IL7R_FGFR3,IL7R,"['EVT_2', 'iEVT']",FGFR3,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+323,IL7R_FGFR3,FGFR3,"['EVT_1', 'EVT_2', 'eEVT']",IL7R,"['EVT_2', 'iEVT', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+324,JAG1_NOTCH2,JAG1,['eEVT'],NOTCH2,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'dS1', 'uSMC']",(M+F)-(M+F)
+325,JAG1_NOTCH2,NOTCH2,"['eEVT', 'iEVT', 'GC']",JAG1,"['eEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+326,JAG1_NOTCH3,JAG1,['eEVT'],NOTCH3,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+327,JAG1_NOTCH3,NOTCH3,"['VCT_CCC', 'eEVT']",JAG1,['eEVT'],(M+F)-F
+328,JAG1_NOTCH4,JAG1,['eEVT'],NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+329,JAG1_NOTCH4,NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",JAG1,['eEVT'],(M+F)-F
+330,JAG1_VASN,JAG1,['eEVT'],VASN,"['VCT_CCC', 'eEVT', 'iEVT', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F)
+331,JAG1_VASN,VASN,"['VCT_CCC', 'eEVT', 'iEVT']",JAG1,"['eEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+332,JAM2_JAM3,JAM2,"['iEVT', 'GC']",JAM3,"['EVT_1', 'EVT_2', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+333,JAM2_JAM3,JAM3,"['EVT_1', 'EVT_2', 'GC']",JAM2,"['iEVT', 'GC', 'dS3', 'Endo_M']",(M+F)-(M+F)
+334,JAM3_JAM3,JAM3,"['EVT_1', 'EVT_2', 'GC']",JAM3,"['EVT_1', 'EVT_2', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+335,JAM3_JAM3,JAM3,"['EVT_1', 'EVT_2', 'GC']",JAM3,"['EVT_1', 'EVT_2', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+336,JAML_CD320,JAML,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CD320,"['VCT_CCC', 'EVT_1', 'GC']",(M+F)-F
+337,JAML_CD320,CD320,"['VCT_CCC', 'EVT_1', 'GC']",JAML,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+338,KLRB1_CLEC2D,KLRB1,"['VCT_CCC', 'EVT_2', 'iEVT']",CLEC2D,"['iEVT', 'GC']",(M+F)-F
+339,KLRB1_CLEC2D,CLEC2D,"['iEVT', 'GC']",KLRB1,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+340,LAIR1_CDCP1,LAIR1,"['eEVT', 'GC']",CDCP1,"['VCT_CCC', 'eEVT']",(M+F)-F
+341,LAIR1_CDCP1,CDCP1,"['VCT_CCC', 'eEVT']",LAIR1,"['eEVT', 'GC', 'dM1', 'dM2']",F-(M+F)
+342,LDLR_KIT,LDLR,"['EVT_2', 'iEVT', 'GC']",KIT,"['eEVT', 'dNK1', 'Endo_M', 'uSMC']",F-(M+F)
+343,LDLR_KIT,KIT,['eEVT'],LDLR,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+344,LDLR_LIFR,LDLR,"['EVT_2', 'iEVT', 'GC']",LIFR,"['eEVT', 'iEVT', 'GC', 'dM2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+345,LDLR_LIFR,LIFR,"['eEVT', 'iEVT', 'GC']",LDLR,"['EVT_2', 'iEVT', 'GC', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+346,LEP_LEPR,LEP,"['EVT_2', 'eEVT']",LEPR,"['eEVT', 'iEVT', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+347,LEP_LEPR,LEPR,"['eEVT', 'iEVT']",LEP,"['EVT_2', 'eEVT', 'dM2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+348,LGALS3_MERTK,LGALS3,"['VCT_CCC', 'EVT_1', 'iEVT']",MERTK,"['EVT_2', 'eEVT', 'dM1', 'dM2']",F-(M+F)
+349,LGALS3_MERTK,MERTK,"['EVT_2', 'eEVT']",LGALS3,"['VCT_CCC', 'EVT_1', 'iEVT']",(M+F)-F
+350,LGALS9_P4HB,LGALS9,"['EVT_2', 'eEVT', 'iEVT']",P4HB,"['VCT_CCC', 'EVT_1', 'GC']",(M+F)-F
+351,LGALS9_P4HB,P4HB,"['VCT_CCC', 'EVT_1', 'GC']",LGALS9,"['EVT_2', 'eEVT', 'iEVT', 'dM1', 'dM2', 'dS3', 'dS2']",F-(M+F)
+352,LILRA4_BST2,LILRA4,['EVT_1'],BST2,"['iEVT', 'GC']",(M+F)-F
+353,LILRA4_BST2,BST2,"['iEVT', 'GC']",LILRA4,"['EVT_1', 'dM1', 'dM2']",F-(M+F)
+354,LILRB5_APLP2,LILRB5,"['VCT_CCC', 'eEVT', 'iEVT']",APLP2,"['VCT_CCC', 'GC']",(M+F)-F
+355,LILRB5_APLP2,APLP2,"['VCT_CCC', 'GC']",LILRB5,"['VCT_CCC', 'eEVT', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+356,LRC15_PILRA,LRRC15,"['EVT_2', 'iEVT']",PILRA,['GC'],(M+F)-F
+357,LRC15_PILRA,PILRA,['GC'],LRRC15,"['EVT_2', 'iEVT', 'dS3', 'dS2']",F-(M+F)
+358,LRP5_DKK1,LRP5,['VCT_CCC'],DKK1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+359,LRP5_DKK1,DKK1,"['EVT_2', 'iEVT', 'GC']",LRP5,"['VCT_CCC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+360,LRP6_DKK1,LRP6,"['VCT_CCC', 'eEVT', 'iEVT']",DKK1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+361,LRP6_DKK1,DKK1,"['EVT_2', 'iEVT', 'GC']",LRP6,"['VCT_CCC', 'eEVT', 'iEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+362,LRPAP1_SORT1,LRPAP1,"['VCT_CCC', 'EVT_1']",SORT1,"['VCT_CCC', 'iEVT', 'dNK1', 'dM1', 'dM2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+363,LRPAP1_SORT1,SORT1,"['VCT_CCC', 'iEVT']",LRPAP1,"['VCT_CCC', 'EVT_1', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F)
+364,LRRC15_PILRA,LRRC15,"['EVT_2', 'iEVT']",PILRA,['GC'],(M+F)-F
+365,LRRC15_PILRA,PILRA,['GC'],LRRC15,"['EVT_2', 'iEVT', 'dS3', 'dS2']",F-(M+F)
+366,LTA_TNFRSF1A,LTA,"['VCT_CCC', 'iEVT']",TNFRSF1A,"['VCT_CCC', 'EVT_1', 'iEVT', 'GC']",(M+F)-F
+367,LTA_TNFRSF1A,TNFRSF1A,"['VCT_CCC', 'EVT_1', 'iEVT', 'GC']",LTA,"['VCT_CCC', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+368,LTA_TNFRSF1B,LTA,"['VCT_CCC', 'iEVT']",TNFRSF1B,['eEVT'],(M+F)-F
+369,LTA_TNFRSF1B,TNFRSF1B,['eEVT'],LTA,"['VCT_CCC', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+370,LTBR_LTB,LTBR,"['eEVT', 'GC']",LTB,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+371,LTBR_LTB,LTB,"['VCT_CCC', 'EVT_2', 'iEVT']",LTBR,"['eEVT', 'GC']",(M+F)-F
+372,MCAM_PTGFRN,MCAM,"['eEVT', 'iEVT', 'GC']",PTGFRN,"['EVT_2', 'iEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+373,MCAM_PTGFRN,PTGFRN,"['EVT_2', 'iEVT']",MCAM,"['eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+374,MPZL1_MPZL1,MPZL1,"['eEVT', 'GC']",MPZL1,"['eEVT', 'GC', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+375,MPZL1_MPZL1,MPZL1,"['eEVT', 'GC']",MPZL1,"['eEVT', 'GC', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+376,MUC18_PTGFRN,MCAM,"['eEVT', 'iEVT', 'GC']",PTGFRN,"['EVT_2', 'iEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+377,MUC18_PTGFRN,PTGFRN,"['EVT_2', 'iEVT']",MCAM,"['eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+378,NCAM1_CNTNAP1,NCAM1,['eEVT'],CNTNAP1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+379,NCAM1_CNTNAP1,CNTNAP1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NCAM1,['eEVT'],(M+F)-F
+380,NCAM1_CNTP1,NCAM1,['eEVT'],CNTNAP1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+381,NCAM1_CNTP1,CNTNAP1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NCAM1,['eEVT'],(M+F)-F
+382,NECTIN1_NECTIN4,NECTIN1,"['VCT_CCC', 'EVT_2', 'iEVT']",NECTIN4,"['EVT_2', 'eEVT', 'iEVT']",(M+F)-F
+383,NECTIN1_NECTIN4,NECTIN4,"['EVT_2', 'eEVT', 'iEVT']",NECTIN1,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK1', 'dNK2']",F-(M+F)
+384,NECTIN2_NECTIN3,NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NECTIN3,"['eEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+385,NECTIN2_NECTIN3,NECTIN3,"['eEVT', 'GC']",NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+386,NGFR_BDNF,NGFR,['eEVT'],BDNF,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F)
+387,NGFR_BDNF,BDNF,"['VCT_CCC', 'EVT_2', 'iEVT']",NGFR,['eEVT'],(M+F)-F
+388,NGFR_CD80,NGFR,['eEVT'],CD80,"['VCT_CCC', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+389,NGFR_CD80,CD80,"['VCT_CCC', 'iEVT']",NGFR,['eEVT'],(M+F)-F
+390,NGFR_NTF3,NGFR,['eEVT'],NTF3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+391,NGFR_NTF3,NTF3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NGFR,['eEVT'],(M+F)-F
+392,NGF_NGFR,NGF,['VCT_CCC'],NGFR,['eEVT'],(M+F)-F
+393,NGF_NGFR,NGFR,['eEVT'],NGF,"['VCT_CCC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+394,NGF_SORT1,NGF,['VCT_CCC'],SORT1,"['VCT_CCC', 'iEVT']",(M+F)-F
+395,NGF_SORT1,SORT1,"['VCT_CCC', 'iEVT']",NGF,"['VCT_CCC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+396,NOTCH1_DLK1,NOTCH1,['VCT_CCC'],DLK1,"['GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2', 'Endo_M']",(M+F)-(M+F)
+397,NOTCH1_DLK1,DLK1,['GC'],NOTCH1,"['VCT_CCC', 'dNK3', 'dM2', 'Endo_M']",(M+F)-(M+F)
+398,NOTCH1_DLL4,NOTCH1,['VCT_CCC'],DLL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+399,NOTCH1_DLL4,DLL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NOTCH1,['VCT_CCC'],(M+F)-F
+400,NOTCH1_JAG1,NOTCH1,['VCT_CCC'],JAG1,"['eEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+401,NOTCH1_JAG1,JAG1,['eEVT'],NOTCH1,"['VCT_CCC', 'dNK3', 'dM2', 'Endo_M']",(M+F)-(M+F)
+402,NOTCH1_JAG2,NOTCH1,['VCT_CCC'],JAG2,"['eEVT', 'iEVT', 'dNK1', 'dNK2', 'Endo_M']",(M+F)-(M+F)
+403,NOTCH1_JAG2,JAG2,"['eEVT', 'iEVT']",NOTCH1,"['VCT_CCC', 'dNK3', 'dM2', 'Endo_M']",(M+F)-(M+F)
+404,NOTCH2_DLL4,NOTCH2,"['eEVT', 'iEVT', 'GC']",DLL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+405,NOTCH2_DLL4,DLL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NOTCH2,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+406,NOTCH2_JAG2,NOTCH2,"['eEVT', 'iEVT', 'GC']",JAG2,"['eEVT', 'iEVT', 'dNK1', 'dNK2', 'Endo_M']",(M+F)-(M+F)
+407,NOTCH2_JAG2,JAG2,"['eEVT', 'iEVT']",NOTCH2,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'dS1', 'uSMC']",(M+F)-(M+F)
+408,NOTCH3_JAG2,NOTCH3,"['VCT_CCC', 'eEVT']",JAG2,"['eEVT', 'iEVT']",(M+F)-F
+409,NOTCH3_JAG2,JAG2,"['eEVT', 'iEVT']",NOTCH3,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+410,NOTCH4_JAG2,NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",JAG2,"['eEVT', 'iEVT']",(M+F)-F
+411,NOTCH4_JAG2,JAG2,"['eEVT', 'iEVT']",NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+412,NRG3_ERBB4,NRG3,"['EVT_2', 'eEVT', 'iEVT']",ERBB4,['eEVT'],(M+F)-F
+413,NRG3_ERBB4,ERBB4,['eEVT'],NRG3,"['EVT_2', 'eEVT', 'iEVT', 'dS2', 'Endo_M', 'uSMC']",F-(M+F)
+414,NRP1_PGF,NRP1,"['VCT_CCC', 'GC']",PGF,"['EVT_1', 'EVT_2', 'GC']",(M+F)-F
+415,NRP1_PGF,PGF,"['EVT_1', 'EVT_2', 'GC']",NRP1,"['VCT_CCC', 'GC', 'dM1', 'dM2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+416,NRP1_SEMA3A,NRP1,"['VCT_CCC', 'GC']",SEMA3A,['GC'],(M+F)-F
+417,NRP1_SEMA3A,SEMA3A,['GC'],NRP1,"['VCT_CCC', 'GC', 'dM1', 'dM2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+418,NRP1_SLC3A2,NRP1,"['VCT_CCC', 'GC']",SLC3A2,"['VCT_CCC', 'EVT_1']",(M+F)-F
+419,NRP1_SLC3A2,SLC3A2,"['VCT_CCC', 'EVT_1']",NRP1,"['VCT_CCC', 'GC', 'dM1', 'dM2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+420,NRP1_VEGFB,NRP1,"['VCT_CCC', 'GC']",VEGFB,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F
+421,NRP1_VEGFB,VEGFB,"['VCT_CCC', 'iEVT', 'GC']",NRP1,"['VCT_CCC', 'GC', 'dM1', 'dM2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+422,NRP2_PGF,NRP2,"['VCT_CCC', 'GC']",PGF,"['EVT_1', 'EVT_2', 'GC']",(M+F)-F
+423,NRP2_PGF,PGF,"['EVT_1', 'EVT_2', 'GC']",NRP2,"['VCT_CCC', 'GC', 'dM1', 'dM2', 'Endo_M', 'uSMC']",F-(M+F)
+424,NRP2_SEMA3F,NRP2,"['VCT_CCC', 'GC']",SEMA3F,['eEVT'],(M+F)-F
+425,NRP2_SEMA3F,SEMA3F,['eEVT'],NRP2,"['VCT_CCC', 'GC', 'dM1', 'dM2', 'Endo_M', 'uSMC']",F-(M+F)
+426,NT5E_LAIR1,NT5E,"['eEVT', 'iEVT', 'GC']",LAIR1,"['eEVT', 'GC', 'dM1', 'dM2']",F-(M+F)
+427,NT5E_LAIR1,LAIR1,"['eEVT', 'GC']",NT5E,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+428,NTRK2_NTN4,NTRK2,"['VCT_CCC', 'EVT_2', 'iEVT']",NTN4,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+429,NTRK2_NTN4,NTN4,"['eEVT', 'iEVT', 'GC']",NTRK2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+430,NTS_SORT1,NTS,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",SORT1,"['VCT_CCC', 'iEVT']",(M+F)-F
+431,NTS_SORT1,SORT1,"['VCT_CCC', 'iEVT']",NTS,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F)
+432,PDCD1_CD274,PDCD1,"['VCT_CCC', 'EVT_2']",CD274,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+433,PDCD1_CD274,CD274,"['eEVT', 'iEVT', 'GC']",PDCD1,"['VCT_CCC', 'EVT_2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+434,PDCD1_PDCD1LG2,PDCD1,"['VCT_CCC', 'EVT_2']",PDCD1LG2,"['iEVT', 'GC']",(M+F)-F
+435,PDCD1_PDCD1LG2,PDCD1LG2,"['iEVT', 'GC']",PDCD1,"['VCT_CCC', 'EVT_2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+436,PDGFA_PDGFRA,PDGFA,['VCT_CCC'],PDGFRA,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1']",F-(M+F)
+437,PDGFA_PDGFRA,PDGFRA,"['VCT_CCC', 'EVT_2', 'iEVT']",PDGFA,['VCT_CCC'],(M+F)-F
+438,PDGFB_PDGFRA,PDGFB,"['VCT_CCC', 'iEVT']",PDGFRA,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1']",F-(M+F)
+439,PDGFB_PDGFRA,PDGFRA,"['VCT_CCC', 'EVT_2', 'iEVT']",PDGFB,"['VCT_CCC', 'iEVT']",(M+F)-F
+440,PDGFB_PDGFRB,PDGFB,"['VCT_CCC', 'iEVT']",PDGFRB,"['eEVT', 'GC', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+441,PDGFB_PDGFRB,PDGFRB,"['eEVT', 'GC']",PDGFB,"['VCT_CCC', 'iEVT']",(M+F)-F
+442,PGR_Progesterone_byHSD3B1,PGR,['GC'],HSD3B1,"['iEVT', 'GC']",(M+F)-F
+443,PGR_Progesterone_byHSD3B1,HSD3B1,"['iEVT', 'GC']",PGR,"['GC', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+444,PIGR_APLP2,PIGR,"['EVT_2', 'eEVT', 'iEVT']",APLP2,"['VCT_CCC', 'GC']",(M+F)-F
+445,PIGR_APLP2,APLP2,"['VCT_CCC', 'GC']",PIGR,"['EVT_2', 'eEVT', 'iEVT', 'dNK1', 'dNK2', 'dNK3', 'dS2', 'Endo_M', 'dS1']",F-(M+F)
+446,PLAU_PLAUR,PLAU,['VCT_CCC'],PLAUR,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dM1', 'dM2', 'dS3']",(M+F)-(M+F)
+447,PLAU_PLAUR,PLAUR,"['VCT_CCC', 'EVT_1', 'EVT_2']",PLAU,"['VCT_CCC', 'dM1', 'dM2', 'dS3', 'dS2']",(M+F)-(M+F)
+448,PLXNB1_SEMA4D,PLXNB1,"['VCT_CCC', 'GC']",SEMA4D,"['VCT_CCC', 'GC', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+449,PLXNB1_SEMA4D,SEMA4D,"['VCT_CCC', 'GC']",PLXNB1,"['VCT_CCC', 'GC']",(M+F)-F
+450,PLXNB2_SEMA4C,PLXNB2,"['eEVT', 'iEVT', 'GC']",SEMA4C,"['EVT_2', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+451,PLXNB2_SEMA4C,SEMA4C,"['EVT_2', 'iEVT', 'GC']",PLXNB2,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'dS3', 'dS2', 'uSMC']",(M+F)-(M+F)
+452,PLXNC1_SEMA7A,PLXNC1,"['eEVT', 'GC']",SEMA7A,"['EVT_2', 'GC']",(M+F)-F
+453,PLXNC1_SEMA7A,SEMA7A,"['EVT_2', 'GC']",PLXNC1,"['eEVT', 'GC', 'dNK3', 'dM1', 'dM2', 'uSMC']",F-(M+F)
+454,PODXL_SELL,PODXL,"['eEVT', 'GC']",SELL,"['VCT_CCC', 'EVT_1', 'EVT_2']",F-F
+455,PODXL_SELL,SELL,"['VCT_CCC', 'EVT_1', 'EVT_2']",PODXL,"['eEVT', 'GC']",F-F
+456,POMC_MC1R,POMC,"['eEVT', 'iEVT', 'GC']",MC1R,"['VCT_CCC', 'EVT_2', 'eEVT', 'iEVT', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+457,POMC_MC1R,MC1R,"['VCT_CCC', 'EVT_2', 'eEVT', 'iEVT']",POMC,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+458,POMC_OPRK1,POMC,"['eEVT', 'iEVT', 'GC']",OPRK1,"['EVT_1', 'EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+459,POMC_OPRK1,OPRK1,"['EVT_1', 'EVT_2', 'iEVT']",POMC,"['eEVT', 'iEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dS3']",(M+F)-(M+F)
+460,POMC_OPRM1,POMC,"['eEVT', 'iEVT', 'GC']",OPRM1,"['eEVT', 'dNK1', 'dNK2', 'dNK3', 'uSMC']",(M+F)-(M+F)
+461,POMC_OPRM1,OPRM1,['eEVT'],POMC,"['eEVT', 'iEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dS3']",(M+F)-(M+F)
+462,PRL_PRLR,PRL,"['EVT_2', 'iEVT']",PRLR,"['VCT_CCC', 'EVT_2', 'iEVT']",(M+F)-F
+463,PRL_PRLR,PRLR,"['VCT_CCC', 'EVT_2', 'iEVT']",PRL,"['EVT_2', 'iEVT', 'dS3', 'dS2']",F-(M+F)
+464,PROC_PROCR,PROC,"['EVT_1', 'EVT_2', 'iEVT']",PROCR,"['EVT_1', 'iEVT', 'GC']",(M+F)-F
+465,PROC_PROCR,PROCR,"['EVT_1', 'iEVT', 'GC']",PROC,"['EVT_1', 'EVT_2', 'iEVT', 'dM1']",F-(M+F)
+466,PTGER3_ProstaglandinE2_byPTGES,PTGER3,"['eEVT', 'iEVT', 'GC']",PTGES,"['VCT_CCC', 'EVT_1', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+467,PTGER3_ProstaglandinE2_byPTGES,PTGES,"['VCT_CCC', 'EVT_1', 'iEVT', 'GC']",PTGER3,"['eEVT', 'iEVT', 'GC', 'dS1', 'uSMC']",(M+F)-(M+F)
+468,PTGER3_ProstaglandinE2_byPTGES2,PTGER3,"['eEVT', 'iEVT', 'GC']",PTGES2,"['VCT_CCC', 'EVT_1', 'eEVT', 'dNK1', 'dNK2', 'dM1', 'dS3', 'dS1']",(M+F)-(M+F)
+469,PTGER3_ProstaglandinE2_byPTGES2,PTGES2,"['VCT_CCC', 'EVT_1', 'eEVT']",PTGER3,"['eEVT', 'iEVT', 'GC', 'dS1', 'uSMC']",(M+F)-(M+F)
+470,PTGER3_ProstaglandinE2_byPTGES3,PTGER3,"['eEVT', 'iEVT', 'GC']",PTGES3,"['VCT_CCC', 'EVT_1', 'dNK3', 'dM1', 'dS3', 'dS2', 'Endo_M', 'dS1']",(M+F)-(M+F)
+471,PTGER3_ProstaglandinE2_byPTGES3,PTGES3,"['VCT_CCC', 'EVT_1']",PTGER3,"['eEVT', 'iEVT', 'GC', 'dS1', 'uSMC']",(M+F)-(M+F)
+472,PTPRC_CD22,PTPRC,['eEVT'],CD22,"['eEVT', 'iEVT']",(M+F)-F
+473,PTPRC_CD22,CD22,"['eEVT', 'iEVT']",PTPRC,"['eEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+474,PTPRF_CD46,PTPRF,"['EVT_2', 'eEVT', 'iEVT', 'GC']",CD46,"['eEVT', 'iEVT', 'GC', 'dS3', 'dS2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+475,PTPRF_CD46,CD46,"['eEVT', 'iEVT', 'GC']",PTPRF,"['EVT_2', 'eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+476,PTPRF_IL1RAP,PTPRF,"['EVT_2', 'eEVT', 'iEVT', 'GC']",IL1RAP,"['EVT_2', 'eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+477,PTPRF_IL1RAP,IL1RAP,"['EVT_2', 'eEVT', 'iEVT', 'GC']",PTPRF,"['EVT_2', 'eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+478,PTPRS_NTRK3,PTPRS,"['eEVT', 'iEVT', 'GC']",NTRK3,"['eEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+479,PTPRS_NTRK3,NTRK3,['eEVT'],PTPRS,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+480,PVR_CD226,PVR,"['EVT_2', 'iEVT']",CD226,"['eEVT', 'dNK3', 'dM1', 'dM2', 'dS1', 'uSMC']",F-(M+F)
+481,PVR_CD226,CD226,['eEVT'],PVR,"['EVT_2', 'iEVT']",(M+F)-F
+482,PVR_CD96,PVR,"['EVT_2', 'iEVT']",CD96,"['eEVT', 'GC', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F)
+483,PVR_CD96,CD96,"['eEVT', 'GC']",PVR,"['EVT_2', 'iEVT', 'dS3', 'dS2', 'Endo_M', 'uSMC']",(M+F)-(M+F)
+484,PVR_NECTIN3,PVR,"['EVT_2', 'iEVT']",NECTIN3,"['eEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+485,PVR_NECTIN3,NECTIN3,"['eEVT', 'GC']",PVR,"['EVT_2', 'iEVT']",(M+F)-F
+486,PVR_TIGIT,PVR,"['EVT_2', 'iEVT']",TIGIT,"['EVT_1', 'EVT_2', 'iEVT', 'dNK3']",F-(M+F)
+487,PVR_TIGIT,TIGIT,"['EVT_1', 'EVT_2', 'iEVT']",PVR,"['EVT_2', 'iEVT']",(M+F)-F
+488,RAMP3_ADM,RAMP3,"['EVT_2', 'iEVT']",ADM,"['EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+489,RAMP3_ADM,ADM,"['EVT_1', 'EVT_2', 'iEVT']",RAMP3,"['EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+490,RBP4_STRA6,RBP4,"['EVT_1', 'EVT_2']",STRA6,"['VCT_CCC', 'GC', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F)
+491,RBP4_STRA6,STRA6,"['VCT_CCC', 'GC']",RBP4,"['EVT_1', 'EVT_2', 'dNK1', 'dNK2', 'dS3', 'dS2']",(M+F)-(M+F)
+492,RELN_VLDLR,RELN,"['EVT_2', 'iEVT']",VLDLR,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+493,RELN_VLDLR,VLDLR,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",RELN,"['EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+494,RNASET2_TLR8,RNASET2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",TLR8,"['VCT_CCC', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+495,RNASET2_TLR8,TLR8,"['VCT_CCC', 'iEVT']",RNASET2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+496,S1PR2_FAM19A5,S1PR2,"['VCT_CCC', 'iEVT']",FAM19A5,"['EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+497,S1PR2_FAM19A5,FAM19A5,"['EVT_2', 'iEVT']",S1PR2,"['VCT_CCC', 'iEVT']",(M+F)-F
+498,SELE_GLG1,SELE,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",GLG1,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+499,SELE_GLG1,GLG1,"['eEVT', 'iEVT', 'GC']",SELE,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dS2', 'Endo_M']",F-(M+F)
+500,SELP_CCD47,SELP,"['VCT_CCC', 'iEVT']",CCDC47,"['VCT_CCC', 'EVT_1', 'iEVT']",(M+F)-F
+501,SELP_CCD47,CCDC47,"['VCT_CCC', 'EVT_1', 'iEVT']",SELP,"['VCT_CCC', 'iEVT', 'Endo_M']",F-(M+F)
+502,SELP_CCDC47,SELP,"['VCT_CCC', 'iEVT']",CCDC47,"['VCT_CCC', 'EVT_1', 'iEVT']",(M+F)-F
+503,SELP_CCDC47,CCDC47,"['VCT_CCC', 'EVT_1', 'iEVT']",SELP,"['VCT_CCC', 'iEVT', 'Endo_M']",F-(M+F)
+504,SELP_CD24,SELP,"['VCT_CCC', 'iEVT']",CD24,"['VCT_CCC', 'EVT_1']",(M+F)-F
+505,SELP_CD24,CD24,"['VCT_CCC', 'EVT_1']",SELP,"['VCT_CCC', 'iEVT', 'Endo_M']",F-(M+F)
+506,SEMA3E_PLXND1,SEMA3E,"['eEVT', 'GC']",PLXND1,"['EVT_2', 'eEVT']",(M+F)-F
+507,SEMA3E_PLXND1,PLXND1,"['EVT_2', 'eEVT']",SEMA3E,"['eEVT', 'GC', 'dS2', 'Endo_M', 'uSMC']",F-(M+F)
+508,SEMA4A_PLXND1,SEMA4A,"['VCT_CCC', 'EVT_2', 'iEVT']",PLXND1,"['EVT_2', 'eEVT']",(M+F)-F
+509,SEMA4A_PLXND1,PLXND1,"['EVT_2', 'eEVT']",SEMA4A,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS2', 'Endo_M']",F-(M+F)
+510,SEMA4A_SEM4B,SEMA4A,"['VCT_CCC', 'EVT_2', 'iEVT']",SEMA4B,"['EVT_2', 'eEVT', 'iEVT', 'GC']",(M+F)-F
+511,SEMA4A_SEM4B,SEMA4B,"['EVT_2', 'eEVT', 'iEVT', 'GC']",SEMA4A,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS2', 'Endo_M']",F-(M+F)
+512,SEMA4A_SEMA4B,SEMA4A,"['VCT_CCC', 'EVT_2', 'iEVT']",SEMA4B,"['EVT_2', 'eEVT', 'iEVT', 'GC']",(M+F)-F
+513,SEMA4A_SEMA4B,SEMA4B,"['EVT_2', 'eEVT', 'iEVT', 'GC']",SEMA4A,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS2', 'Endo_M']",F-(M+F)
+514,SFRP1_WNT2B,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT2B,"['iEVT', 'GC', 'dM2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+515,SFRP1_WNT2B,WNT2B,"['iEVT', 'GC']",SFRP1,"['EVT_2', 'eEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+516,SFRP1_WNT5B,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT5B,"['eEVT', 'GC', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+517,SFRP1_WNT5B,WNT5B,"['eEVT', 'GC']",SFRP1,"['EVT_2', 'eEVT', 'GC']",(M+F)-F
+518,SFRP1_WNT6,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT6,"['VCT_CCC', 'dS3', 'dS2']",(M+F)-(M+F)
+519,SFRP1_WNT6,WNT6,['VCT_CCC'],SFRP1,"['EVT_2', 'eEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+520,SFRP4_WNT2B,SFRP4,['eEVT'],WNT2B,"['iEVT', 'GC']",(M+F)-F
+521,SFRP4_WNT2B,WNT2B,"['iEVT', 'GC']",SFRP4,"['eEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+522,SFRP4_WNT6,SFRP4,['eEVT'],WNT6,['VCT_CCC'],(M+F)-F
+523,SFRP4_WNT6,WNT6,['VCT_CCC'],SFRP4,"['eEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+524,SIRPA_CD47,SIRPA,"['VCT_CCC', 'EVT_2', 'iEVT']",CD47,"['VCT_CCC', 'EVT_1']",(M+F)-F
+525,SIRPA_CD47,CD47,"['VCT_CCC', 'EVT_1']",SIRPA,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F)
+526,SIRPB1_CD47,SIRPB1,"['VCT_CCC', 'EVT_1', 'EVT_2']",CD47,"['VCT_CCC', 'EVT_1']",(M+F)-F
+527,SIRPB1_CD47,CD47,"['VCT_CCC', 'EVT_1']",SIRPB1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dM1']",F-(M+F)
+528,SLIT2_ROBO1,SLIT2,"['eEVT', 'iEVT', 'GC']",ROBO1,"['VCT_CCC', 'eEVT', 'GC']",(M+F)-F
+529,SLIT2_ROBO1,ROBO1,"['VCT_CCC', 'eEVT', 'GC']",SLIT2,"['eEVT', 'iEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+530,SLIT2_ROBO2,SLIT2,"['eEVT', 'iEVT', 'GC']",ROBO2,['eEVT'],(M+F)-F
+531,SLIT2_ROBO2,ROBO2,['eEVT'],SLIT2,"['eEVT', 'iEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+532,TACR3_TAC3,TACR3,"['eEVT', 'iEVT', 'GC']",TAC3,"['iEVT', 'GC', 'dM2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+533,TACR3_TAC3,TAC3,"['iEVT', 'GC']",TACR3,"['eEVT', 'iEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+534,TEK_ANGPT1,TEK,"['EVT_1', 'EVT_2', 'iEVT']",ANGPT1,"['eEVT', 'iEVT']",(M+F)-F
+535,TEK_ANGPT1,ANGPT1,"['eEVT', 'iEVT']",TEK,"['EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+536,TEK_ANGPT4,TEK,"['EVT_1', 'EVT_2', 'iEVT']",ANGPT4,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+537,TEK_ANGPT4,ANGPT4,"['EVT_1', 'EVT_2', 'eEVT']",TEK,"['EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F)
+538,TGFB1_TGFBR3,TGFB1,"['EVT_1', 'EVT_2', 'iEVT']",TGFBR3,"['eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+539,TGFB1_TGFBR3,TGFBR3,"['eEVT', 'iEVT', 'GC']",TGFB1,"['EVT_1', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1']",(M+F)-(M+F)
+540,TGFB2_TGFBR3,TGFB2,"['eEVT', 'iEVT', 'GC']",TGFBR3,"['eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+541,TGFB2_TGFBR3,TGFBR3,"['eEVT', 'iEVT', 'GC']",TGFB2,"['eEVT', 'iEVT', 'GC', 'dM2', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+542,TGFB3_TGFBR3,TGFB3,['eEVT'],TGFBR3,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+543,TGFB3_TGFBR3,TGFBR3,"['eEVT', 'iEVT', 'GC']",TGFB3,"['eEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+544,TIGIT_NECTIN2,TIGIT,"['EVT_1', 'EVT_2', 'iEVT']",NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F
+545,TIGIT_NECTIN2,NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",TIGIT,"['EVT_1', 'EVT_2', 'iEVT', 'dNK3']",F-(M+F)
+546,TMED2_SLAMF6,TMED2,"['VCT_CCC', 'EVT_1']",SLAMF6,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+547,TMED2_SLAMF6,SLAMF6,"['VCT_CCC', 'EVT_2', 'iEVT']",TMED2,"['VCT_CCC', 'EVT_1']",(M+F)-F
+548,TNFRSF10A_TNFSF10,TNFRSF10A,['eEVT'],TNFSF10,"['iEVT', 'GC']",(M+F)-F
+549,TNFRSF10A_TNFSF10,TNFSF10,"['iEVT', 'GC']",TNFRSF10A,"['eEVT', 'dNK2', 'dNK3', 'Endo_M']",F-(M+F)
+550,TNFRSF10B_PIGR,TNFRSF10B,"['VCT_CCC', 'GC']",PIGR,"['EVT_2', 'eEVT', 'iEVT', 'dNK1', 'dNK2', 'dNK3', 'dS2', 'Endo_M', 'dS1']",F-(M+F)
+551,TNFRSF10B_PIGR,PIGR,"['EVT_2', 'eEVT', 'iEVT']",TNFRSF10B,"['VCT_CCC', 'GC']",(M+F)-F
+552,TNFRSF10B_TNFSF10,TNFRSF10B,"['VCT_CCC', 'GC']",TNFSF10,"['iEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'Endo_M']",(M+F)-(M+F)
+553,TNFRSF10B_TNFSF10,TNFSF10,"['iEVT', 'GC']",TNFRSF10B,"['VCT_CCC', 'GC', 'dM1', 'dM2', 'dS2', 'Endo_M']",(M+F)-(M+F)
+554,TNFRSF21_APP,TNFRSF21,"['VCT_CCC', 'eEVT']",APP,"['eEVT', 'GC', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+555,TNFRSF21_APP,APP,"['eEVT', 'GC']",TNFRSF21,"['VCT_CCC', 'eEVT', 'dM1', 'dM2', 'dS3', 'dS2']",(M+F)-(M+F)
+556,TNFSF10_TNFRSF10D,TNFSF10,"['iEVT', 'GC']",TNFRSF10D,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'Endo_M']",F-(M+F)
+557,TNFSF10_TNFRSF10D,TNFRSF10D,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",TNFSF10,"['iEVT', 'GC']",(M+F)-F
+558,TNFSF12_TNFRSF12A,TNFSF12,"['VCT_CCC', 'iEVT']",TNFRSF12A,"['VCT_CCC', 'EVT_1']",(M+F)-F
+559,TNFSF12_TNFRSF12A,TNFRSF12A,"['VCT_CCC', 'EVT_1']",TNFSF12,"['VCT_CCC', 'iEVT', 'dNK3', 'dM1', 'dM2', 'dS3']",F-(M+F)
+560,TNFSF12_TNFRSF25,TNFSF12,"['VCT_CCC', 'iEVT']",TNFRSF25,"['EVT_2', 'eEVT', 'iEVT', 'GC']",(M+F)-F
+561,TNFSF12_TNFRSF25,TNFRSF25,"['EVT_2', 'eEVT', 'iEVT', 'GC']",TNFSF12,"['VCT_CCC', 'iEVT', 'dNK3', 'dM1', 'dM2', 'dS3']",F-(M+F)
+562,TNFSF14_LTBR,TNFSF14,"['EVT_2', 'iEVT']",LTBR,"['eEVT', 'GC']",(M+F)-F
+563,TNFSF14_LTBR,LTBR,"['eEVT', 'GC']",TNFSF14,"['EVT_2', 'iEVT', 'dNK2', 'dNK3']",F-(M+F)
+564,TNF_TNFRSF1A,TNF,"['VCT_CCC', 'EVT_2', 'iEVT']",TNFRSF1A,"['VCT_CCC', 'EVT_1', 'iEVT', 'GC']",(M+F)-F
+565,TNF_TNFRSF1A,TNFRSF1A,"['VCT_CCC', 'EVT_1', 'iEVT', 'GC']",TNF,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+566,TNF_TNFRSF1B,TNF,"['VCT_CCC', 'EVT_2', 'iEVT']",TNFRSF1B,['eEVT'],(M+F)-F
+567,TNF_TNFRSF1B,TNFRSF1B,['eEVT'],TNF,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F)
+568,TNR21_APP,TNFRSF21,"['VCT_CCC', 'eEVT']",APP,"['eEVT', 'GC', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+569,TNR21_APP,APP,"['eEVT', 'GC']",TNFRSF21,"['VCT_CCC', 'eEVT', 'dM1', 'dM2', 'dS3', 'dS2']",(M+F)-(M+F)
+570,TREML2_CCD47,TREML2,"['VCT_CCC', 'EVT_2', 'iEVT']",CCDC47,"['VCT_CCC', 'EVT_1', 'iEVT']",(M+F)-F
+571,TREML2_CCD47,CCDC47,"['VCT_CCC', 'EVT_1', 'iEVT']",TREML2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'Endo_M', 'uSMC']",F-(M+F)
+572,TREML2_CCDC47,TREML2,"['VCT_CCC', 'EVT_2', 'iEVT']",CCDC47,"['VCT_CCC', 'EVT_1', 'iEVT']",(M+F)-F
+573,TREML2_CCDC47,CCDC47,"['VCT_CCC', 'EVT_1', 'iEVT']",TREML2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'Endo_M', 'uSMC']",F-(M+F)
+574,TREML2_CD276,TREML2,"['VCT_CCC', 'EVT_2', 'iEVT']",CD276,"['EVT_1', 'eEVT', 'iEVT', 'GC']",(M+F)-F
+575,TREML2_CD276,CD276,"['EVT_1', 'eEVT', 'iEVT', 'GC']",TREML2,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'Endo_M', 'uSMC']",F-(M+F)
+576,TYRO3_GAS6,TYRO3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT']",GAS6,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS1', 'uSMC']",F-(M+F)
+577,TYRO3_GAS6,GAS6,"['VCT_CCC', 'EVT_2', 'iEVT']",TYRO3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT']",(M+F)-F
+578,UNC5B_NTN4,UNC5B,['eEVT'],NTN4,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+579,UNC5B_NTN4,NTN4,"['eEVT', 'iEVT', 'GC']",UNC5B,"['eEVT', 'dM1', 'dM2', 'dS3', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+580,UNC5D_NTN4,UNC5D,"['eEVT', 'GC']",NTN4,"['eEVT', 'iEVT', 'GC']",(M+F)-F
+581,UNC5D_NTN4,NTN4,"['eEVT', 'iEVT', 'GC']",UNC5D,"['eEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+582,VASN_JAG2,VASN,"['VCT_CCC', 'eEVT', 'iEVT']",JAG2,"['eEVT', 'iEVT', 'dNK1', 'dNK2', 'Endo_M']",(M+F)-(M+F)
+583,VASN_JAG2,JAG2,"['eEVT', 'iEVT']",VASN,"['VCT_CCC', 'eEVT', 'iEVT', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F)
+584,VEGFA_FLT1,VEGFA,"['VCT_CCC', 'EVT_2', 'iEVT']",FLT1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F
+585,VEGFA_FLT1,FLT1,"['EVT_2', 'iEVT', 'GC']",VEGFA,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dS3', 'dS2', 'uSMC']",F-(M+F)
+586,WNT11_SFRP1,WNT11,"['VCT_CCC', 'eEVT']",SFRP1,"['EVT_2', 'eEVT', 'GC']",(M+F)-F
+587,WNT11_SFRP1,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT11,"['VCT_CCC', 'eEVT', 'dNK1', 'dS3', 'dS2']",F-(M+F)
+588,WNT2_SFRP1,WNT2,['GC'],SFRP1,"['EVT_2', 'eEVT', 'GC']",(M+F)-F
+589,WNT2_SFRP1,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT2,"['GC', 'dS2', 'dS1']",F-(M+F)
+590,WNT3A_SFRP1,WNT3A,['eEVT'],SFRP1,"['EVT_2', 'eEVT', 'GC']",(M+F)-F
+591,WNT3A_SFRP1,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT3A,"['eEVT', 'dS3', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+592,WNT3_SFRP1,WNT3,"['VCT_CCC', 'EVT_2', 'iEVT']",SFRP1,"['EVT_2', 'eEVT', 'GC']",(M+F)-F
+593,WNT3_SFRP1,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT3,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2']",F-(M+F)
+594,WNT4_SFRP1,WNT4,"['VCT_CCC', 'EVT_2', 'iEVT']",SFRP1,"['EVT_2', 'eEVT', 'GC']",(M+F)-F
+595,WNT4_SFRP1,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT4,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2']",F-(M+F)
+596,WNT5A_ROR1,WNT5A,"['EVT_2', 'eEVT', 'iEVT']",ROR1,"['eEVT', 'GC']",(M+F)-F
+597,WNT5A_ROR1,ROR1,"['eEVT', 'GC']",WNT5A,"['EVT_2', 'eEVT', 'iEVT', 'dS3', 'dS2']",F-(M+F)
+598,WNT5A_SFRP1,WNT5A,"['EVT_2', 'eEVT', 'iEVT']",SFRP1,"['EVT_2', 'eEVT', 'GC']",(M+F)-F
+599,WNT5A_SFRP1,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT5A,"['EVT_2', 'eEVT', 'iEVT', 'dS3', 'dS2']",F-(M+F)
+600,WNT7A_FRZB,WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2']",FRZB,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM2', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F)
+601,WNT7A_FRZB,FRZB,"['VCT_CCC', 'EVT_2', 'iEVT']",WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+602,WNT7A_SFRP1,WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2']",SFRP1,"['EVT_2', 'eEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+603,WNT7A_SFRP1,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dM2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F)
+604,WNT7A_SFRP4,WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2']",SFRP4,"['eEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+605,WNT7A_SFRP4,SFRP4,['eEVT'],WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F
+606,WNT9A_SFRP1,WNT9A,"['VCT_CCC', 'EVT_2', 'iEVT']",SFRP1,"['EVT_2', 'eEVT', 'GC']",(M+F)-F
+607,WNT9A_SFRP1,SFRP1,"['EVT_2', 'eEVT', 'GC']",WNT9A,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F)
+608,XCR1_XCL1,XCR1,"['eEVT', 'iEVT']",XCL1,"['eEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F)
+609,XCR1_XCL1,XCL1,['eEVT'],XCR1,"['eEVT', 'iEVT']",(M+F)-F
+610,XCR1_XCL2,XCR1,"['eEVT', 'iEVT']",XCL2,"['GC', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F)
+611,XCR1_XCL2,XCL2,['GC'],XCR1,"['eEVT', 'iEVT', 'dM2', 'dS1', 'uSMC']",(M+F)-(M+F)

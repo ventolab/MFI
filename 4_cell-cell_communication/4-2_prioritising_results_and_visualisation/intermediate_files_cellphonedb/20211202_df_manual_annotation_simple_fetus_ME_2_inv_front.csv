@@ -1,0 +1,120 @@
+,interacting_pair,partner_in_troph,partner_in_troph_expr_where,partner_other,partner_other_expr_where,direction_of_interaction,comments,taking_or_not,taking_as(doesnt_matter_so_much),extra_comments
+2,ACKR2_CCL13,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL13,"['EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2']",(M+F)-(M+F),nan,yes,EVT_2_and_dM1_dM2_interaction,
+3,ACKR2_CCL13,CCL13,"['EVT_1', 'EVT_2', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dS3', 'dS2']",(M+F)-(M+F),nan,no,,CCL13 expr in troph is too low %
+4,ACKR2_CCL14,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL14,"['EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F),nan,no,,CCL14 is only expr by Endo_M which only colocates with eEVT & iEVT troph wise but not EVT_2
+5,ACKR2_CCL14,CCL14,"['EVT_1', 'EVT_2', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F,nan,no,,CCL14 expr in troph is too low %
+6,ACKR2_CCL2,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL2,"['GC', 'dM1', 'dM2', 'Endo_M']",F-(M+F),nan,yes,EVT_2_and_dM1_dM2_interaction,
+8,ACKR2_CCL3,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",(M+F)-(M+F),nan,yes,VCT_CCC_EVT_1_EVT_2_and_dNK_dM,also troph-troph but less % in troph is expressing CCL3
+10,ACKR2_CCL4,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'eEVT', 'iEVT', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2']",F-(M+F),nan,yes,VCT_CCC_EVT_1_EVT_2_and_dNK_dM,also troph-troph but less % in troph is expressing CCL3
+12,ACKR2_CCL5,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL5,"['VCT_CCC', 'eEVT', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F),nan,yes,VCT_CCC_EVT_1_EVT_2_and_dNK_eEVT,
+14,ACKR2_CCL7,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL7,"['EVT_1', 'iEVT', 'dM1']",F-(M+F),nan,no,,CCL7 expr very low %
+15,ACKR2_CCL7,CCL7,"['EVT_1', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F,nan,no,,CCL7 expr very low %
+16,ACKR2_CCL8,ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",CCL8,"['EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dM2', 'dS3', 'dS2']",F-(M+F),nan,yes,,
+17,ACKR2_CCL8,CCL8,"['EVT_1', 'EVT_2', 'iEVT']",ACKR2,"['VCT_CCC', 'EVT_1', 'EVT_2']",(M+F)-F,nan,no,,CCL8 expr very low %
+22,ADORA3_ENTPD1,ADORA3,"['EVT_1', 'iEVT']",ENTPD1,"['eEVT', 'iEVT', 'GC']",(M+F)-F,nan,no,,ADORA3 expr very low %
+28,ANXA1_FPR3,ANXA1,"['VCT_CCC', 'EVT_1', 'EVT_2']",FPR3,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F),nan,yes,VCT_CCC_EVT_1_EVT_2_and_dM,
+42,BSG_PPIA,BSG,"['VCT_CCC', 'EVT_1', 'EVT_2']",PPIA,"['VCT_CCC', 'EVT_1', 'GC', 'dNK3', 'dM1', 'dS3', 'dS2']",(M+F)-(M+F),nan,yes,"VCT_CCC_EVT_1_and_VCT_CCC_EVT_1,VCT_CCC_EVT_1_and_dNK3_dM1_dS3_dS2",
+48,BTN3A1_CSF1R,BTN3A1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CSF1R,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F,Jarrods_inter,yes,VCT_CCC_EVT_1_EVT_2_iEVT_and_EVT_1_EVT_2_eEVT,
+54,CCL3L1_CCR1,CCL3L1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F,nan,yes,VCT_CCC_EVT_1_EVT_2_iEVT_and_EVT_1_EVT_2_eEVT,
+56,CCL3L1_CCR3,CCL3L1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CCR3,"['eEVT', 'GC']",F-F,nan,yes,EVT_2_iEVT_and_eEVT,
+67,CCR1_CCL14,CCL14,"['EVT_1', 'EVT_2', 'iEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F,nan,no,,CCL14 expr very low %
+69,CCR1_CCL26,CCL26,['iEVT'],CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F,nan,no,,CCL26 expr very low %
+71,CCR1_CCL7,CCL7,"['EVT_1', 'iEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F,nan,no,,CCL7 expr very low %
+73,CCR1_CCL8,CCL8,"['EVT_1', 'EVT_2', 'iEVT']",CCR1,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F,nan,no,,
+75,CCR3_CCL13,CCL13,"['EVT_1', 'EVT_2', 'iEVT']",CCR3,"['eEVT', 'GC', 'dNK1', 'dM1', 'dM2', 'Endo_M', 'uSMC']",(M+F)-(M+F),nan,no,,
+77,CCR3_CCL14,CCL14,"['EVT_1', 'EVT_2', 'iEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F,nan,no,,
+79,CCR3_CCL26,CCL26,['iEVT'],CCR3,"['eEVT', 'GC']",(M+F)-F,nan,no,,
+81,CCR3_CCL7,CCL7,"['EVT_1', 'iEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F,nan,no,,
+83,CCR3_CCL8,CCL8,"['EVT_1', 'EVT_2', 'iEVT']",CCR3,"['eEVT', 'GC']",(M+F)-F,nan,no,,
+85,CD200_CD200R1,CD200R1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CD200,"['EVT_2', 'iEVT', 'GC']",(M+F)-F,nan,no,,
+87,CD226_NECTIN2,NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CD226,"['eEVT', 'dNK3', 'dM1', 'dM2', 'dS1', 'uSMC']",F-(M+F),nan,yes,inv_states_and_dNK3_dM,
+90,CD33_GP6,CD33,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",GP6,"['iEVT', 'GC']",(M+F)-F,Jarrods_inter,no,,unfortunately CD33 % is very low expr
+92,CD33_GPVI,CD33,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",GP6,"['iEVT', 'GC']",(M+F)-F,nan,no,,same as inter above
+97,CD47_SIRPG,SIRPG,"['EVT_2', 'iEVT']",CD47,"['VCT_CCC', 'EVT_1']",(M+F)-F,nan,no,,
+98,CD55_ADGRE2,CD55,"['VCT_CCC', 'EVT_1', 'EVT_2']",ADGRE2,"['EVT_2', 'eEVT', 'dM1', 'dM2']",(M+F)-(M+F),Jarrods_inter,yes,VCT_CCC_EVT_1_EVT_2_and_dM,
+100,CD55_ADGRE5,CD55,"['VCT_CCC', 'EVT_1', 'EVT_2']",ADGRE5,"['EVT_2', 'eEVT', 'iEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'uSMC']",(M+F)-(M+F),nan,yes,VCT_CCC_EVT_1_EVT_2_and_dNK,
+121,CEACAM1_SELE,SELE,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CEACAM1,"['VCT_CCC', 'iEVT']",(M+F)-F,nan,no,,SELE % too low
+122,CEACAM4_PDCD1LG2,CEACAM4,"['EVT_2', 'iEVT']",PDCD1LG2,"['iEVT', 'GC']",(M+F)-F,Jarrods_inter,no,,CEACAM4 % too low
+124,CEAM4_PDCD1LG2,CEACAM4,"['EVT_2', 'iEVT']",PDCD1LG2,"['iEVT', 'GC']",(M+F)-F,nan,no,,same inter as above
+132,CXCL11_ACKR3,CXCL11,"['EVT_2', 'iEVT']",ACKR3,['eEVT'],(M+F)-F,nan,no,,CXCL11 % too low
+134,CXCL11_DPP4,CXCL11,"['EVT_2', 'iEVT']",DPP4,"['VCT_CCC', 'EVT_1']",(M+F)-F,nan,no,,CXCL11 % too low
+142,CXCR6_CXCL16,CXCR6,"['EVT_1', 'iEVT']",CXCL16,"['VCT_CCC', 'iEVT', 'dM1', 'dM2']",(M+F)-(M+F),nan,yes,EVT_2_iEVT_and_dM,
+149,DLK1_NOTCH4,NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",DLK1,['GC'],(M+F)-F,nan,no,,NOTCH4 % very low
+150,DLL1_NOTCH1,DLL1,"['VCT_CCC', 'EVT_1', 'EVT_2']",NOTCH1,"['VCT_CCC', 'dNK3', 'dM2', 'Endo_M']",(M+F)-(M+F),CellSign_VCT_CCC_NOTCH1,yes,"VCT_CCC_and_VCT_CCC,EVT_2_and_Endo_M",
+152,DLL1_NOTCH2,DLL1,"['VCT_CCC', 'EVT_1', 'EVT_2']",NOTCH2,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'dS1', 'uSMC']",(M+F)-(M+F),CellSign_iEVT_and_EVT_2_NOTCH2,yes,EVT_2_and_iEVT_dM,
+161,DSCAM_NTN1,NTN1,"['EVT_2', 'iEVT']",DSCAM,"['eEVT', 'GC', 'dM2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),nan,no,,
+174,EFNA3_EPHA4,EFNA3,"['EVT_1', 'EVT_2']",EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F),nan,yes,EVT_2_and_Endo_M,
+176,EFNA3_EPHA7,EFNA3,"['EVT_1', 'EVT_2']",EPHA7,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan,no,,EPHA7 % too low
+178,EFNA4_EPHA4,EFNA4,"['EVT_1', 'EVT_2']",EPHA4,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'uSMC']",F-(M+F),nan,yes,EVT_2_and_Endo_M,
+180,EFNA4_EPHA7,EFNA4,"['EVT_1', 'EVT_2']",EPHA7,"['VCT_CCC', 'EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan,no,,EPHA7 % too low
+189,EGFR_HBEGF,HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2']",EGFR,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F,CellSign_GC_and_VCT_CCC_EGFR,yes,,
+191,EGFR_TGFA,TGFA,"['EVT_1', 'EVT_2', 'iEVT']",EGFR,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F,CellSign_GC_and_VCT_CCC_EGFR,yes,,
+193,EPHA1_EFNA3,EFNA3,"['EVT_1', 'EVT_2']",EPHA1,"['eEVT', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F),nan,yes,"EVT_2_and_eEVT,EVT_1_EVT_1_and_dNK",
+195,EPHA1_EFNA4,EFNA4,"['EVT_1', 'EVT_2']",EPHA1,"['eEVT', 'dNK1', 'dNK2', 'dNK3']",(M+F)-(M+F),nan,yes,"EVT_2_and_eEVT,EVT_1_EVT_1_and_dNK",
+199,EPHA2_EFNA3,EFNA3,"['EVT_1', 'EVT_2']",EPHA2,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M']",F-(M+F),nan,yes,EVT_2_and_Endo_M,
+201,EPHA2_EFNA4,EFNA4,"['EVT_1', 'EVT_2']",EPHA2,"['VCT_CCC', 'eEVT', 'dS3', 'dS2', 'Endo_M']",F-(M+F),nan,yes,EVT_2_and_Endo_M,
+205,EPHA3_EFNA3,EFNA3,"['EVT_1', 'EVT_2']",EPHA3,"['EVT_2', 'eEVT', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan,no,,
+207,EPHA3_EFNA4,EFNA4,"['EVT_1', 'EVT_2']",EPHA3,"['EVT_2', 'eEVT', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan,no,,
+227,ERBB2_HBEGF,HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2']",ERBB2,"['eEVT', 'iEVT', 'GC']",(M+F)-F,nan,yes,"EVT_2_iEVT, EVT_2_eEVT",
+228,ERBB3_BTC,ERBB3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",BTC,"['VCT_CCC', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F),nan,yes,inv_states_and_dS_uSMC,
+231,ERBB4_HBEGF,HBEGF,"['VCT_CCC', 'EVT_1', 'EVT_2']",ERBB4,['eEVT'],(M+F)-F,nan,yes,"EVT_2_iEVT, EVT_2_eEVT",
+234,EREG_EGFR,EREG,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",EGFR,"['VCT_CCC', 'iEVT', 'GC']",(M+F)-F,nan,no,,EREG % too low
+236,EREG_ERBB4,EREG,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",ERBB4,['eEVT'],F-F,nan,no,,EREG % too low
+272,FTH1_SCARA5,FTH1,"['VCT_CCC', 'EVT_1', 'EVT_2']",SCARA5,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F),nan,yes,VCT_CCC_EVT_1_EVT_2_and_dS,
+274,FTL_SCARA5,FTL,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",SCARA5,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F),nan,yes,VCT_CCC_EVT_1_EVT_2_iEVT_and_dS,
+276,GFRA2_TMEM132A,GFRA2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",TMEM132A,"['EVT_2', 'eEVT', 'iEVT', 'GC']",(M+F)-F,Jarrods_inter,no,,GFRA2 % very low and unclear partners in space
+284,HFE_JAG2,HFE,"['EVT_2', 'iEVT']",JAG2,"['eEVT', 'iEVT', 'dNK1', 'dNK2', 'Endo_M']",(M+F)-(M+F),Jarrods_inter,yes,"EVT_2_iEVT_and_eEVT, EVT_2_iEVT_and_dNK1_dNK2_Endo_M",
+286,HLA-C_KIR2DL1,HLA-C,"['EVT_1', 'EVT_2', 'iEVT']",KIR2DL1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F),nan,yes,inv_states_and_dNK,
+287,HLA-C_KIR2DL1,KIR2DL1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",HLA-C,"['EVT_1', 'EVT_2', 'iEVT']",(M+F)-F,nan,no,,
+288,HLA-C_KIR2DL3,HLA-C,"['EVT_1', 'EVT_2', 'iEVT']",KIR2DL3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dNK1', 'dNK2', 'dNK3']",F-(M+F),nan,yes,inv_states_and_dNK,
+289,HLA-C_KIR2DL3,KIR2DL3,"['VCT_CCC', 'EVT_1', 'EVT_2']",HLA-C,"['EVT_1', 'EVT_2', 'iEVT']",(M+F)-F,nan,no,,
+295,HLA-E_VSIR,VSIR,"['VCT_CCC', 'EVT_1', 'EVT_2']",HLA-E,"['EVT_1', 'EVT_2', 'iEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dS3', 'Endo_M']",(M+F)-(M+F),Jarrods_inter,yes,VCT_CCC_EVT_1_EVT_2_and_EVT_1_EVT_2_iEVT_dNK_dM1_Endo_M,
+301,HLA-F_VSIR,VSIR,"['VCT_CCC', 'EVT_1', 'EVT_2']",HLA-F,"['eEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dS3']",(M+F)-(M+F),Jarrods_inter,yes,EVT_2_and_eEVT_dNK_dM1,
+316,IGFBP3_TMEM219,IGFBP3,"['EVT_1', 'EVT_2']",TMEM219,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'dM1', 'dS3', 'Endo_M']",(M+F)-(M+F),nan,yes,EVT_2_and_inv_states_dM1_dS3,
+317,IGFBP3_TMEM219,TMEM219,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",IGFBP3,"['EVT_1', 'EVT_2', 'dS3', 'dS2', 'Endo_M', 'dS1']",(M+F)-(M+F),nan,yes,inv_states_and_dS_Endo_M,
+318,IGFLR1_PILRA,IGFLR1,"['VCT_CCC', 'EVT_1', 'EVT_2']",PILRA,"['GC', 'dM1', 'dM2', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F),Jarrods_inter,yes,,although IGFLR1 % is very low
+320,IL7R_APLP2,IL7R,"['EVT_2', 'iEVT']",APLP2,"['VCT_CCC', 'GC']",(M+F)-F,Jarrods_inter,no,,unlikely partners and IL7R % is very low
+322,IL7R_FGFR3,IL7R,"['EVT_2', 'iEVT']",FGFR3,"['EVT_1', 'EVT_2', 'eEVT']",(M+F)-F,Jarrods_inter,yes,EVT_2_and_eEVT,
+329,JAG1_NOTCH4,NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",JAG1,['eEVT'],(M+F)-F,nan,no,,NOTCH4 % is very low
+336,JAML_CD320,JAML,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",CD320,"['VCT_CCC', 'EVT_1', 'GC']",(M+F)-F,Jarrods_inter,yes,VCT_CCC_EVT_1_and_VCT_CCC_EVT_1,
+356,LRC15_PILRA,LRRC15,"['EVT_2', 'iEVT']",PILRA,['GC'],(M+F)-F,nan,no,,
+364,LRRC15_PILRA,LRRC15,"['EVT_2', 'iEVT']",PILRA,['GC'],(M+F)-F,Jarrods_inter,yes,iEVT_and_GC,
+373,MCAM_PTGFRN,PTGFRN,"['EVT_2', 'iEVT']",MCAM,"['eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),Jarrods_inter,yes,EVT_2_iEVT_and_eEVT_iEVT_GC_Endo_M_uSMC,
+377,MUC18_PTGFRN,PTGFRN,"['EVT_2', 'iEVT']",MCAM,"['eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),nan,no,,
+379,NCAM1_CNTNAP1,CNTNAP1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NCAM1,['eEVT'],(M+F)-F,Jarrods_inter,yes,EVT_2_and_eEVT,although CNTNAP1 % is very low
+381,NCAM1_CNTP1,CNTNAP1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NCAM1,['eEVT'],(M+F)-F,nan,no,,
+384,NECTIN2_NECTIN3,NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NECTIN3,"['eEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan,yes,inv_states_and_Endo_M_dS1_uSMC,
+391,NGFR_NTF3,NTF3,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NGFR,['eEVT'],(M+F)-F,nan,no,,
+399,NOTCH1_DLL4,DLL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NOTCH1,['VCT_CCC'],(M+F)-F,CellSign_VCT_CCC_NOTCH1,yes,VCT_CCC_EVT_1_and_VCT_CCC,
+405,NOTCH2_DLL4,DLL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",NOTCH2,"['eEVT', 'iEVT', 'GC']",(M+F)-F,CellSign_iEVT_and_EVT_2_NOTCH2,yes,inv_states_and_eEVT,
+410,NOTCH4_JAG2,NOTCH4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",JAG2,"['eEVT', 'iEVT']",(M+F)-F,nan,yes,inv_states_and_eEVT,
+430,NTS_SORT1,NTS,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",SORT1,"['VCT_CCC', 'iEVT']",(M+F)-F,nan,no,,NTS % very low
+447,PLAU_PLAUR,PLAUR,"['VCT_CCC', 'EVT_1', 'EVT_2']",PLAU,"['VCT_CCC', 'dM1', 'dM2', 'dS3', 'dS2']",(M+F)-(M+F),nan,yes,"VCT_CCC_and_VCT_CCC,EVT_2_and_dM_dS3_dS2",
+455,PODXL_SELL,SELL,"['VCT_CCC', 'EVT_1', 'EVT_2']",PODXL,"['eEVT', 'GC']",(M+F)-F,nan,no,,SELL % very low
+459,POMC_OPRK1,OPRK1,"['EVT_1', 'EVT_2', 'iEVT']",POMC,"['eEVT', 'iEVT', 'GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dS3']",(M+F)-(M+F),nan,yes,EVT_2_iEVT_and_iEVT_GC_dNK_dM1_dS3,
+462,PRL_PRLR,PRL,"['EVT_2', 'iEVT']",PRLR,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",(M+F)-(M+F),nan,yes,EVT_2_iEVT_and_iEVT_dS_uSMC,
+464,PROC_PROCR,PROC,"['EVT_1', 'EVT_2', 'iEVT']",PROCR,"['EVT_1', 'iEVT', 'GC']",(M+F)-F,nan,no,,PROC % very low
+480,PVR_CD226,PVR,"['EVT_2', 'iEVT']",CD226,"['eEVT', 'dNK3', 'dM1', 'dM2', 'dS1', 'uSMC']",F-(M+F),nan,yes,EVT_2_iEVT_and_dNK3_dM,
+482,PVR_CD96,PVR,"['EVT_2', 'iEVT']",CD96,"['eEVT', 'GC', 'dNK1', 'dNK2', 'dNK3']",F-(M+F),nan,yes,EVT_2_iEVT_and_dNK,
+484,PVR_NECTIN3,PVR,"['EVT_2', 'iEVT']",NECTIN3,"['eEVT', 'GC', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan,yes,EVT_2_iEVT_and_Endo_M_uSMC,
+486,PVR_TIGIT,PVR,"['EVT_2', 'iEVT']",TIGIT,"['EVT_1', 'EVT_2', 'iEVT', 'dNK3']",F-(M+F),nan,yes,EVT_2_iEVT_and_dNK3,
+487,PVR_TIGIT,TIGIT,"['EVT_1', 'EVT_2', 'iEVT']",PVR,"['EVT_2', 'iEVT']",(M+F)-F,nan,no,,TIGIT % very low
+488,RAMP3_ADM,RAMP3,"['EVT_2', 'iEVT']",ADM,"['EVT_1', 'EVT_2', 'iEVT']",(M+F)-F,nan,no,,RAMP3 % very low
+489,RAMP3_ADM,ADM,"['EVT_1', 'EVT_2', 'iEVT']",RAMP3,"['EVT_2', 'iEVT', 'Endo_M']",F-(M+F),nan,yes,EVT_2_iEVT_and_Endo_M,
+490,RBP4_STRA6,RBP4,"['EVT_1', 'EVT_2']",STRA6,"['VCT_CCC', 'GC', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F),nan,yes,"EVT_1_and_VCT_CCC,EVT_1_EVT_2_and_dS",
+492,RELN_VLDLR,RELN,"['EVT_2', 'iEVT']",VLDLR,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F,nan,no,,RELN % too low
+493,RELN_VLDLR,VLDLR,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",RELN,"['EVT_2', 'iEVT', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan,yes,EVT_2_iEVT_and_dS1_uSMC,
+494,RNASET2_TLR8,RNASET2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",TLR8,"['VCT_CCC', 'iEVT', 'dM1', 'dM2']",F-(M+F),nan,yes,inv_states_and_dM,
+497,S1PR2_FAM19A5,FAM19A5,"['EVT_2', 'iEVT']",S1PR2,"['VCT_CCC', 'iEVT']",(M+F)-F,nan,no,,FAM19A5 % too low
+498,SELE_GLG1,SELE,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",GLG1,"['eEVT', 'iEVT', 'GC']",(M+F)-F,nan,no,,SELE % too low
+526,SIRPB1_CD47,SIRPB1,"['VCT_CCC', 'EVT_1', 'EVT_2']",CD47,"['VCT_CCC', 'EVT_1']",(M+F)-F,Jarrod_inter,no,,SIRPB1 % too low
+534,TEK_ANGPT1,TEK,"['EVT_1', 'EVT_2', 'iEVT']",ANGPT1,"['eEVT', 'iEVT', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),nan,yes,EVT_2_and_eEVT,
+536,TEK_ANGPT4,TEK,"['EVT_1', 'EVT_2', 'iEVT']",ANGPT4,"['EVT_1', 'EVT_2', 'eEVT', 'dM2', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),nan,yes,inv_states_and_inv_states_eEVT,
+538,TGFB1_TGFBR3,TGFB1,"['EVT_1', 'EVT_2', 'iEVT']",TGFBR3,"['eEVT', 'iEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),nan,yes,EVT_1_EVT_2_iEVT_and_iEVT_GC_Endo_M_dS_uSMC,
+544,TIGIT_NECTIN2,TIGIT,"['EVT_1', 'EVT_2', 'iEVT']",NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",(M+F)-F,nan,no,,TIGIT % too low
+545,TIGIT_NECTIN2,NECTIN2,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",TIGIT,"['EVT_1', 'EVT_2', 'iEVT', 'dNK3']",F-(M+F),nan,yes,inv_states_and_dNK3,
+557,TNFSF10_TNFRSF10D,TNFRSF10D,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT']",TNFSF10,"['iEVT', 'GC']",(M+F)-F,nan,yes,inv_states_and_iEVT_GC,
+562,TNFSF14_LTBR,TNFSF14,"['EVT_2', 'iEVT']",LTBR,"['eEVT', 'GC']",(M+F)-F,nan,no,,
+600,WNT7A_FRZB,WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2']",FRZB,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM2', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan,yes,inv_states_and_inv_states_dS12_uSMC_Endo_M,
+602,WNT7A_SFRP1,WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2']",SFRP1,"['EVT_2', 'eEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),nan,yes,inv_states_and_EVT_2_eEVT_dS12_uSMC,
+604,WNT7A_SFRP4,WNT7A,"['VCT_CCC', 'EVT_1', 'EVT_2']",SFRP4,"['eEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F),nan,yes,inv_states_and_eEVT_dS,

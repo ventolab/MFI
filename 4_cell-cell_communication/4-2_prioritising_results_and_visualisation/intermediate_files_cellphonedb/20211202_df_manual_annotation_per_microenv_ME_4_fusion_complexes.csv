@@ -1,0 +1,21 @@
+,interacting_pair,partners_in_troph,partners_in_troph_expr_where,partners_other,partners_other_expr_where,direction_of_interaction,is_integrin,comments
+8,APOE_TREM2_receptor,"['TYROBP', 'TREM2']",['GC'],['APOE'],"['GC', 'iEVT']",(M+F)-F,False,nan
+9,APP_TREM2_receptor,"['TYROBP', 'TREM2']",['GC'],['APP'],"['GC', 'eEVT']",(M+F)-F,False,nan
+17,CD94:NKG2A_HLA-E,['HLA-E'],"['EVT_1', 'EVT_2', 'iEVT', 'GC']","['KLRD1', 'KLRC1']","['eEVT', 'dNK2', 'dNK3', 'dNK1']",F-(M+F),False,nan
+17,CD94:NKG2C_HLA-E,"['KLRD1', 'KLRC2']",['GC'],['HLA-E'],"['EVT_1', 'EVT_2', 'iEVT', 'GC']",(M+F)-F,False,nan
+18,CD94:NKG2C_HLA-E,['HLA-E'],"['EVT_1', 'EVT_2', 'iEVT', 'GC']","['KLRD1', 'KLRC2']","['GC', 'dNK2', 'dNK3', 'dNK1']",F-(M+F),False,nan
+21,CLU_TREM2_receptor,"['TYROBP', 'TREM2']",['GC'],['CLU'],"['VCT_CCC', 'GC']",(M+F)-F,False,nan
+33,COL1A1_integrin_a11b1_complex,['COL1A1'],['GC'],"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT', 'dS1', 'uSMC']",F-(M+F),True,nan
+34,COL1A1_integrin_a1b1_complex,['COL1A1'],['GC'],"['ITGB1', 'ITGA1']","['GC', 'eEVT', 'iEVT', 'dS3', 'uSMC']",(M+F)-(M+F),True,nan
+35,COL1A1_integrin_a2b1_complex,['COL1A1'],['GC'],"['ITGB1', 'ITGA2']","['eEVT', 'Endo_M']",(M+F)-(M+F),True,nan
+36,COL1A2_integrin_a11b1_complex,['COL1A2'],['GC'],"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT', 'dS1', 'uSMC']",F-(M+F),True,nan
+37,COL1A2_integrin_a1b1_complex,['COL1A2'],['GC'],"['ITGB1', 'ITGA1']","['GC', 'eEVT', 'iEVT', 'dS3', 'uSMC']",(M+F)-(M+F),True,nan
+38,COL1A2_integrin_a2b1_complex,['COL1A2'],['GC'],"['ITGB1', 'ITGA2']","['eEVT', 'Endo_M']",(M+F)-(M+F),True,nan
+60,COL5A2_integrin_a11b1_complex,['COL5A2'],['GC'],"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT', 'dS1', 'uSMC']",F-(M+F),True,nan
+61,COL5A2_integrin_a1b1_complex,['COL5A2'],['GC'],"['ITGB1', 'ITGA1']","['GC', 'eEVT', 'iEVT', 'dS3', 'uSMC']",(M+F)-(M+F),True,nan
+62,COL5A2_integrin_a2b1_complex,['COL5A2'],['GC'],"['ITGB1', 'ITGA2']","['eEVT', 'Endo_M']",(M+F)-(M+F),True,nan
+126,ICAM3_integrin_aDb2_complex,"['ITGB2', 'ITGAD']",['GC'],['ICAM3'],"['VCT_CCC', 'eEVT', 'EVT_1']",(M+F)-F,True,nan
+141,PlexinA1_complex3_SEMA3A,['SEMA3A'],['GC'],"['PLXNA1', 'NRP1']","['VCT_CCC', 'dS1', 'dM2', 'uSMC', 'dM1']",F-(M+F),False,nan
+142,PlexinA2_complex1_SEMA3A,['SEMA3A'],['GC'],"['PLXNA2', 'NRP1']","['VCT_CCC', 'uSMC', 'Endo_M']",F-(M+F),False,nan
+143,PlexinA3_complex1_SEMA3A,['SEMA3A'],['GC'],"['PLXNA3', 'NRP1']","['dS1', 'dM2', 'uSMC', 'dM1']",F-(M+F),False,nan
+144,PlexinA4_complex1_SEMA3A,['SEMA3A'],['GC'],"['PLXNA4', 'NRP1']","['dS1', 'uSMC']",F-(M+F),False,nan

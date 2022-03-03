@@ -1,0 +1,19 @@
+This directory performs parsing, downstream analysis and visualisation of CellPhone results for MFI data.
+
+All notebooks in here are run in my general jhub environment that can be accessed here:
+/lustre/scratch117/cellgen/team292/aa22/sharing/202202_for_MFI_handover/202202_Anna_jhub_general_environment.yml
+
+Order of notebooks is as follows:
+- S0: checking out cell2location results for all cell states in relevant (8) Visium chips of donors P13, P14 and Hrv43; this I then use to derive some sort of spatial neighborhoods in notebook S1 for each tissue region that has been defined with SpatialDE2 (see notebook MFI/2_inv_troph_trajectory_and_TFs/2-1_stOrder_inv_troph/S1_regions_analysis_for_SpCov_model_and_later_for_CellPhone.ipynb) but it's a dead end and eventually we just define colocated cell states from our prior biological knowledge and histology of the tissues.
+
+- S1: no longer used, here applying some sort of exploratory analysis trying to define spatially colocated cell states - it's a dead end and eventually we just define colocated cell states from our prior biological knowledge and histology of the tissues.
+
+- S2: parsing CellPhone results (the relevant_interactions.txt file from the output folder), eventually just creating a table with more readable results (feel free to ignore this notebook if you wish to parse results differently)
+
+- S3: Defining cell state pairs that are relevant for each of the microenvironments of invading trophoblast (in terms of their spatial location, based on prior biological knowledge, histology of the tissue and visual inspection of cell2location results); dividing all relevant interactions between relevant cell state pairs into patterns/microenvironments based on the expression of the L/R in trophoblast partner - this needs to be redone properly using groups of L/R encoding genes as defined in notebook M1a or M1b in MFI/2_inv_troph_trajectory_and_TFs/2-6_TF_analysis_inv_troph/ in what will be the final version of the analysis
+
+From notebook S3 I then copy my parsed cell-cell comm tables per ME into google drive for manual selection (not ideal, may be improved): https://drive.google.com/drive/u/1/folders/10Xu9xckNhqNm7bwVZaLSLKQ2rulG_xWD 
+
+Eventually for validation with RNAscope we wanted to select interactions where trophoblast are the receiving side of the interaction and the ligand is secreted by the other cell state as well as it having interesting pattern in Visium data, for that I somewhat came to this list eventually: https://docs.google.com/spreadsheets/d/1p5b9Let3BANjOKOMF0A-JLw1zerGLs3aMKiGH5WCqbc/edit#gid=0
+
+Considering selection & prioritisation procedures can be improved and more automated, the final list of selected cell-cell comm events may change.

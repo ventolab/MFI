@@ -1,0 +1,38 @@
+,interacting_pair,partner_in_troph,partner_in_troph_expr_where,partner_other,partner_other_expr_where,direction_of_interaction,comments
+44,BST1_VASN,BST1,"['VCT_CCC', 'EVT_1']",VASN,"['VCT_CCC', 'eEVT', 'iEVT', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F),Jarrods_inter
+53,CBPM_M6PR,M6PR,"['VCT_CCC', 'EVT_1']",CPM,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'uSMC']",(M+F)-(M+F),Jarrods_inter
+96,CD47_SIRPG,CD47,"['VCT_CCC', 'EVT_1']",SIRPG,"['EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F),nan
+108,CD99_PILRA,CD99,"['VCT_CCC', 'EVT_1']",PILRA,"['GC', 'dM1', 'dM2', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F),nan
+127,CPM_M6PR,M6PR,"['VCT_CCC', 'EVT_1']",CPM,"['eEVT', 'iEVT', 'GC', 'dM1', 'dM2', 'uSMC']",(M+F)-(M+F),nan
+131,CXCL10_DPP4,DPP4,"['VCT_CCC', 'EVT_1']",CXCL10,"['VCT_CCC', 'iEVT', 'dM1', 'dM2']",(M+F)-(M+F),nan
+135,CXCL11_DPP4,DPP4,"['VCT_CCC', 'EVT_1']",CXCL11,"['EVT_2', 'iEVT', 'dM1']",F-(M+F),nan
+140,CXCL2_DPP4,CXCL2,['VCT_CCC'],DPP4,"['VCT_CCC', 'EVT_1', 'dS2', 'Endo_M']",(M+F)-(M+F),nan
+141,CXCL2_DPP4,DPP4,"['VCT_CCC', 'EVT_1']",CXCL2,"['VCT_CCC', 'dM1', 'dM2', 'dS3', 'dS2', 'Endo_M']",(M+F)-(M+F),nan
+151,DLL1_NOTCH1,NOTCH1,['VCT_CCC'],DLL1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dS3', 'dS2', 'Endo_M', 'dS1']",(M+F)-(M+F),CellSign_VCT_CCC_NOTCH1
+154,DPP4_CXCL12,DPP4,"['VCT_CCC', 'EVT_1']",CXCL12,"['eEVT', 'dS3', 'dS2', 'Endo_M', 'dS1']",F-(M+F),nan
+156,DPP4_CXCL9,DPP4,"['VCT_CCC', 'EVT_1']",CXCL9,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1']",(M+F)-(M+F),nan
+163,DSG2_DSC3,DSC3,['VCT_CCC'],DSG2,['eEVT'],(M+F)-F,nan
+220,EPHB4_EFNB1,EPHB4,['VCT_CCC'],EFNB1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F,nan
+224,EPO_EPOR,EPO,"['VCT_CCC', 'EVT_1']",EPOR,"['eEVT', 'iEVT', 'dS3', 'dS2']",(M+F)-(M+F),CellSign_GC_and_EVT_1_EPOR
+251,FGF1_FGFR2,FGFR2,['VCT_CCC'],FGF1,['eEVT'],(M+F)-F,nan
+271,FRZB_WNT6,WNT6,['VCT_CCC'],FRZB,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM2', 'dS2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),nan
+352,LILRA4_BST2,LILRA4,['EVT_1'],BST2,"['iEVT', 'GC']",(M+F)-F,nan
+358,LRP5_DKK1,LRP5,['VCT_CCC'],DKK1,"['EVT_2', 'iEVT', 'GC']",(M+F)-F,nan
+362,LRPAP1_SORT1,LRPAP1,"['VCT_CCC', 'EVT_1']",SORT1,"['VCT_CCC', 'iEVT', 'dNK1', 'dM1', 'dM2', 'Endo_M', 'uSMC']",(M+F)-(M+F),nan
+392,NGF_NGFR,NGF,['VCT_CCC'],NGFR,"['eEVT', 'dS2', 'dS1', 'uSMC']",(M+F)-(M+F),nan
+394,NGF_SORT1,NGF,['VCT_CCC'],SORT1,"['VCT_CCC', 'iEVT', 'dNK1', 'dM1', 'dM2', 'Endo_M', 'uSMC']",(M+F)-(M+F),nan
+396,NOTCH1_DLK1,NOTCH1,['VCT_CCC'],DLK1,"['GC', 'dNK1', 'dNK2', 'dNK3', 'dM1', 'dM2', 'Endo_M']",(M+F)-(M+F),CellSign_VCT_CCC_NOTCH1
+398,NOTCH1_DLL4,NOTCH1,['VCT_CCC'],DLL4,"['VCT_CCC', 'EVT_1', 'EVT_2', 'iEVT', 'Endo_M']",F-(M+F),CellSign_VCT_CCC_NOTCH1
+400,NOTCH1_JAG1,NOTCH1,['VCT_CCC'],JAG1,"['eEVT', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),CellSign_VCT_CCC_NOTCH1
+402,NOTCH1_JAG2,NOTCH1,['VCT_CCC'],JAG2,"['eEVT', 'iEVT', 'dNK1', 'dNK2', 'Endo_M']",(M+F)-(M+F),CellSign_VCT_CCC_NOTCH1
+419,NRP1_SLC3A2,SLC3A2,"['VCT_CCC', 'EVT_1']",NRP1,"['VCT_CCC', 'GC', 'dM1', 'dM2', 'Endo_M', 'dS1', 'uSMC']",F-(M+F),Jarrods_inter
+436,PDGFA_PDGFRA,PDGFA,['VCT_CCC'],PDGFRA,"['VCT_CCC', 'EVT_2', 'iEVT', 'dS3', 'dS2', 'dS1']",(M+F)-(M+F),nan
+446,PLAU_PLAUR,PLAU,['VCT_CCC'],PLAUR,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dM1', 'dM2', 'dS3']",(M+F)-(M+F),nan
+471,PTGER3_ProstaglandinE2_byPTGES3,PTGES3,"['VCT_CCC', 'EVT_1']",PTGER3,"['eEVT', 'iEVT', 'GC', 'dS1', 'uSMC']",(M+F)-(M+F),CellSign_GC_PTGER3
+505,SELP_CD24,CD24,"['VCT_CCC', 'EVT_1']",SELP,"['VCT_CCC', 'iEVT', 'Endo_M']",F-(M+F),nan
+519,SFRP1_WNT6,WNT6,['VCT_CCC'],SFRP1,"['EVT_2', 'eEVT', 'GC', 'dS2', 'Endo_M', 'dS1', 'uSMC']",(M+F)-(M+F),nan
+523,SFRP4_WNT6,WNT6,['VCT_CCC'],SFRP4,"['eEVT', 'dS3', 'dS2', 'dS1', 'uSMC']",F-(M+F),nan
+525,SIRPA_CD47,CD47,"['VCT_CCC', 'EVT_1']",SIRPA,"['VCT_CCC', 'EVT_2', 'iEVT', 'dM1', 'dM2']",F-(M+F),nan
+527,SIRPB1_CD47,CD47,"['VCT_CCC', 'EVT_1']",SIRPB1,"['VCT_CCC', 'EVT_1', 'EVT_2', 'dM1']",F-(M+F),Jarrod_inter
+546,TMED2_SLAMF6,TMED2,"['VCT_CCC', 'EVT_1']",SLAMF6,"['VCT_CCC', 'EVT_2', 'iEVT', 'dNK1', 'dNK2', 'dNK3']",F-(M+F),Jarrod_inter
+559,TNFSF12_TNFRSF12A,TNFRSF12A,"['VCT_CCC', 'EVT_1']",TNFSF12,"['VCT_CCC', 'iEVT', 'dNK3', 'dM1', 'dM2', 'dS3']",(M+F)-(M+F),nan

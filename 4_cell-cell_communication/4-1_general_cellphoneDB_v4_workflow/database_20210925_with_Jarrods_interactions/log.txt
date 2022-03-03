@@ -1,0 +1,71 @@
+complex_name	uniprot_1	uniprot_2	uniprot_3	uniprot_4	transmembrane	peripheral	secreted	secreted_desc	secreted_highlight	receptor	receptor_desc	integrin	other	other_desc	pdb_id	pdb_structure	stoichiometry	comments_complex
+ACVL1_BMPR2	P37023	Q13873	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+ACVL1_BMPR2	P37023	Q13873	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+ACVR1_BMPR2	Q04771	Q13873	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+ACVR1_BMPR2	Q04771	Q13873	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+BMPR1A_BMPR2	P36894	Q13873	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	On ligand binding, forms a receptor complex consisting of two type II and two type I transmembrane serine/threonine kinases.
+BMPR1A_BMPR2	P36894	Q13873	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	On_ligand_binding,_forms_a_receptor_complex_consisting_of_two_type_II_and_two_type_I_transmembrane_serine_threonine_kinases
+BMPR1B_BMPR2	O00238	Q13873	nan	nan	True	False	False	nan	False	True	TGFBeta_receptor_add	False	False	nan	nan	FALSE	nan	Serine/threonine kinase heterodimer upon ligand binding
+BMPR1B_BMPR2	O00238	Q13873	nan	nan	True	False	False	nan	False	True	TGFBeta_receptor_add	False	False	nan	nan	False	nan	Serine_threonine_kinase_heterodimer_upon_ligand_binding
+BMR1A_ACR2A	P36894	P27037	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+BMR1A_ACR2A	P36894	P27037	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+BMR1A_AVR2B	P36894	Q13705	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+BMR1A_AVR2B	P36894	Q13705	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+BMR1B_AVR2A	O00238	P27037	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+BMR1B_AVR2A	O00238	P27037	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+BMR1B_AVR2B	O00238	Q13705	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+BMR1B_AVR2B	O00238	Q13705	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+CD94:NKG2A	Q13241	P26715	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+CD94:NKG2A	Q13241	P26715	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+CD94:NKG2C	Q13241	P26717	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+CD94:NKG2C	Q13241	P26717	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+CD94:NKG2E	Q13241	Q07444	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+CD94:NKG2E	Q13241	Q07444	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+FCeR1	P12319	Q01362	P30273	nan	True	False	False	nan	False	True	Fc_receptor_family	False	False	nan	nan	False	nan	Fc_receptor_family;_Tetramer_of_an_a_chain,_a_beta_chain,_and_two_disulfide_linked_gamma_chains
+FCeR1	P12319	Q01362	P30273	nan	True	False	False	nan	False	True	Fc receptor family	False	False	nan	nan	FALSE	nan	Fc receptor family; Tetramer of an alpha chain, a beta chain, and two disulfide linked gamma chains.
+FCyR1A	P12314	P30273	nan	nan	True	False	False	nan	False	True	Human_IgG_receptor	False	False	nan	nan	False	nan	Also_called_CD64_Interacts_with_FCERG1;_forms_a_functional_signaling_complex
+FCyR1A	P12314	P30273	nan	nan	True	False	False	nan	False	True	Human IgG receptor	False	False	nan	nan	FALSE	nan	Also called CD64. Interacts with FCERG1; forms a functional signaling complex
+FCyR3A	P08637	P30273	nan	nan	True	False	False	nan	False	True	Human_IgG_receptor	False	False	nan	nan	False	nan	Exists_as_a_heterooligomeric_receptor_complex_with_Fc_epsilon_receptor_I_gamma_subunit_and___or_the_CD3_zeta_subunit
+FCyR3A	P08637	P30273	nan	nan	True	False	False	nan	False	True	Human IgG receptor	False	False	nan	nan	FALSE	nan	Exists as a heterooligomeric receptor complex with Fc epsilon receptor I gamma subunit and / or the CD3 zeta subunit.
+GMCSFR	P32927	P15509	nan	nan	True	False	False	nan	False	True	Cytokine receptor IL3 family	False	False	nan	4nkq	binding	CSF2;CSF2RA;CSF2RB	Heterodimer of an alpha and a beta subunit.
+GMCSFR	P32927	P15509	nan	nan	True	False	False	nan	False	True	Cytokine_receptor_IL3_family	False	False	nan	4nkq	binding	CSF2;CSF2RA;CSF2RB	Heterodimer_of_an_a_and_a_beta_subunit
+IL12	P29459	P29460	nan	nan	False	False	True	Cytokine receptor IL6 family, IL12 subfamily	True	False	nan	False	False	nan	1f45	TRUE	IL12A;IL12B	nan
+IL12	P29459	P29460	nan	nan	False	False	True	Cytokine_receptor_IL6_family,_IL12_subfamily	True	False	nan	False	False	nan	1f45	True	IL12A;IL12B	nan
+IL23	P29460	Q9NPF7	nan	nan	False	False	True	Cytokine receptor IL6 family, IL12 subfamily	True	False	nan	False	False	nan	3d87	TRUE	IL12B;IL12B;IL23A;IL23A	nan
+IL23	P29460	Q9NPF7	nan	nan	False	False	True	Cytokine_receptor_IL6_family,_IL12_subfamily	True	False	nan	False	False	nan	3d87	True	IL12B;IL12B;IL23A;IL23A	nan
+IL27	Q14213	Q8NEV9	nan	nan	False	False	True	Cytokine receptor IL6 family	True	False	nan	False	False	nan	nan	FALSE	nan	nan
+IL27	Q14213	Q8NEV9	nan	nan	False	False	True	Cytokine_receptor_IL6_family	True	False	nan	False	False	nan	nan	False	nan	nan
+IL35	Q14213	P29459	nan	nan	False	False	True	Cytokine receptor	True	False	nan	False	False	nan	nan	FALSE	nan	nan
+IL35	Q14213	P29459	nan	nan	False	False	True	Cytokine_receptor	True	False	nan	False	False	nan	nan	False	nan	nan
+KIRS2	P43631	O43914	nan	nan	True	False	False	nan	False	True	KIR_add	False	False	nan	nan	False	nan	nan
+KIRS2	P43631	O43914	nan	nan	True	False	False	nan	False	True	KIR_add	False	False	nan	nan	FALSE	nan	nan
+KIRS4	P43632	O43914	nan	nan	True	False	False	nan	False	True	KIR_add	False	False	nan	nan	FALSE	nan	nan
+KIRS4	P43632	O43914	nan	nan	True	False	False	nan	False	True	KIR_add	False	False	nan	nan	False	nan	nan
+LIFR	P42702	P40189	nan	nan	True	False	False	nan	False	True	Cytokine receptor IL6 family	False	False	nan	nan	FALSE	nan	Heterodimer composed of LIFR and IL6ST.
+LIFR	P42702	P40189	nan	nan	True	False	False	nan	False	True	Cytokine_receptor_IL6_family	False	False	nan	nan	False	nan	Heterodimer_composed_of_LIFR_and_IL6ST
+OSMR	Q99650	P40189	nan	nan	True	False	False	nan	False	True	Cytokine_receptor_IL6_family	False	False	nan	nan	False	nan	Heterodimer_composed_of_OSMR_and_IL6ST_(type_II_OSM_receptor)
+OSMR	Q99650	P40189	nan	nan	True	False	False	nan	False	True	Cytokine receptor IL6 family	False	False	nan	nan	FALSE	nan	Heterodimer composed of OSMR and IL6ST (type II OSM receptor).
+PlexinA1_complex1	Q9UIW2	P35968	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	PMID:_22325954
+PlexinA1_complex1	Q9UIW2	P35968	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	PMID: 22325954
+PlexinA1_complex2	Q9UIW2	Q9NZC2	O43914	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	PMID:_22325954
+PlexinA1_complex2	Q9UIW2	Q9NZC2	O43914	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	PMID: 22325954
+PlexinA1_complex3	O14786	Q9UIW2	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	PMID:_22325954
+PlexinA1_complex3	O14786	Q9UIW2	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	PMID: 22325954
+PlexinA2_complex1	O14786	O75051	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	PMID:_22325954
+PlexinA2_complex1	O14786	O75051	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	PMID: 22325954
+PlexinA3_complex1	O14786	P51805	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	PMID:_22325954
+PlexinA3_complex1	O14786	P51805	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	PMID: 22325954
+PlexinA4_complex1	O14786	Q9HCM2	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	PMID:_22325954
+PlexinA4_complex1	O14786	Q9HCM2	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	PMID: 22325954
+TGFR_AVR2A	P36897	P27037	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+TGFR_AVR2A	P36897	P27037	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+TGFR_AVR2B	P36897	Q13705	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+TGFR_AVR2B	P36897	Q13705	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+TGFR_BMPR2	P36897	Q13873	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	nan
+TGFR_BMPR2	P36897	Q13873	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	nan
+TIE1TEK_receptor	P35590	Q02763	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	False	nan	Heterodimer_with_TEK_TIE2
+TIE1TEK_receptor	P35590	Q02763	nan	nan	True	False	False	nan	False	True	nan	False	False	nan	nan	FALSE	nan	Heterodimer with TEK/TIE2
+TSLPR	P16871	Q9HC73	nan	nan	True	False	False	nan	False	True	Cytokine receptor IL2 family, IL7 subfamily	False	False	nan	5j11	binding	CRLF2;IL7R;TSLP	The TSLP receptor is a heterodimer of CRLF2 and IL7R.
+TSLPR	P16871	Q9HC73	nan	nan	True	False	False	nan	False	True	Cytokine_receptor_IL2_family,_IL7_subfamily	False	False	nan	5j11	binding	CRLF2;IL7R;TSLP	The_TSLP_receptor_is_a_heterodimer_of_CRLF2_and_IL7R
+fibrinogen	P02671	P02679	P02675	nan	False	True	False	nan	False	False	nan	False	False	nan	nan	FALSE	nan	nan
+fibrinogen	P02671	P02679	P02675	nan	False	True	False	nan	False	False	nan	False	False	nan	nan	False	nan	nan

@@ -1,0 +1,35 @@
+,interacting_pair,partners_in_troph,partners_in_troph_expr_where,partners_other,partners_other_expr_where,direction_of_interaction,is_integrin,comments
+1,ACVR_1A2B_receptor_INHA,"['ACVR2B', 'ACVR1']","['EVT_2', 'iEVT']",['INHA'],"['VCT_CCC', 'EVT_2', 'iEVT', 'GC']",(M+F)-F,False,nan
+4,ACVR_1B2B_receptor_GDF11,"['ACVR2B', 'ACVR1B']",['iEVT'],['GDF11'],['eEVT'],F-F,False,nan
+5,ACVR_1B2B_receptor_INHA,"['ACVR2B', 'ACVR1B']",['iEVT'],['INHA'],"['VCT_CCC', 'EVT_2', 'iEVT', 'GC']",(M+F)-F,False,nan
+7,ADM2_RAMP2_complex,"['RAMP2', 'CALCRL']","['EVT_2', 'iEVT']",['ADM2'],['eEVT'],(M+F)-F,False,nan
+22,COL11A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL11A1'],"['GC', 'iEVT']",(M+F)-F,True,nan
+25,COL15A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL15A1'],"['GC', 'iEVT']",(M+F)-F,True,nan
+28,COL17A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL17A1'],"['VCT_CCC', 'EVT_2', 'iEVT']",(M+F)-F,True,nan
+31,COL19A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL19A1'],"['GC', 'eEVT']",(M+F)-F,True,nan
+34,COL1A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL1A1'],['GC'],(M+F)-F,True,nan
+37,COL1A2_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL1A2'],['GC'],(M+F)-F,True,nan
+40,COL21A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL21A1'],['eEVT'],(M+F)-F,True,nan
+43,COL26A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL26A1'],"['GC', 'eEVT']",(M+F)-F,True,nan
+46,COL27A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL27A1'],"['iEVT', 'EVT_2', 'eEVT', 'GC']",(M+F)-F,True,nan
+49,COL3A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL3A1'],"['GC', 'EVT_2', 'iEVT']",(M+F)-F,True,nan
+52,COL4A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL4A1'],"['iEVT', 'EVT_2', 'eEVT', 'GC']",(M+F)-F,True,nan
+55,COL4A2_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL4A2'],"['iEVT', 'EVT_2', 'eEVT', 'GC']",(M+F)-F,True,nan
+58,COL5A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL5A1'],"['GC', 'EVT_2', 'iEVT']",(M+F)-F,True,nan
+61,COL5A2_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL5A2'],['GC'],(M+F)-F,True,nan
+64,COL6A1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL6A1'],"['GC', 'eEVT']",(M+F)-F,True,nan
+67,COL6A2_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL6A2'],"['GC', 'iEVT']",(M+F)-F,True,nan
+70,COL9A3_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['COL9A3'],"['VCT_CCC', 'EVT_2', 'eEVT', 'EVT_1']",(M+F)-F,True,nan
+74,FLT1_complex_PGF,"['FLT1', 'KDR']","['EVT_2', 'iEVT']",['PGF'],"['EVT_1', 'EVT_2', 'GC', 'dS1', 'dM2', 'uSMC', 'Endo_M']",(M+F)-(M+F),False,nan
+75,FLT1_complex_VEGFB,"['FLT1', 'KDR']","['EVT_2', 'iEVT']",['VEGFB'],"['VCT_CCC', 'iEVT', 'GC', 'dS2', 'dS3', 'dM1', 'dS1', 'dM2']",(M+F)-(M+F),False,nan
+77,FN1_integrin_a11b1_complex,"['ITGA11', 'ITGB1']","['EVT_2', 'iEVT']",['FN1'],"['GC', 'EVT_2', 'iEVT']",(M+F)-F,True,nan
+81,FN1_integrin_a4b7_complex,"['ITGB7', 'ITGA4']","['EVT_2', 'iEVT']",['FN1'],"['GC', 'EVT_2', 'iEVT']",(M+F)-F,True,nan
+83,FN1_integrin_a8b1_complex,"['ITGB1', 'ITGA8']","['EVT_2', 'iEVT']",['FN1'],"['GC', 'EVT_2', 'iEVT']",(M+F)-F,True,nan
+127,IL7_receptor_IL7,"['IL2RG', 'IL7R']",['iEVT'],['IL7'],"['GC', 'eEVT']",(M+F)-F,False,nan
+130,JAM3_integrin_aMb2_complex,"['ITGB2', 'ITGAM']",['iEVT'],['JAM3'],"['EVT_1', 'EVT_2', 'GC']",(M+F)-F,True,nan
+134,LAMC1_integrin_a7b1_complex,"['ITGB1', 'ITGA7']","['EVT_2', 'iEVT']",['LAMC1'],"['GC', 'iEVT']",(M+F)-F,True,nan
+147,TGFB1_TGFbeta_receptor1,['TGFB1'],"['EVT_1', 'EVT_2', 'iEVT']","['TGFBR1', 'TGFBR2']","['GC', 'iEVT', 'dM2', 'uSMC']",(M+F)-(M+F),False,CellSign_GC_eEVT_TGFbeta_receptor1
+148,TGFB1_TGFbeta_receptor2,['TGFB1'],"['EVT_1', 'EVT_2', 'iEVT']","['TGFBR2', 'ACVR1']","['iEVT', 'uSMC', 'Endo_M']",F-(M+F),False,nan
+149,TGFB1_TGFbeta_receptor2,"['TGFBR2', 'ACVR1']",['iEVT'],['TGFB1'],"['EVT_1', 'EVT_2', 'iEVT']",(M+F)-F,False,nan
+149,TGFB1_integrin_aVb6_complex,['TGFB1'],"['EVT_1', 'EVT_2', 'iEVT']","['ITGB6', 'ITGAV']","['VCT_CCC', 'dS2', 'dM2', 'uSMC', 'Endo_M']",F-(M+F),True,nan
+152,TGFB2_TGFbeta_receptor2,"['TGFBR2', 'ACVR1']",['iEVT'],['TGFB2'],"['iEVT', 'eEVT', 'GC']",(M+F)-F,False,nan
