@@ -1,0 +1,7 @@
+,MEFISTO_factor,contribution
+VCT_CCC_vs_VCT,X_mofa_Factor2,+
+EVT_1_vs_VCT_CCC,X_mofa_Factor4,+
+EVT_2_vs_EVT_1,X_mofa_Factor2,-
+eEVT_vs_EVT_2,X_mofa_Factor10,+
+iEVT_vs_EVT_2,X_mofa_Factor4,-
+GC_vs_iEVT,X_mofa_Factor6,-

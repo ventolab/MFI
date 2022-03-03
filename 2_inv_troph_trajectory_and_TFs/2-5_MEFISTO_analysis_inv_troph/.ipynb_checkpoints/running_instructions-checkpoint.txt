@@ -1,0 +1,13 @@
+This directory contains notebooks used to run MEFISTO analysis of the invading trophoblast of donor P13 (only 2 multiome samples due to batch effects in raw data otherwise).
+
+All notebooks are run in my general jhub environment accessible here: /lustre/scratch117/cellgen/team292/aa22/sharing/202202_for_MFI_handover/202202_Anna_jhub_general_environment.yml
+aside from occasional installs that are indicated in each notebook where that's necessary. 
+
+Order of notebooks:
+- optional notebook S0: using ArchR package to have a look at peaks aggregated by cell state (invading trophoblast) to produce bigWig files in order to then be able to visualise these tracks and assess the true variability of selected peaks (as highly variable) across cell states - this advice kindly provided by Ricard Argelaguet from Stegle team
+- S1: running MEFISTO model on the RNA and ATAC data corresponding to multiome of donor P13 invading trophoblast and VCT populations
+- S2: enrichment analysis of MEFISTO results obtained in notebook S1
+- S3: translating DE/DA comparisons (backwards along the trajectory) into MEFISTO factors
+
+
+For details of this analysis if smth is unclear please feel free to contact Britta Velten (Stegle team) - I was discussing this analysis with her and she should be sufficiently aware of what's happening here

@@ -1,0 +1,20 @@
+This directory contains notebooks performing TF analysis and visualisation of results based on different parts of analysis (DE with limma, DA with DoRothEA or chromVar or MEFISTO).
+
+All the notebooks here are run in my default jhub environment that can be accessed here: 
+/lustre/scratch117/cellgen/team292/aa22/sharing/202202_for_MFI_handover/202202_Anna_jhub_general_environment.yml
+aside from occasional installs of additional packages which is done in notebooks.
+
+Order of notebooks is as follows:
+- M0: running DoRothEA to get TFs that are active based on the DE genes (inferred with limma in 2-3_DE_analysis_inv_troph subdirectory)
+- M1: gathering together all the TF evidences (DE, DA with DoRothEA or chromVar or MEFISTO) and visualising in heatmaps
+
+Important note: in this notebook (M1) I cluster genes (encoding chosen important TFs according to all the measures) into patterns according to the different parts of invading trophoblast trajectory. Once all the decisions are made about which TFs to use, at this point one should also unite the expression of these TFs with important ligands and receptors coming up in cell-cell communication analysis - this way these patterns in invading trophoblast microenvironments will be defined for both TFs and L/Rs involved in important communication events.
+Here in slide 28 I assign gene clusters (of TFs and L/Rs) to certain microenvironments according to their pattern: https://docs.google.com/presentation/d/11pifvNHIwhkOaVMCLj6r6B1JMr76LtvB2tWQD_66oxY/edit#slide=id.g112bbaff805_0_10
+For the clustering of genes I use a very basic K means clustering algorithm which requires a somewhat arbitrary choice of k (the number of clusters), which in my case ended up being k=8 (I tried a few). This clustering may be further improved.
+I try to cluster TFs and L/Rs into these patterns in notebooks M1a and M1b (see below)
+In this case L/Rs that are relevant are coming from the following notebook: MFI/4_cell-cell_communication/4-2_prioritising_results_and_visualisation/S3_MEs_selection_and_plotting.ipynb
+
+alternative versions of notebook M1 are:
+- M1a: using a 10% quantile cutoff for logFC of the DE genes in limma to restrict TF lists a bit more
+- M1b: repeating analysis of notebook M1a but only for donor P13 data - this should not be used as a main branch of analysis, this was just to have a look
+

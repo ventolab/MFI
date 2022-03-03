@@ -1,0 +1,2187 @@
+
+           ___      .______        ______  __    __  .______      
+          /   \     |   _  \      /      ||  |  |  | |   _  \     
+         /  ^  \    |  |_)  |    |  ,----'|  |__|  | |  |_)  |    
+        /  /_\  \   |      /     |  |     |   __   | |      /     
+       /  _____  \  |  |\  \\___ |  `----.|  |  |  | |  |\  \\___.
+      /__/     \__\ | _| `._____| \______||__|  |__| | _| `._____|
+    
+Logging With ArchR!
+
+Start Time : 2022-01-19 13:40:56
+
+------- ArchR Info
+
+ArchRThreads = 30
+ArchRGenome = Hg38
+
+------- System Info
+
+Computer OS = unix
+Total Cores = 60
+
+------- Session Info
+
+R version 4.0.4 (2021-02-15)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 20.04.1 LTS
+
+Matrix products: default
+BLAS/LAPACK: /opt/conda/lib/libopenblasp-r0.3.12.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+ [1] parallel  stats4    tools     stats     graphics  grDevices utils    
+ [8] datasets  methods   base     
+
+other attached packages:
+ [1] BSgenome.Hsapiens.UCSC.hg38_1.4.3 BSgenome_1.58.0                  
+ [3] rtracklayer_1.50.0                Biostrings_2.58.0                
+ [5] XVector_0.30.0                    ArchR_1.0.1                      
+ [7] magrittr_2.0.1                    rhdf5_2.34.0                     
+ [9] Matrix_1.4-0                      data.table_1.14.2                
+[11] SummarizedExperiment_1.20.0       Biobase_2.50.0                   
+[13] GenomicRanges_1.42.0              GenomeInfoDb_1.31.1              
+[15] IRanges_2.24.1                    S4Vectors_0.28.1                 
+[17] BiocGenerics_0.41.2               MatrixGenerics_1.2.1             
+[19] matrixStats_0.61.0                ggplot2_3.3.5                    
+
+loaded via a namespace (and not attached):
+ [1] tidyselect_1.1.1         purrr_0.3.4              lattice_0.20-41         
+ [4] colorspace_2.0-2         vctrs_0.3.8              generics_0.1.1          
+ [7] utf8_1.2.2               XML_3.99-0.8             rlang_0.4.12            
+[10] pillar_1.6.4             glue_1.6.0               withr_2.4.3             
+[13] DBI_1.1.2                BiocParallel_1.24.1      GenomeInfoDbData_1.2.4  
+[16] lifecycle_1.0.1          stringr_1.4.0            zlibbioc_1.36.0         
+[19] munsell_0.5.0            gtable_0.3.0             Cairo_1.5-14            
+[22] fansi_1.0.0              Rcpp_1.0.7               scales_1.1.1            
+[25] DelayedArray_0.16.3      Rsamtools_2.6.0          stringi_1.7.6           
+[28] dplyr_1.0.7              grid_4.0.4               bitops_1.0-7            
+[31] rhdf5filters_1.2.1       RCurl_1.98-1.5           tibble_3.1.6            
+[34] crayon_1.4.2             pkgconfig_2.0.3          ellipsis_0.3.2          
+[37] assertthat_0.2.1         Rhdf5lib_1.12.1          R6_2.5.1                
+[40] GenomicAlignments_1.26.0 compiler_4.0.4          
+
+
+------- Log Info
+
+
+2022-01-19 13:40:56 : createArrowFiles Input-Parameters, Class = list
+
+createArrowFiles Input-Parameters$inputFiles: length = 2
+[1] "/lustre/scratch117/cellgen/team292/aa22/data/202107_multiome_MFI/cellranger-arc101_count_40427_Pla_Camb10714919_and_40110_Pla_Camb10687915_GRCh38-3.0.0_for_arc/atac_fragments.tsv.gz"
+[2] "/lustre/scratch117/cellgen/team292/aa22/data/202107_multiome_MFI/cellranger-arc101_count_40427_Pla_Camb10714920_and_40110_Pla_Camb10687916_GRCh38-3.0.0_for_arc/atac_fragments.tsv.gz"
+
+
+createArrowFiles Input-Parameters$sampleNames: length = 2
+[1] "40427_Pla_Camb10714919_and_40110_Pla_Camb10687915"
+[2] "40427_Pla_Camb10714920_and_40110_Pla_Camb10687916"
+
+
+createArrowFiles Input-Parameters$outputNames: length = 2
+[1] "40427_Pla_Camb10714919_and_40110_Pla_Camb10687915"
+[2] "40427_Pla_Camb10714920_and_40110_Pla_Camb10687916"
+
+
+createArrowFiles Input-Parameters$validBarcodes: length = 0
+NULL
+
+
+createArrowFiles Input-Parameters$minTSS: length = 1
+[1] 0
+
+
+createArrowFiles Input-Parameters$minFrags: length = 1
+[1] 0
+
+
+createArrowFiles Input-Parameters$maxFrags: length = 1
+[1] 1e+05
+
+
+createArrowFiles Input-Parameters$QCDir: length = 1
+[1] "QualityControl"
+
+
+createArrowFiles Input-Parameters$nucLength: length = 1
+[1] 147
+
+
+createArrowFiles Input-Parameters$promoterRegion: length = 2
+[1] 2000  100
+
+
+createArrowFiles Input-Parameters$excludeChr: length = 2
+[1] "chrM" "chrY"
+
+
+createArrowFiles Input-Parameters$nChunk: length = 1
+[1] 5
+
+
+createArrowFiles Input-Parameters$bcTag: length = 1
+[1] "qname"
+
+
+createArrowFiles Input-Parameters$gsubExpression: length = 0
+NULL
+
+
+createArrowFiles Input-Parameters$bamFlag: length = 0
+NULL
+
+
+createArrowFiles Input-Parameters$offsetPlus: length = 1
+[1] 4
+
+
+createArrowFiles Input-Parameters$offsetMinus: length = 1
+[1] -5
+
+
+createArrowFiles Input-Parameters$addTileMat: length = 1
+[1] TRUE
+
+
+createArrowFiles Input-Parameters$addGeneScoreMat: length = 1
+[1] TRUE
+
+
+createArrowFiles Input-Parameters$force: length = 1
+[1] FALSE
+
+
+createArrowFiles Input-Parameters$threads: length = 1
+[1] 30
+
+
+createArrowFiles Input-Parameters$parallelParam: length = 0
+NULL
+
+
+createArrowFiles Input-Parameters$subThreading: length = 1
+[1] TRUE
+
+
+createArrowFiles Input-Parameters$verbose: length = 1
+[1] TRUE
+
+
+createArrowFiles Input-Parameters$cleanTmp: length = 1
+[1] TRUE
+
+
+createArrowFiles Input-Parameters$logFile: length = 1
+[1] "ArchRLogs/ArchR-createArrows-66136388863-Date-2022-01-19_Time-13-40-56.log"
+
+
+createArrowFiles Input-Parameters$filterFrags: length = 1
+[1] 0
+
+
+createArrowFiles Input-Parameters$filterTSS: length = 1
+[1] 0
+
+
+
+2022-01-19 13:40:56 : Cleaning Temporary Files
+2022-01-19 13:40:56 : Batch Execution w/ safelapply!, 0 mins elapsed.
+
+###########
+2022-01-19 13:40:56 : Creating Arrow File 40427_Pla_Camb10714919_and_40110_Pla_Camb10687915.arrow (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2)
+###########
+
+
+2022-01-19 13:40:56 : validBC, Class = NULL
+
+validBC: length = 0
+NULL
+
+
+
+###########
+2022-01-19 13:40:56 : Creating Arrow File 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916.arrow (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2)
+###########
+
+
+2022-01-19 13:40:56 : validBC, Class = NULL
+
+validBC: length = 0
+NULL
+
+
+
+2022-01-19 13:40:57 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) Determining Arrow Method to use!
+
+2022-01-19 13:40:57 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Determining Arrow Method to use!
+2022-01-19 13:41:07 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) Reading In Fragments from inputFiles (readMethod = tabix), 0.002 mins elapsed.
+2022-01-19 13:41:07 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Reading In Fragments from inputFiles (readMethod = tabix), 0.002 mins elapsed.
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) Tabix Bed To Temporary File, 0.168 mins elapsed.
+2022-01-19 13:41:17 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Tabix Bed To Temporary File, 0.169 mins elapsed.
+
+2022-01-19 13:41:17 : tileChromSizes, Class = GRanges
+
+2022-01-19 13:41:17 : tileChromSizes, Class = GRanges
+GRanges object with 120 ranges and 1 metadata column:
+GRanges object with 120 ranges and 1 metadata column:
+        seqnames              ranges strand |     chunkName
+           <Rle>           <IRanges>  <Rle> |   <character>
+    [1]     chr1          1-49791284      * |   chr1#chunk1
+    [2]     chr1   49791285-99582568      * |   chr1#chunk2
+    [3]     chr1  99582569-149373853      * |   chr1#chunk3
+    [4]     chr1 149373854-199165137      * |   chr1#chunk4
+    [5]     chr1 199165138-248956422      * |   chr1#chunk5
+    ...      ...                 ...    ... .           ...
+  [116]     chrY          1-11445483      * | chrY#chunk116
+  [117]     chrY   11445484-22890966      * | chrY#chunk117
+  [118]     chrY   22890967-34336449      * | chrY#chunk118
+  [119]     chrY   34336450-45781932      * | chrY#chunk119
+  [120]     chrY   45781933-57227415      * | chrY#chunk120
+  -------
+  seqinfo: 24 sequences from an unspecified genome; no seqlengths
+
+        seqnames              ranges strand |     chunkName
+           <Rle>           <IRanges>  <Rle> |   <character>
+    [1]     chr1          1-49791284      * |   chr1#chunk1
+    [2]     chr1   49791285-99582568      * |   chr1#chunk2
+    [3]     chr1  99582569-149373853      * |   chr1#chunk3
+    [4]     chr1 149373854-199165137      * |   chr1#chunk4
+    [5]     chr1 199165138-248956422      * |   chr1#chunk5
+    ...      ...                 ...    ... .           ...
+  [116]     chrY          1-11445483      * | chrY#chunk116
+  [117]     chrY   11445484-22890966      * | chrY#chunk117
+  [118]     chrY   22890967-34336449      * | chrY#chunk118
+  [119]     chrY   34336450-45781932      * | chrY#chunk119
+  [120]     chrY   45781933-57227415      * | chrY#chunk120
+  -------
+  seqinfo: 24 sequences from an unspecified genome; no seqlengths
+
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr1:49791285-99582568
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr1:99582569-149373853
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr1:1-49791284
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr1:149373854-199165137
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) .tabixToTmp Fragments-Chunk-(1 of 120)-chr1:1-49791284, Class = data.table
+ 
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) .tabixToTmp Fragments-Chunk-(1 of 120)-chr1:1-49791284, Class = data.frame
+(40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) .tabixToTmp Fragments-Chunk-(1 of 120)-chr1:1-49791284: nRows = 0, nCols = 1
+Empty data.table (0 rows and 1 cols): V2
+
+
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) .tabixToTmp Barcodes-Chunk-(1 of 120)-chr1:1-49791284, Class = NULL
+
+(40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) .tabixToTmp Barcodes-Chunk-(1 of 120)-chr1:1-49791284: length = 0
+NULL
+
+
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr1:199165138-248956422
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr2:1-48438705
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr2:48438706-96877411
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr2:96877412-145316117
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr2:145316118-193754823
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr2:193754824-242193529
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr3:1-39659111
+
+2022-01-19 13:41:17 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr3:39659112-79318223
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr3:79318224-118977335
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr3:118977336-158636447
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr3:158636448-198295559
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr4:1-38042911
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr4:38042912-76085822
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr4:76085823-114128733
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr4:114128734-152171644
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr5:1-36307651
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr4:152171645-190214555
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr5:36307652-72615303
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr5:72615304-108922955
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr5:108922956-145230607
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr5:145230608-181538259
+
+2022-01-19 13:41:18 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr6:1-34161195
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr6:34161196-68322391
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr6:68322392-102483587
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr6:136644784-170805979
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr6:102483588-136644783
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr7:31869195-63738389
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr7:63738390-95607583
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr7:95607584-127476778
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr7:127476779-159345973
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr8:1-29027727
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr8:29027728-58055454
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr8:58055455-87083181
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr8:116110909-145138636
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr8:87083182-116110908
+
+2022-01-19 13:41:19 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr9:1-27678943
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr9:27678944-55357886
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr9:55357887-83036830
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr9:110715774-138394717
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr9:83036831-110715773
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr10:1-26759484
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr10:26759485-53518968
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr10:53518969-80278453
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr10:107037938-133797422
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr10:80278454-107037937
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr11:1-27017324
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr11:27017325-54034648
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr11:54034649-81051973
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr11:81051974-108069297
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr11:108069298-135086622
+
+2022-01-19 13:41:20 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr12:1-26655061
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr12:53310124-79965185
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr12:79965186-106620247
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr12:26655062-53310123
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr12:106620248-133275309
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr13:1-22872865
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr13:68618597-91491462
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr13:45745732-68618596
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr13:91491463-114364328
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr14:1-21408743
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr14:21408744-42817487
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr14:42817488-64226230
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr14:64226231-85634974
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr15:1-20398237
+
+2022-01-19 13:41:21 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr14:85634975-107043718
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr15:20398238-40796475
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr15:40796476-61194713
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr15:61194714-81592951
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr16:1-18067669
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr15:81592952-101991189
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr16:18067670-36135338
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr16:36135339-54203007
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr16:54203008-72270676
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr16:72270677-90338345
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr17:16651489-33302976
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr17:1-16651488
+
+2022-01-19 13:41:22 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr17:33302977-49954464
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr17:66605953-83257441
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr17:49954465-66605952
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr18:1-16074657
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr18:32149315-48223971
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr18:16074658-32149314
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr18:48223972-64298628
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr18:64298629-80373285
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr19:11723524-23447046
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr19:1-11723523
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr19:35170570-46894092
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr19:46894093-58617616
+
+2022-01-19 13:41:23 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr20:1-12888833
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr20:12888834-25777666
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr20:38666501-51555333
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr20:25777667-38666500
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr20:51555334-64444167
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr21:1-9341996
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr21:9341997-18683993
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr21:18683994-28025989
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr21:28025990-37367986
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr21:37367987-46709983
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr22:1-10163693
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr22:20327388-30491080
+
+2022-01-19 13:41:24 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr22:10163694-20327387
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr22:30491081-40654774
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr22:40654775-50818468
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrX:1-31208179
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrX:31208180-62416358
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrX:62416359-93624537
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrX:93624538-124832716
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrX:124832717-156040895
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrY:1-11445483
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrY:11445484-22890966
+
+2022-01-19 13:41:25 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrY:22890967-34336449
+
+2022-01-19 13:41:26 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrY:34336450-45781932
+
+2022-01-19 13:41:26 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chrY:45781933-57227415
+2022-01-19 13:41:28 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) Reading TabixFile 26 Percent, 0.366 mins elapsed.
+
+2022-01-19 13:41:29 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr7:1-31869194
+2022-01-19 13:41:31 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) Reading TabixFile 52 Percent, 0.401 mins elapsed.
+
+2022-01-19 13:41:31 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr13:22872866-45745731
+
+2022-01-19 13:41:31 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr1:99582569-149373853
+2022-01-19 13:41:33 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) Reading TabixFile 78 Percent, 0.44 mins elapsed.
+
+2022-01-19 13:41:33 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr3:39659112-79318223
+
+2022-01-19 13:41:33 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) found fragments when removed chromosome prefix : chr19:23447047-35170569
+2022-01-19 13:41:33 : (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) Parallel Hdf5 Linkage Temporary File, 0.612 mins elapsed.
+
+2022-01-19 13:41:33 : No fragments found!
+
+************************************************************
+2022-01-19 13:41:33 : ERROR Found in .tabixToTmp for (40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2) 
+LogFile = ArchRLogs/ArchR-createArrows-66136388863-Date-2022-01-19_Time-13-40-56.log
+
+<simpleError: No fragments found!
+>
+
+2022-01-19 13:41:33 : errorList, Class = list
+
+errorList$tabixFile: length = 1
+[1] "/lustre/scratch117/cellgen/team292/aa22/data/202107_multiome_MFI/cellranger-arc101_count_40427_Pla_Camb10714919_and_40110_Pla_Camb10687915_GRCh38-3.0.0_for_arc/atac_fragments.tsv.gz"
+
+
+errorList$sampleName: length = 1
+[1] "40427_Pla_Camb10714919_and_40110_Pla_Camb10687915"
+
+
+errorList$validBC: length = 0
+NULL
+
+
+errorList$chromSizes: length = 24
+GRanges object with 6 ranges and 0 metadata columns:
+
+2022-01-19 13:41:33 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr3:79318224-118977335
+      seqnames      ranges strand
+         <Rle>   <IRanges>  <Rle>
+  [1]     chr1 1-248956422      *
+  [2]     chr2 1-242193529      *
+  [3]     chr3 1-198295559      *
+  [4]     chr4 1-190214555      *
+  [5]     chr5 1-181538259      *
+  [6]     chr6 1-170805979      *
+  -------
+  seqinfo: 24 sequences from an unspecified genome
+
+
+errorList$nChunk: length = 1
+[1] 5
+
+
+errorList$threads: length = 1
+[1] 15
+
+
+errorList$gsubExpression: length = 0
+NULL
+
+
+errorList$prefix: length = 1
+[1] "(40427_Pla_Camb10714919_and_40110_Pla_Camb10687915 : 1 of 2)"
+
+
+errorList$verbose: length = 1
+[1] TRUE
+
+
+errorList$tstart: length = 1
+[1] "2022-01-19 13:40:56 UTC"
+
+
+
+************************************************************
+
+
+2022-01-19 13:41:34 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr1:149373854-199165137
+
+2022-01-19 13:41:34 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr3:118977336-158636447
+
+2022-01-19 13:41:35 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr3:1-39659111
+
+2022-01-19 13:41:35 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr2:1-48438705
+
+2022-01-19 13:41:35 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr3:158636448-198295559
+
+2022-01-19 13:41:36 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr2:145316118-193754823
+
+2022-01-19 13:41:36 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr2:48438706-96877411
+
+2022-01-19 13:41:36 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr2:96877412-145316117
+
+2022-01-19 13:41:36 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr1:49791285-99582568
+
+2022-01-19 13:41:38 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr2:193754824-242193529
+
+2022-01-19 13:41:39 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr1:199165138-248956422
+
+2022-01-19 13:41:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr1:1-49791284
+
+2022-01-19 13:41:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tabixToTmp Fragments-Chunk-(1 of 120)-chr1:1-49791284, Class = data.table
+ 
+2022-01-19 13:41:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tabixToTmp Fragments-Chunk-(1 of 120)-chr1:1-49791284, Class = data.frame
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tabixToTmp Fragments-Chunk-(1 of 120)-chr1:1-49791284: nRows = 1976966, nCols = 3
+      V2    V3                 V4
+1: 10067 10198 TGCATTAAGGGCCATC-1
+2: 10086 10285 ATCACACAGCATTAGC-1
+3: 10086 10340 CCTGCTCCATCATGGC-1
+4: 10091 10307 GCCTACTTCCCTCGCA-1
+5: 10145 10191 CAATGAACAGGCGAGT-1
+6: 10152 10204 GGTACTTAGGAGCAAC-1
+
+
+
+2022-01-19 13:41:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr4:1-38042911
+
+2022-01-19 13:41:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tabixToTmp Barcodes-Chunk-(1 of 120)-chr1:1-49791284, Class = character
+
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tabixToTmp Barcodes-Chunk-(1 of 120)-chr1:1-49791284: length = 88718
+[1] "TGCATTAAGGGCCATC-1" "ATCACACAGCATTAGC-1" "CCTGCTCCATCATGGC-1"
+[4] "GCCTACTTCCCTCGCA-1" "CAATGAACAGGCGAGT-1" "GGTACTTAGGAGCAAC-1"
+
+
+
+2022-01-19 13:41:45 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr4:114128734-152171644
+
+2022-01-19 13:41:45 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr4:38042912-76085822
+
+2022-01-19 13:41:46 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr4:152171645-190214555
+
+2022-01-19 13:41:46 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr5:1-36307651
+
+2022-01-19 13:41:49 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr4:76085823-114128733
+
+2022-01-19 13:41:50 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr5:72615304-108922955
+
+2022-01-19 13:41:51 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr6:68322392-102483587
+
+2022-01-19 13:41:51 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr6:1-34161195
+
+2022-01-19 13:41:52 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr5:36307652-72615303
+
+2022-01-19 13:41:52 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr6:34161196-68322391
+
+2022-01-19 13:41:53 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr7:31869195-63738389
+
+2022-01-19 13:41:54 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr5:108922956-145230607
+
+2022-01-19 13:41:54 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr6:102483588-136644783
+
+2022-01-19 13:41:56 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr5:145230608-181538259
+
+2022-01-19 13:41:57 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr7:63738390-95607583
+2022-01-19 13:41:57 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Reading TabixFile 26 Percent, 0.841 mins elapsed.
+
+2022-01-19 13:41:57 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr6:136644784-170805979
+
+2022-01-19 13:41:58 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr7:95607584-127476778
+
+2022-01-19 13:41:59 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr8:29027728-58055454
+
+2022-01-19 13:42:00 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr8:1-29027727
+
+2022-01-19 13:42:00 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr7:127476779-159345973
+
+2022-01-19 13:42:00 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr8:58055455-87083181
+
+2022-01-19 13:42:01 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr9:27678944-55357886
+
+2022-01-19 13:42:02 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr9:55357887-83036830
+
+2022-01-19 13:42:03 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr8:87083182-116110908
+
+2022-01-19 13:42:04 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr9:1-27678943
+
+2022-01-19 13:42:06 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr8:116110909-145138636
+
+2022-01-19 13:42:07 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr10:26759485-53518968
+
+2022-01-19 13:42:07 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr10:1-26759484
+
+2022-01-19 13:42:08 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr9:83036831-110715773
+
+2022-01-19 13:42:08 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr7:1-31869194
+
+2022-01-19 13:42:09 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr10:80278454-107037937
+
+2022-01-19 13:42:12 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr10:53518969-80278453
+
+2022-01-19 13:42:12 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr9:110715774-138394717
+
+2022-01-19 13:42:12 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr13:1-22872865
+
+2022-01-19 13:42:13 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr11:27017325-54034648
+
+2022-01-19 13:42:14 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr11:81051974-108069297
+
+2022-01-19 13:42:15 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr11:1-27017324
+
+2022-01-19 13:42:16 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr14:1-21408743
+
+2022-01-19 13:42:16 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr12:1-26655061
+
+2022-01-19 13:42:16 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr11:108069298-135086622
+
+2022-01-19 13:42:16 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr10:107037938-133797422
+
+2022-01-19 13:42:17 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr12:26655062-53310123
+
+2022-01-19 13:42:19 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr15:1-20398237
+
+2022-01-19 13:42:19 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr12:53310124-79965185
+
+2022-01-19 13:42:19 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr12:79965186-106620247
+
+2022-01-19 13:42:19 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr14:21408744-42817487
+
+2022-01-19 13:42:20 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr13:68618597-91491462
+
+2022-01-19 13:42:20 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr13:45745732-68618596
+
+2022-01-19 13:42:20 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr11:54034649-81051973
+
+2022-01-19 13:42:21 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr13:91491463-114364328
+2022-01-19 13:42:23 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Reading TabixFile 52 Percent, 1.269 mins elapsed.
+
+2022-01-19 13:42:23 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr12:106620248-133275309
+
+2022-01-19 13:42:24 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr15:20398238-40796475
+
+2022-01-19 13:42:25 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr16:36135339-54203007
+
+2022-01-19 13:42:25 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr16:18067670-36135338
+
+2022-01-19 13:42:25 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr14:42817488-64226230
+
+2022-01-19 13:42:27 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr14:64226231-85634974
+
+2022-01-19 13:42:28 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr15:40796476-61194713
+
+2022-01-19 13:42:28 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr14:85634975-107043718
+
+2022-01-19 13:42:29 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr15:81592952-101991189
+
+2022-01-19 13:42:29 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr16:1-18067669
+
+2022-01-19 13:42:30 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr15:61194714-81592951
+
+2022-01-19 13:42:30 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr13:22872866-45745731
+
+2022-01-19 13:42:31 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr16:54203008-72270676
+
+2022-01-19 13:42:32 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr17:1-16651488
+
+2022-01-19 13:42:33 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr16:72270677-90338345
+
+2022-01-19 13:42:33 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr18:16074658-32149314
+
+2022-01-19 13:42:33 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr17:16651489-33302976
+
+2022-01-19 13:42:35 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr18:1-16074657
+
+2022-01-19 13:42:36 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr18:32149315-48223971
+
+2022-01-19 13:42:37 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr17:66605953-83257441
+
+2022-01-19 13:42:38 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr18:64298629-80373285
+
+2022-01-19 13:42:38 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr18:48223972-64298628
+
+2022-01-19 13:42:39 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr17:49954465-66605952
+
+2022-01-19 13:42:40 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr21:1-9341996
+
+2022-01-19 13:42:41 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr17:33302977-49954464
+
+2022-01-19 13:42:41 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr19:1-11723523
+
+2022-01-19 13:42:41 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr20:38666501-51555333
+
+2022-01-19 13:42:41 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr20:12888834-25777666
+
+2022-01-19 13:42:41 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr19:11723524-23447046
+
+2022-01-19 13:42:41 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr21:9341997-18683993
+
+2022-01-19 13:42:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr20:1-12888833
+
+2022-01-19 13:42:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr19:35170570-46894092
+
+2022-01-19 13:42:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr21:18683994-28025989
+
+2022-01-19 13:42:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr22:1-10163693
+
+2022-01-19 13:42:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr21:28025990-37367986
+
+2022-01-19 13:42:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr20:25777667-38666500
+
+2022-01-19 13:42:43 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr19:46894093-58617616
+2022-01-19 13:42:44 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Reading TabixFile 78 Percent, 1.62 mins elapsed.
+
+2022-01-19 13:42:44 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr22:10163694-20327387
+
+2022-01-19 13:42:44 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr20:51555334-64444167
+
+2022-01-19 13:42:45 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrY:1-11445483
+
+2022-01-19 13:42:45 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrY:11445484-22890966
+
+2022-01-19 13:42:46 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr19:23447047-35170569
+
+2022-01-19 13:42:47 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr22:30491081-40654774
+
+2022-01-19 13:42:47 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrY:22890967-34336449
+
+2022-01-19 13:42:47 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrY:34336450-45781932
+
+2022-01-19 13:42:47 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrY:45781933-57227415
+
+2022-01-19 13:42:48 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr21:37367987-46709983
+
+2022-01-19 13:42:50 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrX:31208180-62416358
+
+2022-01-19 13:42:50 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrX:93624538-124832716
+
+2022-01-19 13:42:51 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrX:62416359-93624537
+
+2022-01-19 13:42:51 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrX:124832717-156040895
+
+2022-01-19 13:42:52 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr22:20327388-30491080
+
+2022-01-19 13:42:52 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chr22:40654775-50818468
+
+2022-01-19 13:42:53 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) found fragments when removed chromosome prefix : chrX:1-31208179
+2022-01-19 13:42:54 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Parallel Hdf5 Linkage Temporary File, 1.958 mins elapsed.
+2022-01-19 13:43:05 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Successful creation of Temporary File, 1.975 mins elapsed.
+2022-01-19 13:43:15 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Creating ArrowFile From Temporary File, 2.141 mins elapsed.
+
+2022-01-19 13:43:15 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) chunkChrNames, Class = data.frame
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) chunkChrNames: nRows = 118, nCols = 1
+     chunkNames
+1   chr1#chunk1
+2   chr1#chunk2
+3   chr1#chunk3
+4   chr1#chunk4
+5   chr1#chunk5
+6 chr10#chunk46
+
+
+2022-01-19 13:43:15 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Counting Unique Barcodes From Temporary File, 2.312 mins elapsed.
+
+2022-01-19 13:43:39 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) BarcodeFrequencyTable, Class = data.table
+ 
+2022-01-19 13:43:39 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) BarcodeFrequencyTable, Class = data.frame
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) BarcodeFrequencyTable: nRows = 448548, nCols = 2
+            values.V1     V1
+1: CTAGCGGGTGCGCAAT-1 166994
+2: AGTAAACAGGCTAGAA-1 140626
+3: GCGCGATTCAGGAACA-1 127849
+4: CCTTCAATCTTAGTCT-1 125090
+5: CAATGACTCTAAGTGC-1 120506
+6: GTAGTTTCAGTTATGT-1 119418
+
+
+
+2022-01-19 13:43:39 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) BarcodesMinMaxFrags, Class = data.frame
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) BarcodesMinMaxFrags: nRows = 448536, nCols = 1
+                  bc
+1 TATCACAAGTAAGAAC-1
+2 GACATTATCCCATAAA-1
+3 TCGCGAGGTAATAGCT-1
+4 TAAGCCAGTTAGACCA-1
+5 GTGAGGAGTTGTTGTC-1
+6 GATTGCGTCTCCATAT-1
+
+
+
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Unique Chromosomes, Class = data.frame
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Unique Chromosomes: nRows = 24, nCols = 1
+   chr
+1 chr1
+2 chr2
+3 chr3
+4 chr4
+5 chr5
+6 chr6
+
+
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 1 of 24, 2.757 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 2 of 24, 2.757 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 3 of 24, 2.758 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 4 of 24, 2.758 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 5 of 24, 2.759 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 6 of 24, 2.759 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 7 of 24, 2.76 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 8 of 24, 2.76 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 9 of 24, 2.761 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 10 of 24, 2.762 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 11 of 24, 2.762 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 12 of 24, 2.763 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 13 of 24, 2.763 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 14 of 24, 2.764 mins elapsed.
+2022-01-19 13:43:42 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 15 of 24, 2.765 mins elapsed.
+2022-01-19 13:43:54 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 16 of 24, 2.956 mins elapsed.
+2022-01-19 13:43:54 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 17 of 24, 2.958 mins elapsed.
+2022-01-19 13:43:57 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 18 of 24, 3.008 mins elapsed.
+2022-01-19 13:43:57 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 19 of 24, 3.013 mins elapsed.
+2022-01-19 13:43:57 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 20 of 24, 3.014 mins elapsed.
+2022-01-19 13:43:57 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 21 of 24, 3.015 mins elapsed.
+2022-01-19 13:43:59 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 22 of 24, 3.041 mins elapsed.
+2022-01-19 13:43:59 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 23 of 24, 3.042 mins elapsed.
+2022-01-19 13:43:59 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Chromosome 24 of 24, 3.043 mins elapsed.
+
+2022-01-19 13:44:00 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tmpToArrow Fragments-Chr-(1 of 24)-chr1, Class = IRanges
+
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tmpToArrow Fragments-Chr-(1 of 24)-chr1: length = 6367117
+IRanges object with 6 ranges and 1 metadata column:
+          start       end     width |                 RG
+      <integer> <integer> <integer> |              <Rle>
+  [1]    181384    181470        87 | TATCACAAGTAAGAAC-1
+  [2]    186170    186219        50 | TATCACAAGTAAGAAC-1
+  [3]    601103    601291       189 | TATCACAAGTAAGAAC-1
+  [4]    629931    629980        50 | TATCACAAGTAAGAAC-1
+  [5]    634001    634030        30 | TATCACAAGTAAGAAC-1
+  [6]    634005    634046        42 | TATCACAAGTAAGAAC-1
+
+
+
+2022-01-19 13:44:00 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tmpToArrow Barcodes-Chr-(1 of 24)-chr1, Class = data.frame
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .tmpToArrow Barcodes-Chr-(1 of 24)-chr1: nRows = 137710, nCols = 1
+                  bc
+1 TATCACAAGTAAGAAC-1
+2 GACATTATCCCATAAA-1
+3 TCGCGAGGTAATAGCT-1
+4 TAAGCCAGTTAGACCA-1
+5 GTGAGGAGTTGTTGTC-1
+6 GATTGCGTCTCCATAT-1
+
+
+2022-01-19 13:44:07 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Parallel Hdf5 Linkage Arrow File, 3.183 mins elapsed.
+2022-01-19 13:44:19 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Successful creation of Arrow File, 3.217 mins elapsed.
+2022-01-19 13:44:21 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Fragment Summary, 3.405 mins elapsed.
+2022-01-19 13:44:46 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Plotting Fragment Size Distribution, 3.833 mins elapsed.
+2022-01-19 13:44:48 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Computing TSS Enrichment Scores, 3.853 mins elapsed.
+2022-01-19 13:45:09 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Computed TSS Scores!, 0.354 mins elapsed.
+2022-01-19 13:45:19 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) CellStats : Number of Cells Pass Filter = 448536 , 4.207 mins elapsed.
+2022-01-19 13:45:29 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) CellStats : Median Frags = 2 , 4.374 mins elapsed.
+2022-01-19 13:45:39 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) CellStats : Median TSS Enrichment = 0 , 4.54 mins elapsed.
+2022-01-19 13:45:39 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Plotting TSS Enrichment Scores, 4.708 mins elapsed.
+2022-01-19 13:45:58 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Metadata to Fragments, 5.018 mins elapsed.
+2022-01-19 13:46:11 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding Additional Feature Counts!, 5.069 mins elapsed.
+2022-01-19 13:46:29 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Finished Adding Additional Feature Counts!, 5.55 mins elapsed.
+
+2022-01-19 13:46:29 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Metadata, Class = DFrame
+DataFrame with 448536 rows and 12 columns
+                    cellNames    nFrags nMonoFrags  nDiFrags nMultiFrags
+                  <character> <numeric>  <numeric> <numeric>   <numeric>
+1      40427_Pla_Camb107149..     98392      58761     30183        9448
+2      40427_Pla_Camb107149..     97015      62511     26520        7984
+3      40427_Pla_Camb107149..     95794      50469     36766        8559
+4      40427_Pla_Camb107149..     93013      67049     21732        4232
+5      40427_Pla_Camb107149..     91887      43513     40323        8051
+...                       ...       ...        ...       ...         ...
+448532 40427_Pla_Camb107149..         1          0         1           0
+448533 40427_Pla_Camb107149..         1          0         1           0
+448534 40427_Pla_Camb107149..         1          1         0           0
+448535 40427_Pla_Camb107149..         1          0         1           0
+448536 40427_Pla_Camb107149..         1          1         0           0
+       TSSEnrichment ReadsInTSS      Keep ReadsInPromoter PromoterRatio
+           <numeric>  <numeric> <numeric>       <numeric>     <numeric>
+1              6.146      18318         1           22765     0.1156852
+2              5.776      14369         1           17787     0.0916714
+3              1.954       2508         1            5084     0.0265361
+4              1.169        962         1            2722     0.0146324
+5              4.505       7840         1           10609     0.0577285
+...              ...        ...       ...             ...           ...
+448532             0          0         1               0             0
+448533             0          0         1               0             0
+448534             0          0         1               0             0
+448535             0          0         1               0             0
+448536             0          0         1               0             0
+       ReadsInBlacklist BlacklistRatio
+              <numeric>      <numeric>
+1                   879     0.00446683
+2                   957     0.00493223
+3                  1237     0.00645656
+4                  1563     0.00840205
+5                   808     0.00439670
+...                 ...            ...
+448532                2              1
+448533                2              1
+448534                2              1
+448535                2              1
+448536                2              1
+
+2022-01-19 13:46:45 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Removing Fragments from Filtered Cells, 5.639 mins elapsed.
+2022-01-19 13:46:55 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Creating Filtered Arrow File, 5.806 mins elapsed.
+
+2022-01-19 13:46:59 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .filterCellsFromArrow Fragments-Chr-(1 of 24)-chr1, Class = GRanges
+GRanges object with 6367117 ranges and 1 metadata column:
+            seqnames              ranges strand |                     RG
+               <Rle>           <IRanges>  <Rle> |                  <Rle>
+        [1]     chr1       181384-181470      * | 40427_Pla_Camb107149..
+        [2]     chr1       186170-186219      * | 40427_Pla_Camb107149..
+        [3]     chr1       601103-601291      * | 40427_Pla_Camb107149..
+        [4]     chr1       629931-629980      * | 40427_Pla_Camb107149..
+        [5]     chr1       634001-634030      * | 40427_Pla_Camb107149..
+        ...      ...                 ...    ... .                    ...
+  [6367113]     chr1 224357001-224357080      * | 40427_Pla_Camb107149..
+  [6367114]     chr1 214890791-214890981      * | 40427_Pla_Camb107149..
+  [6367115]     chr1 201899905-201900219      * | 40427_Pla_Camb107149..
+  [6367116]     chr1 227271287-227271453      * | 40427_Pla_Camb107149..
+  [6367117]     chr1 225999483-225999569      * | 40427_Pla_Camb107149..
+  -------
+  seqinfo: 1 sequence from an unspecified genome; no seqlengths
+
+
+2022-01-19 13:46:59 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .filterCellsFromArrow Barcodes-Chr-(1 of 24)-chr1, Class = data.frame
+(40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) .filterCellsFromArrow Barcodes-Chr-(1 of 24)-chr1: nRows = 137710, nCols = 1
+                                                                    bc
+1 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916#TATCACAAGTAAGAAC-1
+2 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916#GACATTATCCCATAAA-1
+3 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916#TCGCGAGGTAATAGCT-1
+4 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916#TAAGCCAGTTAGACCA-1
+5 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916#GTGAGGAGTTGTTGTC-1
+6 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916#GATTGCGTCTCCATAT-1
+
+
+2022-01-19 13:47:49 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Finished Constructing Filtered Arrow File!, 6.714 mins elapsed.
+2022-01-19 13:48:01 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding TileMatrix!, 6.902 mins elapsed.
+
+2022-01-19 13:48:02 : 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 .addTileMat FeatureDF, Class = DFrame
+DataFrame with 6062095 rows and 3 columns
+           seqnames       idx     start
+        <character> <integer> <numeric>
+1              chr1         1         0
+2              chr1         2       500
+3              chr1         3      1000
+4              chr1         4      1500
+5              chr1         5      2000
+...             ...       ...       ...
+6062091        chrX    312078 156038500
+6062092        chrX    312079 156039000
+6062093        chrX    312080 156039500
+6062094        chrX    312081 156040000
+6062095        chrX    312082 156040500
+
+2022-01-19 13:48:12 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (1 of 23)!, 0.195 mins elapsed.
+
+2022-01-19 13:48:13 : NTiles_TileMatrix_1_chr1, Class = numeric
+
+NTiles_TileMatrix_1_chr1: length = 1
+  chr1 
+497913 
+
+
+
+2022-01-19 13:48:13 : NCells_TileMatrix_1_chr1, Class = integer
+
+NCells_TileMatrix_1_chr1: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:48:13 : MinTile_TileMatrix_1_chr1, Class = numeric
+
+MinTile_TileMatrix_1_chr1: length = 1
+[1] 21
+
+
+
+2022-01-19 13:48:13 : MaxTile_TileMatrix_1_chr1, Class = numeric
+
+MaxTile_TileMatrix_1_chr1: length = 1
+[1] 497893
+
+
+
+2022-01-19 13:48:13 : MinCell_TileMatrix_1_chr1, Class = integer
+
+MinCell_TileMatrix_1_chr1: length = 1
+[1] 1
+
+
+
+2022-01-19 13:48:13 : MaxCell_TileMatrix_1_chr1, Class = integer
+
+MaxCell_TileMatrix_1_chr1: length = 1
+[1] 286408
+
+
+2022-01-19 13:48:22 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (2 of 23)!, 0.352 mins elapsed.
+
+2022-01-19 13:48:22 : NTiles_TileMatrix_2_chr2, Class = numeric
+
+NTiles_TileMatrix_2_chr2: length = 1
+  chr2 
+484388 
+
+
+
+2022-01-19 13:48:22 : NCells_TileMatrix_2_chr2, Class = integer
+
+NCells_TileMatrix_2_chr2: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:48:22 : MinTile_TileMatrix_2_chr2, Class = numeric
+
+MinTile_TileMatrix_2_chr2: length = 1
+[1] 21
+
+
+
+2022-01-19 13:48:22 : MaxTile_TileMatrix_2_chr2, Class = numeric
+
+MaxTile_TileMatrix_2_chr2: length = 1
+[1] 484367
+
+
+
+2022-01-19 13:48:22 : MinCell_TileMatrix_2_chr2, Class = integer
+
+MinCell_TileMatrix_2_chr2: length = 1
+[1] 1
+
+
+
+2022-01-19 13:48:22 : MaxCell_TileMatrix_2_chr2, Class = integer
+
+MaxCell_TileMatrix_2_chr2: length = 1
+[1] 365147
+
+
+2022-01-19 13:48:30 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (3 of 23)!, 0.482 mins elapsed.
+
+2022-01-19 13:48:30 : NTiles_TileMatrix_3_chr3, Class = numeric
+
+NTiles_TileMatrix_3_chr3: length = 1
+  chr3 
+396592 
+
+
+
+2022-01-19 13:48:30 : NCells_TileMatrix_3_chr3, Class = integer
+
+NCells_TileMatrix_3_chr3: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:48:30 : MinTile_TileMatrix_3_chr3, Class = numeric
+
+MinTile_TileMatrix_3_chr3: length = 1
+[1] 21
+
+
+
+2022-01-19 13:48:30 : MaxTile_TileMatrix_3_chr3, Class = numeric
+
+MaxTile_TileMatrix_3_chr3: length = 1
+[1] 396466
+
+
+
+2022-01-19 13:48:30 : MinCell_TileMatrix_3_chr3, Class = integer
+
+MinCell_TileMatrix_3_chr3: length = 1
+[1] 1
+
+
+
+2022-01-19 13:48:30 : MaxCell_TileMatrix_3_chr3, Class = integer
+
+MaxCell_TileMatrix_3_chr3: length = 1
+[1] 387120
+
+
+2022-01-19 13:48:37 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (4 of 23)!, 0.599 mins elapsed.
+
+2022-01-19 13:48:37 : NTiles_TileMatrix_4_chr4, Class = numeric
+
+NTiles_TileMatrix_4_chr4: length = 1
+  chr4 
+380430 
+
+
+
+2022-01-19 13:48:37 : NCells_TileMatrix_4_chr4, Class = integer
+
+NCells_TileMatrix_4_chr4: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:48:37 : MinTile_TileMatrix_4_chr4, Class = numeric
+
+MinTile_TileMatrix_4_chr4: length = 1
+[1] 21
+
+
+
+2022-01-19 13:48:37 : MaxTile_TileMatrix_4_chr4, Class = numeric
+
+MaxTile_TileMatrix_4_chr4: length = 1
+[1] 380410
+
+
+
+2022-01-19 13:48:37 : MinCell_TileMatrix_4_chr4, Class = integer
+
+MinCell_TileMatrix_4_chr4: length = 1
+[1] 1
+
+
+
+2022-01-19 13:48:37 : MaxCell_TileMatrix_4_chr4, Class = integer
+
+MaxCell_TileMatrix_4_chr4: length = 1
+[1] 396516
+
+
+2022-01-19 13:48:43 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (5 of 23)!, 0.702 mins elapsed.
+
+2022-01-19 13:48:43 : NTiles_TileMatrix_5_chr5, Class = numeric
+
+NTiles_TileMatrix_5_chr5: length = 1
+  chr5 
+363077 
+
+
+
+2022-01-19 13:48:43 : NCells_TileMatrix_5_chr5, Class = integer
+
+NCells_TileMatrix_5_chr5: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:48:43 : MinTile_TileMatrix_5_chr5, Class = numeric
+
+MinTile_TileMatrix_5_chr5: length = 1
+[1] 21
+
+
+
+2022-01-19 13:48:43 : MaxTile_TileMatrix_5_chr5, Class = numeric
+
+MaxTile_TileMatrix_5_chr5: length = 1
+[1] 362956
+
+
+
+2022-01-19 13:48:43 : MinCell_TileMatrix_5_chr5, Class = integer
+
+MinCell_TileMatrix_5_chr5: length = 1
+[1] 1
+
+
+
+2022-01-19 13:48:43 : MaxCell_TileMatrix_5_chr5, Class = integer
+
+MaxCell_TileMatrix_5_chr5: length = 1
+[1] 406621
+
+
+2022-01-19 13:48:49 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (6 of 23)!, 0.809 mins elapsed.
+
+2022-01-19 13:48:50 : NTiles_TileMatrix_6_chr6, Class = numeric
+
+NTiles_TileMatrix_6_chr6: length = 1
+  chr6 
+341612 
+
+
+
+2022-01-19 13:48:50 : NCells_TileMatrix_6_chr6, Class = integer
+
+NCells_TileMatrix_6_chr6: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:48:50 : MinTile_TileMatrix_6_chr6, Class = numeric
+
+MinTile_TileMatrix_6_chr6: length = 1
+[1] 176
+
+
+
+2022-01-19 13:48:50 : MaxTile_TileMatrix_6_chr6, Class = numeric
+
+MaxTile_TileMatrix_6_chr6: length = 1
+[1] 341484
+
+
+
+2022-01-19 13:48:50 : MinCell_TileMatrix_6_chr6, Class = integer
+
+MinCell_TileMatrix_6_chr6: length = 1
+[1] 1
+
+
+
+2022-01-19 13:48:50 : MaxCell_TileMatrix_6_chr6, Class = integer
+
+MaxCell_TileMatrix_6_chr6: length = 1
+[1] 416861
+
+
+2022-01-19 13:48:56 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (7 of 23)!, 0.917 mins elapsed.
+
+2022-01-19 13:48:56 : NTiles_TileMatrix_7_chr7, Class = numeric
+
+NTiles_TileMatrix_7_chr7: length = 1
+  chr7 
+318692 
+
+
+
+2022-01-19 13:48:56 : NCells_TileMatrix_7_chr7, Class = integer
+
+NCells_TileMatrix_7_chr7: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:48:56 : MinTile_TileMatrix_7_chr7, Class = numeric
+
+MinTile_TileMatrix_7_chr7: length = 1
+[1] 21
+
+
+
+2022-01-19 13:48:56 : MaxTile_TileMatrix_7_chr7, Class = numeric
+
+MaxTile_TileMatrix_7_chr7: length = 1
+[1] 318672
+
+
+
+2022-01-19 13:48:56 : MinCell_TileMatrix_7_chr7, Class = integer
+
+MinCell_TileMatrix_7_chr7: length = 1
+[1] 1
+
+
+
+2022-01-19 13:48:56 : MaxCell_TileMatrix_7_chr7, Class = integer
+
+MaxCell_TileMatrix_7_chr7: length = 1
+[1] 426320
+
+
+2022-01-19 13:49:02 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (8 of 23)!, 1.02 mins elapsed.
+
+2022-01-19 13:49:02 : NTiles_TileMatrix_8_chr8, Class = numeric
+
+NTiles_TileMatrix_8_chr8: length = 1
+  chr8 
+290278 
+
+
+
+2022-01-19 13:49:02 : NCells_TileMatrix_8_chr8, Class = integer
+
+NCells_TileMatrix_8_chr8: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:02 : MinTile_TileMatrix_8_chr8, Class = numeric
+
+MinTile_TileMatrix_8_chr8: length = 1
+[1] 124
+
+
+
+2022-01-19 13:49:02 : MaxTile_TileMatrix_8_chr8, Class = numeric
+
+MaxTile_TileMatrix_8_chr8: length = 1
+[1] 290153
+
+
+
+2022-01-19 13:49:02 : MinCell_TileMatrix_8_chr8, Class = integer
+
+MinCell_TileMatrix_8_chr8: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:02 : MaxCell_TileMatrix_8_chr8, Class = integer
+
+MaxCell_TileMatrix_8_chr8: length = 1
+[1] 434444
+
+
+2022-01-19 13:49:08 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (9 of 23)!, 1.116 mins elapsed.
+
+2022-01-19 13:49:08 : NTiles_TileMatrix_9_chr9, Class = numeric
+
+NTiles_TileMatrix_9_chr9: length = 1
+  chr9 
+276790 
+
+
+
+2022-01-19 13:49:08 : NCells_TileMatrix_9_chr9, Class = integer
+
+NCells_TileMatrix_9_chr9: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:08 : MinTile_TileMatrix_9_chr9, Class = numeric
+
+MinTile_TileMatrix_9_chr9: length = 1
+[1] 21
+
+
+
+2022-01-19 13:49:08 : MaxTile_TileMatrix_9_chr9, Class = numeric
+
+MaxTile_TileMatrix_9_chr9: length = 1
+[1] 276621
+
+
+
+2022-01-19 13:49:08 : MinCell_TileMatrix_9_chr9, Class = integer
+
+MinCell_TileMatrix_9_chr9: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:08 : MaxCell_TileMatrix_9_chr9, Class = integer
+
+MaxCell_TileMatrix_9_chr9: length = 1
+[1] 441894
+
+
+2022-01-19 13:49:13 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (10 of 23)!, 1.205 mins elapsed.
+
+2022-01-19 13:49:13 : NTiles_TileMatrix_10_chr10, Class = numeric
+
+NTiles_TileMatrix_10_chr10: length = 1
+ chr10 
+267595 
+
+
+
+2022-01-19 13:49:13 : NCells_TileMatrix_10_chr10, Class = integer
+
+NCells_TileMatrix_10_chr10: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:13 : MinTile_TileMatrix_10_chr10, Class = numeric
+
+MinTile_TileMatrix_10_chr10: length = 1
+[1] 22
+
+
+
+2022-01-19 13:49:13 : MaxTile_TileMatrix_10_chr10, Class = numeric
+
+MaxTile_TileMatrix_10_chr10: length = 1
+[1] 267575
+
+
+
+2022-01-19 13:49:13 : MinCell_TileMatrix_10_chr10, Class = integer
+
+MinCell_TileMatrix_10_chr10: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:13 : MaxCell_TileMatrix_10_chr10, Class = integer
+
+MaxCell_TileMatrix_10_chr10: length = 1
+[1] 294868
+
+
+2022-01-19 13:49:19 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (11 of 23)!, 1.301 mins elapsed.
+
+2022-01-19 13:49:19 : NTiles_TileMatrix_11_chr11, Class = numeric
+
+NTiles_TileMatrix_11_chr11: length = 1
+ chr11 
+270174 
+
+
+
+2022-01-19 13:49:19 : NCells_TileMatrix_11_chr11, Class = integer
+
+NCells_TileMatrix_11_chr11: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:19 : MinTile_TileMatrix_11_chr11, Class = numeric
+
+MinTile_TileMatrix_11_chr11: length = 1
+[1] 208
+
+
+
+2022-01-19 13:49:19 : MaxTile_TileMatrix_11_chr11, Class = numeric
+
+MaxTile_TileMatrix_11_chr11: length = 1
+[1] 270154
+
+
+
+2022-01-19 13:49:19 : MinCell_TileMatrix_11_chr11, Class = integer
+
+MinCell_TileMatrix_11_chr11: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:19 : MaxCell_TileMatrix_11_chr11, Class = integer
+
+MaxCell_TileMatrix_11_chr11: length = 1
+[1] 303732
+
+
+2022-01-19 13:49:25 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (12 of 23)!, 1.4 mins elapsed.
+
+2022-01-19 13:49:25 : NTiles_TileMatrix_12_chr12, Class = numeric
+
+NTiles_TileMatrix_12_chr12: length = 1
+ chr12 
+266551 
+
+
+
+2022-01-19 13:49:25 : NCells_TileMatrix_12_chr12, Class = integer
+
+NCells_TileMatrix_12_chr12: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:25 : MinTile_TileMatrix_12_chr12, Class = numeric
+
+MinTile_TileMatrix_12_chr12: length = 1
+[1] 21
+
+
+
+2022-01-19 13:49:25 : MaxTile_TileMatrix_12_chr12, Class = numeric
+
+MaxTile_TileMatrix_12_chr12: length = 1
+[1] 266530
+
+
+
+2022-01-19 13:49:25 : MinCell_TileMatrix_12_chr12, Class = integer
+
+MinCell_TileMatrix_12_chr12: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:25 : MaxCell_TileMatrix_12_chr12, Class = integer
+
+MaxCell_TileMatrix_12_chr12: length = 1
+[1] 312307
+
+
+2022-01-19 13:49:30 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (13 of 23)!, 1.496 mins elapsed.
+
+2022-01-19 13:49:31 : NTiles_TileMatrix_13_chr13, Class = numeric
+
+NTiles_TileMatrix_13_chr13: length = 1
+ chr13 
+228729 
+
+
+
+2022-01-19 13:49:31 : NCells_TileMatrix_13_chr13, Class = integer
+
+NCells_TileMatrix_13_chr13: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:31 : MinTile_TileMatrix_13_chr13, Class = numeric
+
+MinTile_TileMatrix_13_chr13: length = 1
+[1] 32763
+
+
+
+2022-01-19 13:49:31 : MaxTile_TileMatrix_13_chr13, Class = numeric
+
+MaxTile_TileMatrix_13_chr13: length = 1
+[1] 228709
+
+
+
+2022-01-19 13:49:31 : MinCell_TileMatrix_13_chr13, Class = integer
+
+MinCell_TileMatrix_13_chr13: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:31 : MaxCell_TileMatrix_13_chr13, Class = integer
+
+MaxCell_TileMatrix_13_chr13: length = 1
+[1] 317262
+
+
+2022-01-19 13:49:35 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (14 of 23)!, 1.574 mins elapsed.
+
+2022-01-19 13:49:35 : NTiles_TileMatrix_14_chr14, Class = numeric
+
+NTiles_TileMatrix_14_chr14: length = 1
+ chr14 
+214088 
+
+
+
+2022-01-19 13:49:35 : NCells_TileMatrix_14_chr14, Class = integer
+
+NCells_TileMatrix_14_chr14: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:35 : MinTile_TileMatrix_14_chr14, Class = numeric
+
+MinTile_TileMatrix_14_chr14: length = 1
+[1] 32046
+
+
+
+2022-01-19 13:49:35 : MaxTile_TileMatrix_14_chr14, Class = numeric
+
+MaxTile_TileMatrix_14_chr14: length = 1
+[1] 213768
+
+
+
+2022-01-19 13:49:35 : MinCell_TileMatrix_14_chr14, Class = integer
+
+MinCell_TileMatrix_14_chr14: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:35 : MaxCell_TileMatrix_14_chr14, Class = integer
+
+MaxCell_TileMatrix_14_chr14: length = 1
+[1] 322825
+
+
+2022-01-19 13:49:40 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (15 of 23)!, 1.654 mins elapsed.
+
+2022-01-19 13:49:40 : NTiles_TileMatrix_15_chr15, Class = numeric
+
+NTiles_TileMatrix_15_chr15: length = 1
+ chr15 
+203983 
+
+
+
+2022-01-19 13:49:40 : NCells_TileMatrix_15_chr15, Class = integer
+
+NCells_TileMatrix_15_chr15: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:40 : MinTile_TileMatrix_15_chr15, Class = numeric
+
+MinTile_TileMatrix_15_chr15: length = 1
+[1] 34001
+
+
+
+2022-01-19 13:49:40 : MaxTile_TileMatrix_15_chr15, Class = numeric
+
+MaxTile_TileMatrix_15_chr15: length = 1
+[1] 203963
+
+
+
+2022-01-19 13:49:40 : MinCell_TileMatrix_15_chr15, Class = integer
+
+MinCell_TileMatrix_15_chr15: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:40 : MaxCell_TileMatrix_15_chr15, Class = integer
+
+MaxCell_TileMatrix_15_chr15: length = 1
+[1] 328157
+
+
+2022-01-19 13:49:45 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (16 of 23)!, 1.733 mins elapsed.
+
+2022-01-19 13:49:45 : NTiles_TileMatrix_16_chr16, Class = numeric
+
+NTiles_TileMatrix_16_chr16: length = 1
+ chr16 
+180677 
+
+
+
+2022-01-19 13:49:45 : NCells_TileMatrix_16_chr16, Class = integer
+
+NCells_TileMatrix_16_chr16: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:45 : MinTile_TileMatrix_16_chr16, Class = numeric
+
+MinTile_TileMatrix_16_chr16: length = 1
+[1] 21
+
+
+
+2022-01-19 13:49:45 : MaxTile_TileMatrix_16_chr16, Class = numeric
+
+MaxTile_TileMatrix_16_chr16: length = 1
+[1] 180453
+
+
+
+2022-01-19 13:49:45 : MinCell_TileMatrix_16_chr16, Class = integer
+
+MinCell_TileMatrix_16_chr16: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:45 : MaxCell_TileMatrix_16_chr16, Class = integer
+
+MaxCell_TileMatrix_16_chr16: length = 1
+[1] 334080
+
+
+2022-01-19 13:49:49 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (17 of 23)!, 1.813 mins elapsed.
+
+2022-01-19 13:49:50 : NTiles_TileMatrix_17_chr17, Class = numeric
+
+NTiles_TileMatrix_17_chr17: length = 1
+ chr17 
+166515 
+
+
+
+2022-01-19 13:49:50 : NCells_TileMatrix_17_chr17, Class = integer
+
+NCells_TileMatrix_17_chr17: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:50 : MinTile_TileMatrix_17_chr17, Class = numeric
+
+MinTile_TileMatrix_17_chr17: length = 1
+[1] 126
+
+
+
+2022-01-19 13:49:50 : MaxTile_TileMatrix_17_chr17, Class = numeric
+
+MaxTile_TileMatrix_17_chr17: length = 1
+[1] 166495
+
+
+
+2022-01-19 13:49:50 : MinCell_TileMatrix_17_chr17, Class = integer
+
+MinCell_TileMatrix_17_chr17: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:50 : MaxCell_TileMatrix_17_chr17, Class = integer
+
+MaxCell_TileMatrix_17_chr17: length = 1
+[1] 340761
+
+
+2022-01-19 13:49:54 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (18 of 23)!, 1.898 mins elapsed.
+
+2022-01-19 13:49:55 : NTiles_TileMatrix_18_chr18, Class = numeric
+
+NTiles_TileMatrix_18_chr18: length = 1
+ chr18 
+160747 
+
+
+
+2022-01-19 13:49:55 : NCells_TileMatrix_18_chr18, Class = integer
+
+NCells_TileMatrix_18_chr18: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:55 : MinTile_TileMatrix_18_chr18, Class = numeric
+
+MinTile_TileMatrix_18_chr18: length = 1
+[1] 21
+
+
+
+2022-01-19 13:49:55 : MaxTile_TileMatrix_18_chr18, Class = numeric
+
+MaxTile_TileMatrix_18_chr18: length = 1
+[1] 160527
+
+
+
+2022-01-19 13:49:55 : MinCell_TileMatrix_18_chr18, Class = integer
+
+MinCell_TileMatrix_18_chr18: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:55 : MaxCell_TileMatrix_18_chr18, Class = integer
+
+MaxCell_TileMatrix_18_chr18: length = 1
+[1] 344781
+
+
+2022-01-19 13:49:59 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (19 of 23)!, 1.971 mins elapsed.
+
+2022-01-19 13:49:59 : NTiles_TileMatrix_19_chr19, Class = numeric
+
+NTiles_TileMatrix_19_chr19: length = 1
+ chr19 
+117236 
+
+
+
+2022-01-19 13:49:59 : NCells_TileMatrix_19_chr19, Class = integer
+
+NCells_TileMatrix_19_chr19: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:49:59 : MinTile_TileMatrix_19_chr19, Class = numeric
+
+MinTile_TileMatrix_19_chr19: length = 1
+[1] 179
+
+
+
+2022-01-19 13:49:59 : MaxTile_TileMatrix_19_chr19, Class = numeric
+
+MaxTile_TileMatrix_19_chr19: length = 1
+[1] 117216
+
+
+
+2022-01-19 13:49:59 : MinCell_TileMatrix_19_chr19, Class = integer
+
+MinCell_TileMatrix_19_chr19: length = 1
+[1] 1
+
+
+
+2022-01-19 13:49:59 : MaxCell_TileMatrix_19_chr19, Class = integer
+
+MaxCell_TileMatrix_19_chr19: length = 1
+[1] 350841
+
+
+2022-01-19 13:50:04 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (20 of 23)!, 2.052 mins elapsed.
+
+2022-01-19 13:50:04 : NTiles_TileMatrix_20_chr20, Class = numeric
+
+NTiles_TileMatrix_20_chr20: length = 1
+ chr20 
+128889 
+
+
+
+2022-01-19 13:50:04 : NCells_TileMatrix_20_chr20, Class = integer
+
+NCells_TileMatrix_20_chr20: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:50:04 : MinTile_TileMatrix_20_chr20, Class = numeric
+
+MinTile_TileMatrix_20_chr20: length = 1
+[1] 121
+
+
+
+2022-01-19 13:50:04 : MaxTile_TileMatrix_20_chr20, Class = numeric
+
+MaxTile_TileMatrix_20_chr20: length = 1
+[1] 128669
+
+
+
+2022-01-19 13:50:04 : MinCell_TileMatrix_20_chr20, Class = integer
+
+MinCell_TileMatrix_20_chr20: length = 1
+[1] 1
+
+
+
+2022-01-19 13:50:04 : MaxCell_TileMatrix_20_chr20, Class = integer
+
+MaxCell_TileMatrix_20_chr20: length = 1
+[1] 369810
+
+
+2022-01-19 13:50:08 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (21 of 23)!, 2.126 mins elapsed.
+
+2022-01-19 13:50:08 : NTiles_TileMatrix_21_chr21, Class = numeric
+
+NTiles_TileMatrix_21_chr21: length = 1
+chr21 
+93420 
+
+
+
+2022-01-19 13:50:08 : NCells_TileMatrix_21_chr21, Class = integer
+
+NCells_TileMatrix_21_chr21: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:50:08 : MinTile_TileMatrix_21_chr21, Class = numeric
+
+MinTile_TileMatrix_21_chr21: length = 1
+[1] 10062
+
+
+
+2022-01-19 13:50:08 : MaxTile_TileMatrix_21_chr21, Class = numeric
+
+MaxTile_TileMatrix_21_chr21: length = 1
+[1] 93400
+
+
+
+2022-01-19 13:50:08 : MinCell_TileMatrix_21_chr21, Class = integer
+
+MinCell_TileMatrix_21_chr21: length = 1
+[1] 1
+
+
+
+2022-01-19 13:50:08 : MaxCell_TileMatrix_21_chr21, Class = integer
+
+MaxCell_TileMatrix_21_chr21: length = 1
+[1] 371962
+
+
+2022-01-19 13:50:12 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (22 of 23)!, 2.192 mins elapsed.
+
+2022-01-19 13:50:12 : NTiles_TileMatrix_22_chr22, Class = numeric
+
+NTiles_TileMatrix_22_chr22: length = 1
+ chr22 
+101637 
+
+
+
+2022-01-19 13:50:12 : NCells_TileMatrix_22_chr22, Class = integer
+
+NCells_TileMatrix_22_chr22: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:50:12 : MinTile_TileMatrix_22_chr22, Class = numeric
+
+MinTile_TileMatrix_22_chr22: length = 1
+[1] 21144
+
+
+
+2022-01-19 13:50:12 : MaxTile_TileMatrix_22_chr22, Class = numeric
+
+MaxTile_TileMatrix_22_chr22: length = 1
+[1] 101617
+
+
+
+2022-01-19 13:50:12 : MinCell_TileMatrix_22_chr22, Class = integer
+
+MinCell_TileMatrix_22_chr22: length = 1
+[1] 1
+
+
+
+2022-01-19 13:50:12 : MaxCell_TileMatrix_22_chr22, Class = integer
+
+MaxCell_TileMatrix_22_chr22: length = 1
+[1] 375297
+
+
+2022-01-19 13:50:16 : Adding TileMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (23 of 23)!, 2.262 mins elapsed.
+
+2022-01-19 13:50:17 : NTiles_TileMatrix_23_chrX, Class = numeric
+
+NTiles_TileMatrix_23_chrX: length = 1
+  chrX 
+312082 
+
+
+
+2022-01-19 13:50:17 : NCells_TileMatrix_23_chrX, Class = integer
+
+NCells_TileMatrix_23_chrX: length = 1
+[1] 448536
+
+
+
+2022-01-19 13:50:17 : MinTile_TileMatrix_23_chrX, Class = numeric
+
+MinTile_TileMatrix_23_chrX: length = 1
+[1] 21
+
+
+
+2022-01-19 13:50:17 : MaxTile_TileMatrix_23_chrX, Class = numeric
+
+MaxTile_TileMatrix_23_chrX: length = 1
+[1] 312062
+
+
+
+2022-01-19 13:50:17 : MinCell_TileMatrix_23_chrX, Class = integer
+
+MinCell_TileMatrix_23_chrX: length = 1
+[1] 1
+
+
+
+2022-01-19 13:50:17 : MaxCell_TileMatrix_23_chrX, Class = integer
+
+MaxCell_TileMatrix_23_chrX: length = 1
+[1] 448497
+
+
+2022-01-19 13:50:22 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Finished Adding TileMatrix!, 9.43 mins elapsed.
+2022-01-19 13:50:32 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Adding GeneScoreMatrix!, 9.43 mins elapsed.
+
+
+2022-01-19 13:50:32 : 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 .addGeneScoreMat geneRegions, Class = GRanges
+GRanges object with 24919 ranges and 5 metadata columns:
+          seqnames              ranges strand |     gene_id       symbol
+             <Rle>           <IRanges>  <Rle> | <character>  <character>
+      [1]     chr1         64091-70008      + |       79501        OR4F5
+      [2]     chr1       139790-145339      - |      729737    LOC729737
+      [3]     chr1       585990-634010      - |   101928626 LOC101928626
+      [4]     chr1       812371-819837      + |      400728       FAM87B
+      [5]     chr1       820138-859446      + |      643837    LINC01128
+      ...      ...                 ...    ... .         ...          ...
+  [24915]     chrX 155258241-155269589      - |      116442       RAB39B
+  [24916]     chrX 155276211-155339657      - |        1193        CLIC2
+  [24917]     chrX 155375787-155381134      + |      474382       H2AFB1
+  [24918]     chrX 155377115-155383230      + |      474383         F8A2
+  [24919]     chrX 155490115-155674944      - |       55217        TMLHE
+          geneStart   geneEnd geneWeight
+          <integer> <integer>  <numeric>
+      [1]     69091     70008    4.40770
+      [2]    140339    139790    4.63365
+      [3]    629010    585990    1.41996
+      [4]    817371    819837    3.70079
+      [5]    825138    859446    1.51303
+      ...       ...       ...        ...
+  [24915] 155264589 155258241    2.77696
+  [24916] 155334657 155276211    1.31785
+  [24917] 155380787 155381134    4.77090
+  [24918] 155382115 155383230    4.29738
+  [24919] 155669944 155490115    1.10911
+  -------
+  seqinfo: 23 sequences from hg38 genome
+
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (1 of 23)!, 0.001 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (2 of 23)!, 0.002 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (3 of 23)!, 0.003 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (4 of 23)!, 0.004 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (5 of 23)!, 0.005 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (6 of 23)!, 0.006 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (7 of 23)!, 0.007 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (8 of 23)!, 0.008 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (9 of 23)!, 0.009 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (10 of 23)!, 0.011 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (11 of 23)!, 0.012 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (12 of 23)!, 0.013 mins elapsed.
+2022-01-19 13:50:33 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (13 of 23)!, 0.014 mins elapsed.
+2022-01-19 13:50:34 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (14 of 23)!, 0.016 mins elapsed.
+2022-01-19 13:50:34 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (15 of 23)!, 0.017 mins elapsed.
+2022-01-19 13:50:46 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (16 of 23)!, 0.224 mins elapsed.
+2022-01-19 13:50:47 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (17 of 23)!, 0.245 mins elapsed.
+2022-01-19 13:50:47 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (18 of 23)!, 0.247 mins elapsed.
+2022-01-19 13:50:48 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (19 of 23)!, 0.257 mins elapsed.
+2022-01-19 13:50:50 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (20 of 23)!, 0.288 mins elapsed.
+2022-01-19 13:50:51 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (21 of 23)!, 0.307 mins elapsed.
+2022-01-19 13:50:52 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (22 of 23)!, 0.316 mins elapsed.
+2022-01-19 13:50:52 : Creating Temp GeneScoreMatrix for 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916, Chr (23 of 23)!, 0.318 mins elapsed.
+
+2022-01-19 13:51:03 : 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 .addGeneScoreMat FeatureDF, Class = data.frame
+40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 .addGeneScoreMat FeatureDF: nRows = 24919, nCols = 6
+  seqnames  start    end strand         name idx
+1     chr1  69091  70008      1        OR4F5   1
+2     chr1 140339 139790      2    LOC729737   2
+3     chr1 629010 585990      2 LOC101928626   3
+4     chr1 817371 819837      1       FAM87B   4
+5     chr1 825138 859446      1    LINC01128   5
+6     chr1 827522 826206      2    LINC00115   6
+
+
+2022-01-19 13:51:07 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (1 of 23)!, 0.578 mins elapsed.
+2022-01-19 13:51:11 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (2 of 23)!, 0.648 mins elapsed.
+2022-01-19 13:51:14 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (3 of 23)!, 0.699 mins elapsed.
+2022-01-19 13:51:18 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (4 of 23)!, 0.759 mins elapsed.
+2022-01-19 13:51:21 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (5 of 23)!, 0.803 mins elapsed.
+2022-01-19 13:51:24 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (6 of 23)!, 0.849 mins elapsed.
+2022-01-19 13:51:27 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (7 of 23)!, 0.907 mins elapsed.
+2022-01-19 13:51:30 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (8 of 23)!, 0.952 mins elapsed.
+2022-01-19 13:51:32 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (9 of 23)!, 0.995 mins elapsed.
+2022-01-19 13:51:36 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (10 of 23)!, 1.049 mins elapsed.
+2022-01-19 13:51:38 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (11 of 23)!, 1.093 mins elapsed.
+2022-01-19 13:51:41 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (12 of 23)!, 1.139 mins elapsed.
+2022-01-19 13:51:44 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (13 of 23)!, 1.197 mins elapsed.
+2022-01-19 13:51:47 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (14 of 23)!, 1.236 mins elapsed.
+2022-01-19 13:51:49 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (15 of 23)!, 1.277 mins elapsed.
+2022-01-19 13:51:52 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (16 of 23)!, 1.33 mins elapsed.
+2022-01-19 13:51:55 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (17 of 23)!, 1.373 mins elapsed.
+2022-01-19 13:51:58 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (18 of 23)!, 1.418 mins elapsed.
+2022-01-19 13:52:01 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (19 of 23)!, 1.469 mins elapsed.
+2022-01-19 13:52:03 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (20 of 23)!, 1.514 mins elapsed.
+2022-01-19 13:52:06 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (21 of 23)!, 1.554 mins elapsed.
+2022-01-19 13:52:09 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (22 of 23)!, 1.604 mins elapsed.
+2022-01-19 13:52:11 : Adding GeneScoreMatrix to 40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 for Chr (23 of 23)!, 1.642 mins elapsed.
+2022-01-19 13:52:15 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Finished Adding GeneScoreMatrix!, 11.31 mins elapsed.
+2022-01-19 13:52:25 : (40427_Pla_Camb10714920_and_40110_Pla_Camb10687916 : 2 of 2) Finished Creating Arrow File, 11.31 mins elapsed.
+
+2022-01-19 13:52:25 : createArrowFiles has encountered an error, checking if any ArrowFiles completed..
+
+------- Completed
+
+End Time : 2022-01-19 13:52:25
+Elapsed Time Minutes = 11.4926907459895
+Elapsed Time Hours = 0.191545028289159
+
+-------
+
+
+

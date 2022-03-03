@@ -1,0 +1,12 @@
+Notebooks in this directory implement stOrder workflow. Here I use it to jointly derive invading trophoblast trajectory from GEX-based (using PAGA) and physical space-based (using spatial covariance model) connectivities b/w cell states.
+
+Notebooks S0, S1 ans S3 in here are run on jhub within my general environment accessible here: /lustre/scratch117/cellgen/team292/aa22/sharing/202202_for_MFI_handover/202202_Anna_jhub_general_environment.yml
+
+Notebook S2 is run on farm, I include here the container file that is use for that ("container.sh") that I usually launch from /nfs/team292/aa22/SpatialDE_colocation_model_related
+
+
+Notebook order is as follows:
+- S0: running PAGA on invading trophoblast cell states of donor P13 (SN + multiome RNA-seq) to derive GEX-based connectivities b/w cell states
+- S1: classifying Visium spots of donors P13, P14 and Hrv43 Visium data into tissue regions using SpatialDE2 tissue segmentation algorithm; classifying clusters obtained with SpatialDE2 based on visual inspection taking into account spatial positions of cell states that help understand tissue anatomy (uSMC, dS etc.)
+- S2 [needs to be run on farm]: running spatial covariance model on cell2location-dervied cell state densities in donors P13, P14 and Hrv43 Visium data (cell2location analysis for this was done in the following notebook in the repo: MFI/1_basic_atlasing/1-3_Visium_analysis/cell2location_MFI_20211115_P13_new_full_atlas_updated_onto_P13_main_chips_with_LF_gene_filter_clean_copy.ipynb) 
+- S3: last step of stOrder workflow, here I combine GEX-based and physical space-based connectivities b/w invading trophoblast cell states to jointly derive fully resolved invading trophoblast trajectory (starting at VCT_CCC and ending in eEVT and GC endpoints, acyclic, 1 branching point)

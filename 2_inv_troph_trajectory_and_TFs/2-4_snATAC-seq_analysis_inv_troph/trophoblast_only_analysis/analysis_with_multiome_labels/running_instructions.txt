@@ -1,0 +1,13 @@
+This directory contains notebooks analysing cellatac results for trophoblast compartment of donors P13, P14 and Hrv43 multiome samples.
+
+Notebook M2 (with cisTopic analysis) had to be run on a separate VM that was created by Martin Prete (just as Valentina Lorenzi had to do), for more info please contact them.
+
+The rest of the notebooks (aside from occasional installs of some packages that are specified in the code) were run using my general jhub environment accessible here: /lustre/scratch117/cellgen/team292/aa22/sharing/202202_for_MFI_handover/202202_Anna_jhub_general_environment.yml
+
+Order of notebooks:
+- M0: annotation of ATAC peaks
+- M1: QC of multiome ATAC data
+- M2: cisTopic analysis (dimensionality reduction) of multiome ATAC data - here one thing to note is that the selectModel method has always led me to select the model with 50 topics which has just been the model with the largest number of topics, so this is not ideal and in the future we may need to think of a way to properly select the number of topics
+- M3: translating gene features to proximal peaks using Signac functionnel
+- M4: playing with manifold calculation and batch correction of the multiome ATAC data
+- M5: chromVar analysis of multiome ATAC data, here I infer TFs differentially accessible in the invading trophoblast populations (as everywhere else comparisons here are made backwards along their trajectory)
