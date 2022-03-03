@@ -1,0 +1,38 @@
+This document is to describe how to run notebooks within this directory.
+
+Notebooks represent sequential steps of scRNA-seq analysis of unstimulated trophoblast organoid data using scVI as a method of batch correction and dimensionality reduction.
+
+Almost all notebooks in here are run on jhub within my general environment accessible here: /lustre/scratch117/cellgen/team292/aa22/sharing/202202_for_MFI_handover/202202_Anna_jhub_general_environment.yml
+
+Specifically the following notebooks are run in their own environments:
+- notebook S10 (cell2location mapping) is run on GPU on farm using the container provided here: container_cell2location.sh; I launch it from here: /nfs/team292/aa22/spatial_deconvolution_related/202110_MFI_Visium_and_organoids/
+- notebook scVI_integration_no_cytokine is also run on GPU on farm using the container provided here: container_scVI.sh; I usually launch it from here: /nfs/team292/aa22/scVI_related/202105_troph_organoids/
+
+
+The whole workflow is aimed at defining all in vitro trophoblast cell states in trophoblast organoid data.
+
+Order of notebooks is as follows:
+- S0: preprocessing
+- scVI_integration_no_cytokine (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states here
+- S1: reading in scVI (batch correction + dim reduction) results, preliminary look with to assess batch effects / noise levels etc. and label contaminant clusters
+- [back to] scVI_integration_no_cytokine (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states here
+- S2: reading in scVI (batch correction + dim reduction) results, another look with to assess batch effects / noise levels etc. and label contaminant clusters
+- [back to] scVI_integration_no_cytokine (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states here
+- S3: reading in scVI (batch correction + dim reduction) results, another look with to assess batch effects / noise levels etc. and label contaminant clusters
+
+After this I needed to clean up genes via approach used also in section 1 of this repo (from Louis-Francois)
+- S4: filtering genes high in ambient RNA signal for samples with low % reads mapped to cells here
+- [back to] scVI_integration_no_cytokine (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states here
+- S5: reading in scVI (batch correction + dim reduction) results, another look with to assess batch effects / noise levels etc. and label contaminant clusters
+- [back to] scVI_integration_no_cytokine (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states here
+- S6: reading in scVI (batch correction + dim reduction) results, another look with to assess batch effects / noise levels etc. and label contaminant clusters
+- [back to] scVI_integration_no_cytokine (needs to be run on farm): final round of batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states here
+- S7: reading in final scVI (batch correction + dim reduction) results, choosing the best manifold here
+
+- S8: predicting in vivo trophoblast cell states in the in vitro data with logistic regression
+
+- S9: performig DEG analysis for DoRothEA later on
+
+- S10: cell2location mapping of the in vitro cell states onto in vivo Visium chips of donor P13
+
+- S11: looking at results of cell2location mapping produced in S10 notebook
