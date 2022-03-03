@@ -1,0 +1,45 @@
+This document is to describe how to run notebooks within this directory.
+
+Notebooks represent sequential steps of sc/sn RNA-seq analysis using scVI as a method of batch correction and dimensionality reduction.
+
+All notebooks beginning with "S" in here are run on jhub within my general environment accessible here: /lustre/scratch117/cellgen/team292/aa22/sharing/202202_for_MFI_handover/202202_Anna_jhub_general_environment.yml
+
+2 notebooks beginning with "scVI_" need to be run on farm, I include here the container file that is use for that ("container_copy_gpu-normal.sh") that I usually launch from /nfs/team292/aa22/scVI_related/202111_upd_in_vivo_analysis/
+
+The whole workflow is aimed at defining trophoblast compartments very carefully since this donors' (P13) data contains all the trophoblast cell states.
+This process includes many steps of what I call "clean up" which is exclusion of contaminant/noisy clusters and subsequent reanalysis of the manifold until all cell states are captured and properly annotated. This also includes (at the final stage of looking at invading trophoblast) the use of cell2location to define cell states also based on their location in physical space in Visium data (notebook S7).
+
+Order of notebooks is as follows:
+- S0: preprocessing
+- S1: inferring genes high in ambient RNA signal to then exclude them in appropriate analyses
+- S2: preliminary analysis to assess batch effects etc.
+- S3: calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- scVI_integration_SN_and_multiome (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all cell states 
+- S4: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant manifold representations (all-cell-states manifold), subsetting trophoblast clusters by unbiased clustering
+- scVI_integration_SN_and_multiome_trophoblast (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states (version 1 / v1)
+
+- S5-1: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant trophoblast-only manifold representations, unbiased clustering and labelling contaminant clusters
+- [back to] scVI_integration_SN_and_multiome_trophoblast (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states (v2 after this first round of clean up)
+- S5-2: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant trophoblast-only manifold representations, unbiased clustering and labelling contaminant clusters
+- [back to] scVI_integration_SN_and_multiome_trophoblast (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states (v3 after another round of clean up)
+- S5-3: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant trophoblast-only manifold representations, unbiased clustering and labelling contaminant clusters
+- [back to] scVI_integration_SN_and_multiome_trophoblast (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all trophoblast cell states (v4 after another round of clean up)
+- S5-4: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant trophoblast-only manifold representations, unbiased clustering and labelling clusters corresponding to invading trophoblast cell states
+- [back to] scVI_integration_SN_and_multiome_trophoblast (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with invading trophoblast cell states (v1)
+
+- S6-1: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading trophoblast-only manifold representations, unbiased clustering and labelling contaminant clusters
+- [back to] scVI_integration_SN_and_multiome_trophoblast (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with invading trophoblast cell states (v2 after a round of clean up)
+- S6-2: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading trophoblast-only manifold representations, unbiased clustering and labelling contaminant clusters
+- [back to] scVI_integration_SN_and_multiome_trophoblast (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with invading trophoblast cell states (v3 after a round of clean up)
+- S6-3: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading trophoblast-only manifold representations, unbiased clustering and labelling clusters according to final invading trophoblast annotations (after also considering cell2location results in S7 notebook that have been produced by analysis in "1-3_Visium_analysis" directory of the repo)
+- S7: as indicated above, in this notebook I look at results of cell2location mapping to finalise trophoblast annotations
+
+
+- [back to] scVI_integration_SN_and_multiome_trophoblast (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with trophoblast cell states, now for only using data that has made it through all the clean up steps
+- S5-5: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant trophoblast-only manifold representations, finalisation of all-trophoblast annotation labels
+
+
+The following notebooks are not part of the main analysis and are used to produce additional lists of DE genes and manifold representations for supplementary figures
+- S8: using only final nuclei (judging from all-donors analysis in "1-2_GEX_analysis_all_donors") calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- scVI_integration_SN_and_multiome (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold of donor P13 with all cell states, now using only final nuclei (judging from all-donors analysis in "1-2_GEX_analysis_all_donors")
+- S9: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading all cell states manifold representations, visualising important UMAPs for supplementary figures

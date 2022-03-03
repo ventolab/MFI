@@ -1,0 +1,88 @@
+This document is to describe how to run notebooks within this directory.
+
+Notebooks represent sequential steps of sc/sn RNA-seq analysis using scVI as a method of batch correction and dimensionality reduction.
+
+All notebooks beginning with "M" or "S" in here are run on jhub within my general environment accessible here: /lustre/scratch117/cellgen/team292/aa22/sharing/202202_for_MFI_handover/202202_Anna_jhub_general_environment.yml
+
+1 notebook beginning with "scVI_" needs to be run on farm, I include here the container file that is use for that ("container_copy_gpu-normal.sh") that I usually launch from /nfs/team292/aa22/scVI_related/202111_upd_in_vivo_analysis/
+
+The whole workflow is aimed at defining all cell state compartments (coarse and fine grain) present at the maternal-fetal interface.
+Specifically for trophoblast and invading trophoblast subset of the data this process includes many steps of what I call "clean up" which is exclusion of contaminant/noisy clusters and subsequent reanalysis of the manifold until all cell states are captured and properly annotated. Eventually I was unable to tease apart giant cells (GC) in all-donors analysis here so those labels just come from donor P13-only analysis (see folder "1-1_GEX_analysis_donor_P13" in the repo).
+
+Order of notebooks is as follows:
+- M0: preprocessing
+- M1: preliminary analysis to assess batch effects etc.
+- M2: inferring genes high in ambient RNA signal to then exclude them in appropriate analyses
+- M3: calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all cell states 
+- M4: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant manifold representations (all-cell-states manifold), annotating data preliminarily into coarse grain clusters by unbiased clustering
+
+- S0-1: zooming in on trophoblast compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with trophoblast cell states 
+- [back to] S0-1: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant trophoblast-only manifold representations, unbiased clustering and labelling contaminant clusters
+- S0-2: zooming in on trophoblast compartment after clean up; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with trophoblast cell states after clean up
+- [back to] S0-2: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant trophoblast-only manifold representations, unbiased clustering and labelling invading trophoblast clusters
+
+- S1-1: zooming in on invading trophoblast compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with invading trophoblast cell states 
+- [back to] S1-1: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading trophoblast-only manifold representations, unbiased clustering and labelling contaminant clusters
+- S1-2: zooming in on invading trophoblast compartment after clean up; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with invading trophoblast cell states 
+- [back to] S1-2: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading trophoblast-only manifold representations, unbiased clustering and labelling contaminant clusters after first clean up
+- S1-3: zooming in on invading trophoblast compartment after final clean up; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with invading trophoblast cell states 
+- [back to] S1-3: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading trophoblast-only manifold representations, unbiased clustering and final annotation of invading trophoblast cell states
+
+- S0-3: going back to look at all trophoblast, now knowing indices of final invading trophoblast cells/nuclei droplets; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with trophoblast cell states
+- [back to] S0-3: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading trophoblast-only manifold representations, unbiased clustering and labelling contaminant/not assigned cell labels
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with trophoblast cell states - final subset
+- S0-4: final (for trophoblast) round of reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant invading trophoblast-only manifold representations and final annotation of all trophoblast cell states here
+
+Following notebooks perform zoomed in analysis of major compartments other than trophoblast:
+
+- S2: zooming in on maternal fibroblast compartment (dS and uSMC); calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with maternal fibroblast cell states 
+- [back to] S2: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant fibroblast manifold representations, unbiased clustering and labelling maternal fibroblast cell states
+
+- S3: zooming in on NK + ILC compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with NK + ILC cell states 
+- [back to] S3: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant NK + ILC manifold representations, unbiased clustering and labelling NK + ILC cell states
+
+- S4: zooming in on T cells compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with T cell states 
+- [back to] S4: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant T cells manifold representations, unbiased clustering and labelling T cell states
+
+- S5: zooming in on Myeloid compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with Myeloid cell states 
+- [back to] S5: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant Myeloid manifold representations, unbiased clustering and labelling Myeloid cell states
+
+- S6: zooming in on Endothelial compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with Endothelial cell states 
+- [back to] S6: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant Endothelial manifold representations, unbiased clustering and labelling Endothelial cell states
+
+- S7: zooming in on Epithelial compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with Epithelial cell states 
+- [back to] S7: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant Epithelial manifold representations, unbiased clustering and labelling Epithelial cell states
+
+- S8: zooming in on fetal fibroblast compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with fetal fibroblast cell states 
+- [back to] S8: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant fetal fibroblast manifold representations, unbiased clustering and labelling fetal fibroblast cell states
+
+- S9: zooming in on maternal perivascular compartment; calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with maternal perivascular cell states 
+- [back to] S9: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant maternal perivascular manifold representations, unbiased clustering and labelling maternal perivascular cell states
+
+- M5: pulling together all the final cells/nuclei indices from each of the coarse compartments (that have made it through clean up steps); calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with all cell states 
+- [back to] M5: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant all cell states representations, visualising final annotations and other useful metadata
+
+The following notebooks are not part of the main analysis and are used to produce additional manifold representations for supplementary figures (may not be in use any more):
+- forSuppl_S10_clean_NK_T_manifold: using only final nuclei for NK, ILC and T cell states - calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with NK, ILC, T cell states 
+- [back to] forSuppl_S10_clean_NK_T_manifold: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant NK, ILC, T cells manifold representations
+
+- forSuppl_S11_clean_Myeloid_manifold: using only final nuclei for Myeloid cell states - calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
+- [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with Myeloid cell states 
+- [back to] forSuppl_S11_clean_Myeloid_manifold: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant Myeloid cells manifold representations
