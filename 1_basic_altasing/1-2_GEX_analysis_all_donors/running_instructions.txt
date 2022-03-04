@@ -86,3 +86,6 @@ The following notebooks are not part of the main analysis and are used to produc
 - forSuppl_S11_clean_Myeloid_manifold: using only final nuclei for Myeloid cell states - calculation of cell cycle effect in this data and labelling genes behaving like cell cycle genes if applicable; calculation of appropriate estimate of nubmer of latent variables to be used in scVI analysis later
 - [back to] scVI_integration (needs to be run on farm): batch correction and dimensionality reduction to gage the manifold with Myeloid cell states 
 - [back to] forSuppl_S11_clean_Myeloid_manifold: reading in scVI (batch correction + dim reduction) results, calculating UMAPs of relevant Myeloid cells manifold representations
+
+
+Cell cycle genes file can be found at: https://drive.google.com/drive/u/1/folders/1eyJO-hP4PJqzXN72kVzvWb42m4QtPl1Y under regev_lab_cell_cycle_genes_from_Luz_20200505.txt
