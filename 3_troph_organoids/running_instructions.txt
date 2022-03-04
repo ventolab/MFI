@@ -36,3 +36,6 @@ After this I needed to clean up genes via approach used also in section 1 of thi
 - S10: cell2location mapping of the in vitro cell states onto in vivo Visium chips of donor P13
 
 - S11: looking at results of cell2location mapping produced in S10 notebook
+
+
+Cell cycle genes file can be found at: https://drive.google.com/drive/u/1/folders/1eyJO-hP4PJqzXN72kVzvWb42m4QtPl1Y under regev_lab_cell_cycle_genes_from_Luz_20200505.txt
